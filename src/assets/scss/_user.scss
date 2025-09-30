@@ -1,0 +1,31 @@
+// Use this to write your custom SCSS
+
+.btn-orange {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--bs-orange);
+  --bs-btn-border-color: var(--bs-orange);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--bs-orange);
+  --bs-btn-hover-border-color: var(--bs-orange);
+  --bs-btn-focus-shadow-rgb: 218, 128, 113;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--bs-orange);
+  --bs-btn-active-border-color: var(--bs-orange);
+  --bs-btn-active-shadow: 0rem 0.25rem 0.75rem rgba(30, 34, 40, 0.15);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--bs-orange);
+  --bs-btn-disabled-border-color: var(--bs-orange);
+}
+.text-orange {
+  color: var(--bs-orange) !important;
+}
+.navbar-expand-lg.navbar-light
+  .dropdown:not(.dropdown-submenu)
+  > .dropdown-toggle:after {
+  color: var(--bs-orange);
+}
+.navbar.navbar-light.fixed .btn:not(.btn-expand):not(.btn-gradient) {
+  background: var(--bs-orange);
+  border-color: var(--bs-orange);
+  color: var(--bs-white);
+}
