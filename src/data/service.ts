@@ -412,7 +412,7 @@ export const serviceList11 = [
 export const serviceList12 = [
   {
     id: 1,
-    title: 'Web Design',
+    title: 'Web Development',
     image: { '1x': '/img/illustrations/i24.png', '2x': '/img/illustrations/i24@2x.png 2x' },
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget. Fusce dapibus
     tellus.`
@@ -426,6 +426,12 @@ export const serviceList12 = [
   {
     id: 3,
     title: '3D Animation',
+    image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
+    description: `Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna scelerisque.`
+  },
+  {
+    id: 4,
+    title: 'Tally Prime',
     image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
     description: `Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna scelerisque.`
   }
