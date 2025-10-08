@@ -17,20 +17,20 @@ export const processList1 = [
   {
     no: "1",
     className: "me-lg-6",
-    title: "Collect Ideas",
-    subtitle: "Nulla vitae elit libero pharetra augue dapibus."
+    title: "Understand Goal",
+    subtitle: "We begin by understanding your goals."
   },
   {
     no: "2",
-    title: "Data Analysis",
+    title: "Analyze Learning",
     className: "ms-lg-13 mt-6",
-    subtitle: "Vivamus sagittis lacus vel augue laoreet."
+    subtitle: "Our expert trainers analyze your learning progress through interactive assignments, live projects, and practical sessions."
   },
   {
     no: "3",
-    title: "Finalize Product",
+    title: "Finalize Your Course",
     className: "mx-lg-6 mt-6",
-    subtitle: "Cras mattis consectetur purus sit amet."
+    subtitle: "Become industry-ready with real skills in web, marketing, documents."
   }
 ];
 

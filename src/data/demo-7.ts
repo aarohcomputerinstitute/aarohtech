@@ -22,46 +22,40 @@ const list = [
 const testimonialList = [
   {
     id: 1,
-    name: 'Coriss Ambady',
+    name: 'Priya Sharma',
     image: '/img/avatars/te1.jpg',
-    designation: 'Financial Analyst',
-    review: `Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis.`
+    designation: 'Digital Marketing Student',
+    review: 'The trainers are very supportive and the teaching method is practical. I learned how to run real digital marketing campaigns and now I manage social media for a local business!'
   },
   {
     id: 2,
-    name: 'Cory Zamora',
+    name: 'Rohit Meena',
     image: '/img/avatars/te2.jpg',
-    designation: 'Marketing Specialist',
-    review: `Fusce dapibus, tellus ac cursus tortor mauris condimentum fermentum massa justo sit amet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia.`
+    designation: 'MS Office Course',
+    review: 'I joined Aaroh Computer Classes to improve my Excel and Word skills. The classes were easy to follow and helped me perform better at my office job.'
   },
   {
     id: 3,
-    name: 'Nikolas Brooten',
+    name: 'Neha Saini',
     image: '/img/avatars/te3.jpg',
-    designation: 'Sales Manager',
-    review: `Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget porta ac consectetur vestibulum. Donec sed odio dui.`
+    designation: 'Full Stack Web Development',
+    review: 'I had zero coding experience before joining, but now I can build complete websites on my own. The step-by-step guidance was amazing!'
   },
   {
     id: 4,
-    name: 'Coriss Ambady',
+    name: 'Amit Kumar',
     image: '/img/avatars/te4.jpg',
-    designation: 'Financial Analyst',
-    review: `Etiam adipiscing tincidunt elit convallis felis suscipit ut. Phasellus rhoncus tincidunt auctor. Nullam eu sagittis mauris. Donec non dolor ac elit aliquam tincidunt at at sapien. Aenean tortor`
+    designation: 'Coding & Programming',
+    review: 'Best computer classes at Kalwar Road Jaipur! The trainers make coding fun and easy. I’ve even started working on my own projects now.'
   },
   {
     id: 5,
-    name: 'Laura Widerski',
+    name: 'Sakshi Verma',
     image: '/img/avatars/te5.jpg',
-    designation: 'Sales Specialist',
-    review: `Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient.`
-  },
-  {
-    id: 6,
-    name: 'Jackie Sanders',
-    image: '/img/avatars/te6.jpg',
-    designation: 'Jackie Sanders',
-    review: `Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus magnis dis montes, nascetur ridiculus mus. Donec sed odio.`
+    designation: 'Tally & Accounting',
+    review: 'The Tally course helped me get a job in an accounting firm. The institute gives full practical training and personal attention to every student.'
   }
 ];
+
 
 export { carouselImages, countList, list, testimonialList };
