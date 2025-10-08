@@ -8,8 +8,8 @@ export default function Facts15() {
     <div className="row gx-lg-8 gx-xl-12 gy-10 gy-lg-0 mb-11">
       <div className="col-lg-4 text-center text-lg-start">
         <h2 className="fs-16 text-uppercase text-primary mb-3">Company Facts</h2>
-        <h3 className="display-3 mb-4 pe-xxl-5">We are proud of our design team</h3>
-        <p className="mb-0 pe-xxl-11">Just sit back and relax while we take care of your business needs for you.</p>
+        <h3 className="display-3 mb-4 pe-xxl-5">We are proud of our expert training team</h3>
+        <p className="mb-0 pe-xxl-11">We take pride in our expert training team, dedicated to delivering quality education and practical skills for real-world success.</p>
       </div>
 
       <div className="col-lg-8 mt-lg-2">

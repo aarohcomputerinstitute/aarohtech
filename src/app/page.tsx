@@ -65,9 +65,6 @@ export default function Home() {
             <Team4 />
           </div>
 
-          {/* ========== projects section ========== */}
-          <Portfolio3 />
-
           {/* ========== customer section ========== */}
           <Testimonial17 />
 
