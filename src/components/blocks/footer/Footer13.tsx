@@ -11,10 +11,11 @@ export default function Footer13() {
       <div className="container pt-12 pt-lg-6 pb-13 pb-md-15">
         <div className="d-lg-flex flex-row align-items-lg-center">
           <h3 className="display-3 mb-6 mb-lg-0 pe-lg-20 pe-xl-22 pe-xxl-25 text-white">
-            Join our community by using our services and grow your business.
+            Join our learning community and grow your career with us.
+
           </h3>
 
-          <NextLink href="#" title="Try It For Free" className="btn btn-primary rounded-pill mb-0 text-nowrap" />
+          <NextLink href="#" title="Try Now Free" className="btn btn-primary rounded-pill mb-0 text-nowrap" />
         </div>
 
         <hr className="mt-11 mb-12" />
@@ -22,10 +23,10 @@ export default function Footer13() {
         <div className="row gy-6 gy-lg-0">
           <div className="col-md-4 col-lg-3">
             <div className="widget">
-              <Image alt="logo" width={134} height={26} src="/img/logo-light.png" className="mb-4" />
+              <Image alt="logo" width={134} height={26} src="/img/logo-aaroh.png" className="mb-4" />
 
               <p className="mb-4">
-                © 2022 Sandbox. <br className="d-none d-lg-block" />
+                © 2025 AAROH. <br className="d-none d-lg-block" />
                 All rights reserved.
               </p>
 
@@ -36,15 +37,15 @@ export default function Footer13() {
           <div className="col-md-4 col-lg-3">
             <div className="widget">
               <h4 className="widget-title text-white mb-3">Get in Touch</h4>
-              <address className="pe-xl-15 pe-xxl-17">Moonshine St. 14/05 Light City, London, United Kingdom</address>
-              <NextLink title="info@email.com" href="mailto:#" />
-              <br /> 00 (123) 456 78 90
+              <address className="pe-xl-15 pe-xxl-17">Niwaru Link Road, Kalwar Road,Govindpura, Jhotwara, Jaipur</address>
+              <NextLink title="aarohonline@email.com" href="mailto:aarohonline@email.com" />
+              <br /> +91 9828658887
             </div>
           </div>
 
           <div className="col-md-4 col-lg-3">
             <div className="widget">
-              <h4 className="widget-title text-white mb-3">Learn More</h4>
+              <h4 className="widget-title text-white mb-3">Quick Links</h4>
               <ul className="list-unstyled  mb-0">
                 {footerNav.map(({ title, url }) => (
                   <li key={title}>
