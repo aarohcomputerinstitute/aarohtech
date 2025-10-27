@@ -26,7 +26,7 @@ export default function Process1() {
           lacinia bibendum nulla sed consectetur.
         </p>
 
-        <NextLink href="#" title="Learn More" className="btn btn-primary rounded-pill mb-0" />
+        <NextLink href="#" title="Learn More" className="btn btn-secondary rounded-pill mb-0" />
       </div>
     </div>
   );
