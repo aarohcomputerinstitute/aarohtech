@@ -59,7 +59,7 @@ export const factList7 = [
 // used in the facts-15 block
 export const factList8 = [
   { id: 1, number: 200, title: 'Completed Projects', icon: 'uil-presentation-check', suffix: '+' },
-  { id: 2, number: 500, title: 'Happy Customers', icon: 'uil-user-check', suffix: '+' },
+  { id: 2, number: 5000, title: 'Trained Students', icon: 'uil-user-check', suffix: '+' },
   { id: 3, number: 10, title: 'Awards Won', icon: 'uil-trophy', suffix: '+' }
 ];
 

@@ -414,26 +414,64 @@ export const serviceList12 = [
     id: 1,
     title: 'Web Development',
     image: { '1x': '/img/illustrations/i24.png', '2x': '/img/illustrations/i24@2x.png 2x' },
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget. Fusce dapibus
-    tellus.`
+    description: `Learn full-stack website creation using HTML, CSS, JavaScript, React, and Node.js. Build fast, responsive, and user-friendly web applications.`,
+    gotolink: '/courses/web-development',
   },
   {
     id: 2,
-    title: 'Graphic Design',
+    title: 'Data Analyst',
     image: { '1x': '/img/illustrations/i19.png', '2x': '/img/illustrations/i19@2x.png 2x' },
-    description: `Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet. Sed posuere consectetur.`
+    description: `Master Excel, SQL, and Python to analyze data and create dashboards. Build skills for high-demand data analytics careers.`,
+    gotolink: '/courses/data-analyst'
   },
   {
     id: 3,
-    title: '3D Animation',
+    title: 'Digital Marketing',
     image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
-    description: `Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna scelerisque.`
+    description: `Learn SEO, social media ads, and branding strategies to promote businesses online. Gain practical experience with real campaigns.`,
+    gotolink: '/courses/digital-marketing'
   },
   {
     id: 4,
+    title: 'AI Automation',
+    image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
+    description: `Learn AI tools, workflows, and automation systems to streamline business tasks and increase productivity efficiently.`,
+    gotolink: '/courses/ai-automation'
+  },
+  {
+    id: 5,
+    title: 'Coding Language',
+    image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
+    description: `Learn popular programming languages with hands-on practice to build logic, real applications, and problem-solving skills.`,
+    gotolink: '/courses/coding-language'
+  },
+  {
+    id: 6,
+    title: 'Video Editing',
+    image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
+    description: `Edit professional videos using advanced tools to create engaging content for brands, social media, and storytelling.`,
+    gotolink: '/courses/video-editing'
+  },
+  {
+    id: 7,
+    title: 'Advance Excel',
+    image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
+    description: `Master formulas, dashboards, and data analysis tools to boost productivity and professional reporting skills.`,
+    gotolink: '/courses/advance-excel'
+  },
+  {
+    id: 8,
     title: 'Tally Prime',
     image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
-    description: `Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna scelerisque.`
+    description: `Learn accounting, GST, billing, and inventory management using industry-standard Tally Prime software effectively.`,
+    gotolink: '/courses/tally-prime'
+  },
+  {
+    id: 9,
+    title: 'RSCIT',
+    image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
+    description: `Basic computer course for beginners to learn digital skills, internet usage, typing, and essential applications and many more.`,
+    gotolink: '/courses/rscit'
   }
 ];
 

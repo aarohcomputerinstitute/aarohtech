@@ -18,7 +18,7 @@ export default function Services24() {
         </div>
 
         <div className="row gx-lg-8 gx-xl-12 gy-11 px-xxl-5 text-center d-flex align-items-end">
-          {serviceList12.map(({ id, image, title, description }) => (
+          {serviceList12.map(({ id, image, title, description, gotolink }) => (
             <div className="col-lg-4" key={id}>
               <div className="px-md-15 px-lg-3">
                 <figure className="mb-6">
@@ -26,12 +26,16 @@ export default function Services24() {
                     className="img-fluid"
                     src={image["1x"]}
                     srcSet={image["2x"]}
-                    alt=""
+                    alt={title}
                   />
                 </figure>
                 <h3>{title}</h3>
                 <p className="mb-2">{description}</p>
-                <NextLink title="Learn More" href="#" className="more hover" />
+                <NextLink 
+                  title="Learn More" 
+                  href={gotolink || '#'} 
+                  className="more hover" 
+                />
               </div>
             </div>
           ))}

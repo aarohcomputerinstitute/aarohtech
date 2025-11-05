@@ -13,7 +13,7 @@ import { Portfolio3 } from "components/blocks/portfolio";
 import { Testimonial17 } from "components/blocks/testimonial";
 import NextLink from "components/reuseable/links/NextLink";
 
-export default function Demo21() {
+export default function WebDevelopment() {
   return (
     <Fragment>
       {/* ========== header ========== */}
@@ -53,6 +53,9 @@ export default function Demo21() {
             {/* ========== team section ========== */}
             <Team4 />
           </div>
+
+          {/* ========== projects section ========== */}
+          <Portfolio3 />
 
           {/* ========== customer section ========== */}
           <Testimonial17 />
