@@ -54,7 +54,14 @@ const testimonialList = [
     image: '/img/avatars/te5.jpg',
     designation: 'Tally & Accounting',
     review: 'The Tally course helped me get a job in an accounting firm. The institute gives full practical training and personal attention to every student.'
-  }
+  },
+  {
+    id: 6,
+    name: 'Sakshi Verma',
+    image: '/img/avatars/te5.jpg',
+    designation: 'Tally & Accounting',
+    review: 'The Tally course helped me get a job in an accounting firm. The institute gives full practical training and personal attention to every student.'
+  },
 ];
 
 
