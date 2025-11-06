@@ -37,7 +37,7 @@
       border: 0;
       @include font-size(0.85rem);
       font-weight: $font-weight-bold;
-      color: var(--#{$prefix}primary);
+      color: var(--#{$prefix}orange);
       @include transition(all 150ms ease-in-out);
       background: none;
       &:before {
@@ -51,7 +51,7 @@
         margin-top: -0.25rem;
         margin-left: -0.3rem;
         display: inline-block;
-        color: var(--#{$prefix}primary);
+        color: var(--#{$prefix}orange);
       }
       &.collapsed {
         color: $main-dark;
@@ -60,7 +60,7 @@
         }
       }
       &:hover {
-        color: var(--#{$prefix}primary);
+        color: var(--#{$prefix}orange);
       }
     }
   }

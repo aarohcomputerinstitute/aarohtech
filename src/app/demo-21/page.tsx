@@ -43,7 +43,7 @@ export default function Demo21() {
         <Process14 />
 
         {/* ========== why choose us section ========== */}
-        <About22 />
+        {/* <About22 /> */}
 
         <section className="wrapper bg-light">
           <div className="container pt-12 pt-lg-8 pb-14 pb-md-16">

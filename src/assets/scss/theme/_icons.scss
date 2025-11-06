@@ -109,6 +109,16 @@ img.svg-inject {
       fill: #f857a6;
     }
   }
+  
+  &.text-grape-orange {
+    .fill-primary {
+      fill: $black;
+    }
+    .fill-secondary {
+      fill:#F07419;
+    }
+  }
+
   &.text-grape-green {
     .fill-primary {
       fill: $grape;

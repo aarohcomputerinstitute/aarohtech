@@ -328,43 +328,23 @@ export const serviceList10 = [
     id: 1,
     linkUrl: '#',
     Icon: Script,
-    title: 'Software & Integration',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
+    title: 'Frontend Development',
+    description: `Design and build modern, responsive user interfaces using HTML, CSS, JavaScript, and React. Create fast and interactive web pages for all devices.`
   },
+ 
   {
     id: 2,
     linkUrl: '#',
-    Icon: Verify,
-    title: 'Network Security',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
+    Icon: Setting,
+    title: 'Backend Development',
+    description: `Develop secure and scalable server-side apps using Node.js, Express, and MongoDB. Manage data and build powerful APIs.`
   },
   {
     id: 3,
     linkUrl: '#',
-    Icon: CloudNetwork,
-    title: 'Cloud Services',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
-  },
-  {
-    id: 4,
-    linkUrl: '#',
-    Icon: Director,
-    title: 'Wireless Networking',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
-  },
-  {
-    id: 5,
-    linkUrl: '#',
-    Icon: Setting,
-    title: 'IT Solutions',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
-  },
-  {
-    id: 6,
-    linkUrl: '#',
     Icon: Server,
-    title: 'Server Configuration',
-    description: `Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.`
+    title: 'Live Projects',
+    description: `Work on real MERN projects and deploy them online. Build a strong portfolio for job placements.`
   }
 ];
 

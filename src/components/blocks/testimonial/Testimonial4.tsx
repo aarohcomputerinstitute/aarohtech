@@ -9,12 +9,13 @@ import { testimonialList2 } from "data/testimonial-list";
 export default function Testimonial4() {
   return (
     <div className="wrapper bg-light">
-      <div className="container py-14 py-md-16">
+      <div className="container py-14 py-md-1">
         <div className="row">
           <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 mx-auto text-center">
-            <h2 className="fs-15 text-uppercase text-muted mb-3">Happy Customers</h2>
-            <h3 className="display-4 mb-6 px-xl-10 px-xxl-15">
-              Don't take our word for it. See what customers are saying about us.
+            <h2 className="display-6 mb-3">Our Successful Students
+</h2>
+            <h3 className="fs-15 mb-6 px-xl-10 px-xxl-15">
+              See what learners say about our Full Stack Web Development Course.
             </h3>
           </div>
         </div>
