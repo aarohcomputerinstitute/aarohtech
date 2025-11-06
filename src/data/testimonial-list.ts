@@ -28,31 +28,22 @@ export const testimonialList1 = [
 
 export const testimonialList2 = [
   {
-    name: 'Coriss Ambady',
+    name: 'Ayush Verma',
     image: '/img/avatars/te7.jpg',
-    designation: 'Financial Analyst',
-    review: `Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-      Vestibulum ligula porta felis euismod semper. Cras justo odio.`
+    designation: 'Full Stack Developer',
+    review: 'Thanks to this course, I mastered MERN Stack with real-world projects. I now feel confident applying for developer roles.'
   },
   {
-    name: 'Cory Zamora',
+    name: 'Priya Mehra',
     image: '/img/avatars/te8.jpg',
-    designation: 'Marketing Specialist',
-    review: `Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-      Vestibulum ligula porta felis euismod semper. Cras justo odio.`
+    designation: 'Frontend Intern',
+    review: 'The live mentorship and hands-on assignments made coding super easy. I got my first internship within months!'
   },
   {
-    name: 'Barclay Widerski',
+    name: 'Rohan Singh',
     image: '/img/avatars/te9.jpg',
-    designation: 'Sales Specialist',
-    review: `Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-      Vestibulum ligula porta felis euismod semper. Cras justo odio.`
-  },
-  {
-    name: 'Jackie Sanders',
-    image: '/img/avatars/te10.jpg',
-    designation: 'Investment Planner',
-    review: `Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio.`
+    designation: 'Backend Developer',
+    review: 'Amazing curriculum! I learned HTML, CSS, JavaScript, React & Node.js step-by-step. Best course for placements!'
   }
 ];
 

@@ -8,9 +8,9 @@ export default function Hero2() {
       <div
         className="col-md-8 offset-md-2 col-lg-6 offset-lg-1 position-relative order-lg-2"
         style={zoomInAnimate("0ms")}>
-        <div className="shape bg-dot primary rellax w-17 h-19" style={{ top: "-1.7rem", left: "-1.5rem" }} />
+        <div className="shape bg-dot orange rellax w-17 h-19" style={{ top: "-1.7rem", left: "-1.5rem" }} />
         <div
-          className="shape rounded bg-soft-primary rellax d-md-block"
+          className="shape rounded bg-soft-orange rellax d-md-block"
           style={{ width: "85%", height: "90%", right: "-0.8rem", bottom: "-1.8rem" }}
         />
 
@@ -20,21 +20,27 @@ export default function Hero2() {
       </div>
 
       <div className="col-lg-5 mt-lg-n10 text-center text-lg-start">
-        <h1 className="display-1 mb-5" style={slideInDownAnimate("600ms")}>
-          We bring solutions to make life easier for our customers.
-        </h1>
+        <h3 className="h3 mb-2" style={slideInDownAnimate("600ms")}>
+          Start Today
+        </h3>
 
-        <p className="lead fs-25 lh-sm mb-7 px-md-10 px-lg-0" style={slideInDownAnimate("900ms")}>
-          We have considered our solutions to support every stage of your growth.
+        <p className="lead fs-18 lh-sm mb-5 px-md-10 px-lg-0" style={slideInDownAnimate("900ms")}>
+          Your dream tech career is just a few months away.
         </p>
-
+        <h3 className="h3 mb-2" style={slideInDownAnimate("600ms")}>
+          Believe in Yourself
+        </h3>
+        <p className="lead fs-18 lh-sm mb-5 px-md-10 px-lg-0" style={slideInDownAnimate("900ms")}>
+          Coding becomes easier with the right guidance and regular practice.
+          Stay consistent, keep learning, and prepare confidently for internships and placements in top companies.
+        </p>
         <div className="d-flex justify-content-center justify-content-lg-start">
           <span style={slideInDownAnimate("1200ms")}>
-            <NextLink title="Explore Now" href="#" className="btn btn-lg btn-primary rounded-pill me-2" />
+            <NextLink title="Explore Now" href="#" className="btn btn-orange rounded-pill me-2" />
           </span>
 
           <span style={slideInDownAnimate("1500ms")}>
-            <NextLink title="Free Trial" href="#" className="btn btn-lg btn-outline-primary rounded-pill" />
+            <NextLink title="Call Now" href="tel:+919828658887" className="btn btn-outline-orange rounded-pill" />
           </span>
         </div>
       </div>
