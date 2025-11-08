@@ -180,10 +180,14 @@ const blogsNavigation = [
 
 // about pages links
 const aboutNavigation = [
-  { id: 1, url: "/about-2", title: "Our Story" },
-  { id: 2, url: "/about-1", title: "Our Team" },
+  { id: 1, url: "/about-aaroh", title: "about aaroh" },
 ];
 
+// online academy links
+const onlineAcademyNavigation = [
+  { id: 1, url: "https://www.youtube.com/@aarohtechacademy", title: "Free Courses",target:"_blank" },
+  { id: 2, url: "#", title: "Paid Courses",target:"_blank" },
+];
 // documentation pages links
 const documentationNavigation = {
   usage: [
@@ -343,4 +347,5 @@ export {
   blocksNavigation,
   projectsNavigation,
   documentationNavigation,
+  onlineAcademyNavigation,
 };

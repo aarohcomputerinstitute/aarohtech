@@ -4,7 +4,7 @@ import { Fragment, PropsWithChildren } from "react";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 // GLOBAL CUSTOM COMPONENTS
-import { Footer8 } from "components/blocks/footer";
+import { Footer13, Footer8 } from "components/blocks/footer";
 import Navbar from "components/blocks/navbar/navbar-1";
 import NextLink from "components/reuseable/links/NextLink";
 
@@ -36,7 +36,7 @@ export default function AboutLayout({ children }: PropsWithChildren) {
       <main className="content-wrapper">{children}</main>
 
       {/* ========== footer section ========== */}
-      <Footer8 />
+      <Footer13 />
     </Fragment>
   );
 }

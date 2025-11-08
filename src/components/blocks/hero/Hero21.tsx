@@ -61,7 +61,7 @@ export default function Hero21() {
       </div>
 
       <div className="overflow-hidden">
-        <div className="divider text-soft-primary mx-n2">
+        <div className="divider text-soft-sky mx-n2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
             <path
               fill="currentColor"

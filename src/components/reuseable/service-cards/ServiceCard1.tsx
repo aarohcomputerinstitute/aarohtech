@@ -31,7 +31,6 @@ export default function ServiceCard1({
           <Icon className={iconClassName} />
           <h4>{title}</h4>
           <p className="mb-2">{description}</p>
-          <NextLink title="Learn More" href={linkUrl} className={`more hover link-${linkType}`} />
         </div>
       </div>
     </div>

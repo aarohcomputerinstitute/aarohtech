@@ -4,11 +4,11 @@ import { serviceList12 } from "data/service";
 
 export default function Services24() {
   return (
-    <section className="wrapper bg-gradient-primary">
+    <section className="wrapper bg-gradient-sky">
       <div className="container pt-12 pt-lg-8 pb-14 pb-md-17">
         <div className="row text-center">
           <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-            <h2 className="fs-16 text-uppercase text-primary mb-3">
+            <h2 className="fs-20 text-uppercase text-orange mb-3">
               What We Do?
             </h2>
             <h3 className="display-3 mb-10 px-xxl-10">

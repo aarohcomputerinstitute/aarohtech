@@ -6,5 +6,7 @@ import FAQ5 from './FAQ5';
 import FAQ6 from './FAQ6';
 import FAQ7 from './FAQ7';
 import FAQ8 from './FAQ8';
+import FAQexcel from './FAQexcel';
+import FAQdm from './FAQdm';
 
-export { FAQ1, FAQ2, FAQ3, FAQ4, FAQ5, FAQ6, FAQ7, FAQ8 };
+export { FAQ1, FAQ2, FAQ3, FAQ4, FAQ5, FAQ6, FAQ7, FAQ8, FAQexcel, FAQdm };
