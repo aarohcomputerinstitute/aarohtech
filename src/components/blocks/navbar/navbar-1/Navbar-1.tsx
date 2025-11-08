@@ -95,14 +95,14 @@ export default function NavbarOne({
 
         <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
           <ul className="navbar-nav">
-            {/* ===================== About nav item ===================== */}
-            <AboutNavItem />
-
             {/* ===================== Courses nav item ===================== */}
             <CoursesNavItem />
 
             {/* ===================== Online Academy nav item ===================== */}
             <OnlineAcademyNavItem />
+
+            {/* ===================== About nav item ===================== */}
+            <AboutNavItem />
 
             {/* ===================== News nav item ===================== */}
             <NewsNavItem />

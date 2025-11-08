@@ -14,7 +14,7 @@ export default function Testimonial4() {
           <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 mx-auto text-center">
             <h2 className="display-6 mb-3">Our Successful Students
 </h2>
-            <h3 className="fs-15 mb-6 px-xl-10 px-xxl-15">
+            <h3 className="fs-20 mb-6 px-xl-10 px-xxl-15">
               See what learners say about our Full Stack Web Development Course.
             </h3>
           </div>

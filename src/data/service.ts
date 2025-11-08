@@ -36,37 +36,97 @@ export const serviceList1 = [
     id: 1,
     link: '#',
     icon: Search,
-    title: 'SEO Services',
-    linkText: 'Learn More',
+    title: 'Fundamentals of DM',
     linkType: LinkType.yellow,
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`
+    description: `Marketing fundamentals, online vs. offline, channels overview`
   },
   {
     id: 2,
     link: '#',
     icon: Browser,
-    title: 'Web Design',
-    linkText: 'Learn More',
+    title: 'Website Creation & Optimization',
     linkType: LinkType.red,
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`
+    description: `WordPress basics, landing pages, UI/UX fundamentals`
   },
   {
     id: 3,
     link: '#',
     icon: ChatTwo,
     linkType: LinkType.green,
-    title: 'Social Engagement',
-    linkText: 'Learn More',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`
+    title: 'Search Engine Optimization (SEO)',
+    description: `On & Off-page SEO, Technical SEO, Keyword research, SEO tools`
   },
   {
     id: 4,
     link: '#',
     icon: Megaphone,
     linkType: LinkType.blue,
+    title: 'SEM / Google Ads',
+    description: `Search Ads, Display Ads, Shopping Ads, Video Ads (YouTube Ads), Campaign setup`
+  },
+  {
+    id: 5,
+    link: '#',
+    icon: Megaphone,
+    linkType: LinkType.blue,
+    title: 'Social Media Marketing (SMM)',
+    description: `Strategies for Facebook, Instagram, LinkedIn, YouTube, Twitter`
+  },
+  {
+    id: 6,
+    link: '#',
+    icon: Edit,
+    linkType: LinkType.yellow,
     title: 'Content Marketing',
-    linkText: 'Learn More',
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`
+    description: 'Content writing, Blogging, SEO content strategy, Canva designing basics'
+  },
+  {
+    id: 7,
+    link: '#',
+    icon: Settings,
+    linkType: LinkType.red,
+    title: 'Email Marketing & Automation',
+    description: 'Lead magnet creation, Drip campaigns, Mailchimp / HubSpot automation'
+  },
+  {
+    id: 8,
+    link: '#',
+    icon: Analytics,
+    linkType: LinkType.green,
+    title: 'Analytics & Reporting',
+    description: 'Google Analytics 4 (GA4), Conversion tracking, Data-driven decisions'
+  },
+  {
+    id: 9,
+    link: '#',
+    icon: ShopTwo,
+    linkType: LinkType.blue,
+    title: 'E-commerce Marketing',
+    description: 'Ads for e-commerce, Product listing + catalog creation'
+  },
+  {
+    id: 10,
+    link: '#',
+    icon: Target,
+    linkType: LinkType.yellow,
+    title: 'Affiliate Marketing',
+    description: 'Affiliate networks & earning strategies'
+  },
+  {
+    id: 11,
+    link: '#',
+    icon: Medal,
+    linkType: LinkType.red,
+    title: 'Online Reputation Management',
+    description: 'Brand monitoring & reviews management'
+  },
+  {
+    id: 12,
+    link: '#',
+    icon: Team,
+    linkType: LinkType.green,
+    title: 'Influencer & Community Marketing',
+    description: 'Collaboration planning + outreach processes'
   }
 ];
 

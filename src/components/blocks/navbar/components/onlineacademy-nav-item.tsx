@@ -3,7 +3,7 @@ import ListItemLink from "components/reuseable/links/ListItemLink";
 import DropdownToggleLink from "components/reuseable/links/DropdownToggleLink";
 
 // CUSTOM DATA
-import { aboutNavigation } from "data/navigation";
+import { onlineAcademyNavigation } from "data/navigation";
 
 export default function OnlineAcademyNavItem() {
   return (
@@ -14,16 +14,18 @@ export default function OnlineAcademyNavItem() {
       />
 
       <ul className="dropdown-menu">
-        {aboutNavigation.map(({ id, url, title }) => {
-          return (
-            <ListItemLink
-              key={id}
-              href={url}
-              title={title}
-              linkClassName="dropdown-item"
-            />
-          );
-        })}
+        {onlineAcademyNavigation.map(({ id, url, title, target }) => (
+          <li key={id} className="nav-item">
+            <a 
+              href={url} 
+              className="dropdown-item"
+              target={target}
+              rel={target === '_blank' ? 'noopener noreferrer' : undefined}
+            >
+              {title}
+            </a>
+          </li>
+        ))}
       </ul>
     </li>
   );

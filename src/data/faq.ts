@@ -146,6 +146,97 @@ Tally and Accounting Software Training`
     no: "Five",
     expand: false,
     heading: "Do you offer certification after course completion?",
+    body: `Yes, after successfully completing your course, you'll receive a recognized certificate from Aaroh Computer Classes — useful for jobs, internships, and portfolio building.`
+  },
+  {
+    no: "Six",
+    expand: false,
+    heading: "What are the class timings?",
+    body: `We offer flexible batch timings — morning, afternoon, and evening slots — to suit school, college, and working schedules.`
+  },
+  {
+    no: "Seven",
+    expand: false,
+    heading: "How can I enroll for a course?",
+    body: `You can visit our center, call us, or fill out the inquiry form on our website. Our team will guide you through the registration and course selection process.`
+  }
+];
+
+// used in the faqexcel block
+export const accordionListexcel = [
+  {
+    no: "One",
+    expand: false,
+    heading: "Where is Aaroh Computer Classes located?",
+    body: `We are located on Kalwar Road, Jaipur — easily accessible from nearby areas. You can visit us for demo classes or course counseling anytime during working hours.`
+  },
+  {
+    no: "Two",
+    expand: false,
+    heading: "What courses do you offer?",
+    body: `We offer a wide range of professional and career-oriented courses including:
+
+MS Office Training (Word, Excel, PowerPoint)
+
+Digital Marketing
+
+Full Stack Web Development
+
+Coding & Programming Classes
+
+Tally and Accounting Software Training`
+  },
+  {
+    no: "Three",
+    expand: false,
+    heading: "Do you provide practical training?",
+    body: `Yes, all our courses are 100% practical and project-based. Students work on real-life assignments and hands-on projects to develop industry-ready skills.`
+  },
+  {
+    no: "Four",
+    expand: false,
+    heading: "Are your courses suitable for beginners?",
+    body: `Absolutely! Our courses are designed for students, beginners, and working professionals. We start from basics and gradually move to advanced levels with easy-to-follow lessons.`
+  },
+  {
+    no: "Five",
+    expand: false,
+    heading: "Do you offer certification after course completion?",
+    body: `Yes, after successfully completing your course, you’ll receive a recognized certificate from Aaroh Computer Classes — useful for jobs, internships, and portfolio building.`
+  }
+];
+
+
+// used in the faqexcel block
+export const accordionListdm = [
+  {
+    no: "One",
+    expand: false,
+    heading: "What will I learn in this Digital Marketing course?",
+    body: `You will learn SEO, Google Ads, Social Media Marketing, Email Marketing, Content Strategy, and Analytics with practical projects.`
+  },
+  {
+    no: "Two",
+    expand: false,
+    heading: "Do I need prior experience to join this course?",
+    body: `No, beginners can join easily. We teach everything from basics to advanced marketing skills.`
+  },
+  {
+    no: "Three",
+    expand: false,
+    heading: "Will I receive a certificate after completing the course?",
+    body: `Yes, you will get a recognized Digital Marketing Certification after successful completion.`
+  },
+  {
+    no: "Four",
+    expand: false,
+    heading: "Do you offer placement assistance?",
+    body: `Yes, we provide interview preparation, resume building, and job guidance to help you secure positions in marketing agencies and companies.`
+  },
+  {
+    no: "Five",
+    expand: false,
+    heading: "What career opportunities are available after this course?",
     body: `Yes, after successfully completing your course, you’ll receive a recognized certificate from Aaroh Computer Classes — useful for jobs, internships, and portfolio building.`
   }
 ];
