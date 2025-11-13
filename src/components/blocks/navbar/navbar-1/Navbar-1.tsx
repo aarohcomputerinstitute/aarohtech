@@ -105,19 +105,19 @@ export default function NavbarOne({
             <AboutNavItem />
 
             {/* ===================== News nav item ===================== */}
-            <NewsNavItem />
+            <BlogNavItem />
           </ul>
 
           {/* ============= show contact info in the small device sidebar ============= */}
           <div className="offcanvas-footer d-lg-none">
             <div>
               <NextLink
-                title="info@email.com"
+                title="aarohonline@gmail.com"
                 className="link-inverse"
-                href="mailto:first.last@email.com"
+                href="mailto:aarohonline@gmail.com"
               />
               <br />
-              <NextLink href="tel:0123456789" title="00 (123) 456 78 90" />
+              <NextLink href="tel:9828658887" title="+91 9828658887" />
               <br />
               <SocialLinks />
             </div>

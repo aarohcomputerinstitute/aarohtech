@@ -14,8 +14,8 @@ type InfoProps = {
 
 export default function Info({
   address,
-  title = "Sandbox",
-  phone = "00 (123) 456 78 90",
+  title = "AAROH",
+  phone = "+91 9828658887",
   description = `Sandbox is a multipurpose HTML5 template with various layouts which will be a great solution for your business.`
 }: InfoProps) {
   const otherPages = [

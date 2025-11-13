@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import dayjs from "dayjs";
+import { FC } from "react";
 // GLOBAL CUSTOM COMPONENTS
 import NextLink from "../links/NextLink";
 
@@ -15,14 +16,14 @@ interface BlogCard4Props {
 }
 // ======================================================
 
-export default function BlogCard4(props: BlogCard4Props) {
+const BlogCard4: FC<BlogCard4Props> = (props) => {
   const { date, image, title, category, description, className = "card" } = props;
 
   return (
     <article>
       <div className={className}>
         <figure className="card-img-top overlay overlay-1 hover-scale">
-          <Link href="#">
+          <Link href={`/blogs/${title.toLowerCase().replace(/\s+/g, '-')}`}>
             <Image width={560} height={350} src={image} alt={title} className="w-100 h-auto" />
             <span className="bg" />
           </Link>
@@ -35,12 +36,23 @@ export default function BlogCard4(props: BlogCard4Props) {
         <div className="card-body">
           <div className="post-header">
             <h2 className="post-title h3 mt-1 mb-3">
-              <NextLink title={title} className="link-dark" href="#" />
+              <NextLink 
+                title={title} 
+                className="link-dark" 
+                href={`/blogs/${title.toLowerCase().replace(/\s+/g, '-')}`} 
+              />
             </h2>
           </div>
 
           <div className="post-content">
-            <p>{description}</p>
+            <p className="mb-3">
+              {description.length > 100 ? `${description.substring(0, 100)}...` : description}
+            </p>
+            <NextLink 
+              href={`/blogs/${title.toLowerCase().replace(/\s+/g, '-')}`}
+              className="more hover link-primary"
+              title="Read More"
+            />
           </div>
         </div>
 
@@ -68,4 +80,6 @@ export default function BlogCard4(props: BlogCard4Props) {
       </div>
     </article>
   );
-}
+};
+
+export default BlogCard4;

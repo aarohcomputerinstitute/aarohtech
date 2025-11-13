@@ -4,10 +4,21 @@ import { BlogCard4 } from "components/reuseable/blog-cards";
 import { blogList } from "data/demo-11";
 
 export default function Blog2() {
+  // Split blog posts into chunks of 6 (3 per row × 2 rows)
+  const chunkArray = (arr: any[], size: number) => {
+    const chunks = [];
+    for (let i = 0; i < arr.length; i += size) {
+      chunks.push(arr.slice(i, i + size));
+    }
+    return chunks;
+  };
+
+  const blogChunks = chunkArray(blogList, 6);
+  
   const carouselBreakpoints = {
     0: { slidesPerView: 1 },
-    768: { slidesPerView: 2 },
-    992: { slidesPerView: 3 }
+    768: { slidesPerView: 1 },
+    992: { slidesPerView: 1 }
   };
 
   return (
@@ -25,10 +36,22 @@ export default function Blog2() {
         <div className="shape bg-dot primary rellax w-17 h-20" style={{ top: 0, left: "-1.7rem" }} />
 
         <div className="swiper-container dots-closer blog grid-view mb-6">
-          <Carousel grabCursor spaceBetween={0} navigation={false} breakpoints={carouselBreakpoints}>
-            {blogList.map((item) => (
-              <div className="item-inner" key={item.id}>
-                <BlogCard4 {...item} />
+          <Carousel 
+            grabCursor 
+            spaceBetween={30}
+            navigation={false} 
+            breakpoints={carouselBreakpoints}
+            style={{ height: 'auto' }}
+          >
+            {blogChunks.map((chunk, chunkIndex) => (
+              <div key={chunkIndex} className="blog-row">
+                <div className="row gx-md-8 gx-xl-12">
+                  {chunk.map((item: any) => (
+                    <div className="col-md-6 col-lg-4 mb-8" key={item.id}>
+                      <BlogCard4 {...item} />
+                    </div>
+                  ))}
+                </div>
               </div>
             ))}
           </Carousel>
