@@ -3,12 +3,6 @@ const list = [
   ['Etiam porta euismod malesuada mollis.', 'Vivamus sagittis lacus vel augue rutrum.']
 ];
 
-const facts = [
-  { id: 1, amount: 7518, title: 'Completed Projects' },
-  { id: 2, amount: 3472, title: 'Satisfied Customers' },
-  { id: 3, amount: 2184, title: 'Expert Employees' },
-  { id: 4, amount: 4523, title: 'Awards Won' }
-];
 
 const blogList = [
   {
@@ -16,24 +10,91 @@ const blogList = [
     category: 'Coding',
     date: '14 Apr 2022',
     image: '/img/photos/b4.jpg',
-    title: 'Ligula tristique quis risus',
-    description: `Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras imperdiet nun eu dolor.`
+    title: 'Mastering React Hooks in 2024',
+    description: `Discover the power of React Hooks and how they can simplify your components.`,
+    content: `
+      <h2>Introduction to React Hooks</h2>
+      <p>React Hooks have revolutionized how we write React components. In this post, we'll explore the most commonly used hooks and their practical applications.</p>
+      
+      <h3>useState: Managing State</h3>
+      <p>The <code>useState</code> hook allows you to add state to functional components. Here's a simple example:</p>
+      <pre><code>const [count, setCount] = useState(0);</code></pre>
+      
+      <h3>useEffect: Side Effects</h3>
+      <p>Handle side effects like data fetching with <code>useEffect</code>:</p>
+      <pre><code>useEffect(() => {
+        fetchData().then(data => setData(data));
+      }, []);</code></pre>
+      
+      <h3>Custom Hooks</h3>
+      <p>Create reusable logic with custom hooks:</p>
+      <pre><code>function useWindowSize() {
+        const [size, setSize] = useState([0, 0]);
+        // Implementation...
+      }</code></pre>
+    `
   },
   {
     id: 2,
     category: 'Workspace',
     date: '29 Mar 2022',
     image: '/img/photos/b5.jpg',
-    title: 'ullam id dolor elit id nibh',
-    description: `Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras imperdiet nun eu dolor.`
+    title: 'Creating the Perfect Developer Workspace',
+    description: `Transform your workspace into a productivity powerhouse with these expert tips.`,
+    content: `
+      <h2>Ergonomics First</h2>
+      <p>Your workspace should support your body. Consider these ergonomic essentials:</p>
+      <ul>
+        <li>Adjustable chair with lumbar support</li>
+        <li>Monitor at eye level</li>
+        <li>Keyboard and mouse at elbow height</li>
+      </ul>
+      
+      <h3>Lighting Matters</h3>
+      <p>Proper lighting reduces eye strain. Aim for:</p>
+      <ul>
+        <li>Natural light when possible</li>
+        <li>Adjustable desk lamp</li>
+        <li>Bias lighting behind monitors</li>
+      </ul>
+      
+      <blockquote>
+        "A well-designed workspace isn't a luxury, it's a necessity for sustainable productivity."
+      </blockquote>
+    `
   },
   {
     id: 3,
     category: 'Meeting',
     date: '26 Feb 2022',
     image: '/img/photos/b6.jpg',
-    title: 'Ultricies fusce porta elit',
-    description: `Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras imperdiet nun eu dolor.`
+    title: 'Effective Remote Team Meetings',
+    description: `Learn how to conduct productive and engaging remote meetings that your team will love.`,
+    content: `
+      <h2>Before the Meeting</h2>
+      <p>Set your team up for success with proper preparation:</p>
+      <ol>
+        <li>Share an agenda 24 hours in advance</li>
+        <li>Assign clear roles (facilitator, note-taker, timekeeper)</li>
+        <li>Test all technology beforehand</li>
+      </ol>
+      
+      <h3>During the Meeting</h3>
+      <p>Keep engagement high with these strategies:</p>
+      <ul>
+        <li>Start with a quick check-in question</li>
+        <li>Use video when possible</li>
+        <li>Encourage participation with polls or chat</li>
+      </ul>
+      
+      <h3>After the Meeting</h3>
+      <p>Ensure accountability with clear follow-up:</p>
+      <ul>
+        <li>Send meeting notes within 1 hour</li>
+        <li>Include action items with owners and deadlines</li>
+        <li>Schedule any necessary follow-ups</li>
+      </ul>
+    `
   },
   {
     id: 4,
@@ -42,81 +103,48 @@ const blogList = [
     image: '/img/photos/b7.jpg',
     title: 'Morbi leo risus porta eget',
     description: `Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras imperdiet nun eu dolor.`
-  }
+  },
+  {
+    id: 5,
+    category: 'Business Tips',
+    date: '7 Jan 2022',
+    image: '/img/photos/b7.jpg',
+    title: 'Morbi leo risus porta eget',
+    description: `Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras imperdiet nun eu dolor.`
+  },
+  {
+    id: 6,
+    category: 'Business Tips',
+    date: '7 Jan 2022',
+    image: '/img/photos/b7.jpg',
+    title: 'Morbi leo risus porta eget',
+    description: `Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras imperdiet nun eu dolor.`
+  },
+  {
+    id: 7,
+    category: 'Business Tips',
+    date: '7 Jan 2022',
+    image: '/img/photos/b7.jpg',
+    title: 'Morbi leo risus porta eget',
+    description: `Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras imperdiet nun eu dolor.`
+  },
+  {
+    id: 8,
+    category: 'Business Tips',
+    date: '7 Jan 2022',
+    image: '/img/photos/b7.jpg',
+    title: 'Morbi leo risus porta eget',
+    description: `Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras imperdiet nun eu dolor.`
+  },
+  {
+    id: 9,
+    category: 'Business Tips',
+    date: '7 Jan 2022',
+    image: '/img/photos/b7.jpg',
+    title: 'Morbi leo risus porta eget',
+    description: `Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras imperdiet nun eu dolor.`
+  },
 ];
 
-const teams = [
-  {
-    id: 1,
-    name: 'Coriss Ambady',
-    designation: 'Financial Analyst',
-    image: { '1x': '/img/avatars/t1.jpg', '2x': '/img/avatars/t1@2x.jpg 2x' }
-  },
-  {
-    id: 2,
-    name: 'Cory Zamora',
-    designation: 'Marketing Specialist',
-    image: { '1x': '/img/avatars/t2.jpg', '2x': '/img/avatars/t2@2x.jpg 2x' }
-  },
-  {
-    id: 3,
-    name: 'Nikolas Brooten',
-    designation: 'Sales Manager',
-    image: { '1x': '/img/avatars/t3.jpg', '2x': '/img/avatars/t3@2x.jpg 2x' }
-  },
-  {
-    id: 4,
-    name: 'Jackie Sanders',
-    designation: 'Investment Planner',
-    image: { '1x': '/img/avatars/t4.jpg', '2x': '/img/avatars/t4@2x.jpg 2x' }
-  }
-];
 
-const testimonialList = [
-  {
-    id: 1,
-    name: 'Coriss Ambady',
-    image: '/img/avatars/te7.jpg',
-    designation: 'Financial Analyst',
-    review: `Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio.`
-  },
-  {
-    id: 2,
-    name: 'Cory Zamora',
-    image: '/img/avatars/te8.jpg',
-    designation: 'Marketing Specialist',
-    review: `Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio.`
-  },
-  {
-    id: 3,
-    name: 'Barclay Widerski',
-    image: '/img/avatars/te9.jpg',
-    designation: 'Sales Specialist',
-    review: `Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio.`
-  }
-];
-
-const faq = [
-  {
-    id: 1,
-    title: 'Can I cancel my subscription?',
-    description: `Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod maecenas.`
-  },
-  {
-    id: 2,
-    title: 'Which payment methods do you accept?',
-    description: `Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod maecenas.`
-  },
-  {
-    id: 3,
-    title: 'How can I manage my Account?',
-    description: `Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod maecenas.`
-  },
-  {
-    id: 4,
-    title: 'Is my credit card information secure?',
-    description: `Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod maecenas.`
-  }
-];
-
-export { list, facts, blogList, teams, testimonialList, faq };
+export { list, blogList };

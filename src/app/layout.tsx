@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
-      <body className={manrope.className}>
+      <body className={manrope.className} suppressHydrationWarning={true}>
         <ThemeProvider>{children}</ThemeProvider>
 
         {/* USED FOR SCROLL ANIMATION */}
