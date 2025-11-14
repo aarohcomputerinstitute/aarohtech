@@ -207,7 +207,7 @@ Tally and Accounting Software Training`
 ];
 
 
-// used in the faqexcel block
+// used in the faqdigital marketing course block
 export const accordionListdm = [
   {
     no: "One",
@@ -226,6 +226,41 @@ export const accordionListdm = [
     expand: false,
     heading: "Will I receive a certificate after completing the course?",
     body: `Yes, you will get a recognized Digital Marketing Certification after successful completion.`
+  },
+  {
+    no: "Four",
+    expand: false,
+    heading: "Do you offer placement assistance?",
+    body: `Yes, we provide interview preparation, resume building, and job guidance to help you secure positions in marketing agencies and companies.`
+  },
+  {
+    no: "Five",
+    expand: false,
+    heading: "What career opportunities are available after this course?",
+    body: `Yes, after successfully completing your course, you’ll receive a recognized certificate from Aaroh Computer Classes — useful for jobs, internships, and portfolio building.`
+  }
+];
+
+
+// used in the faq data analyst course block
+export const accordionListdataAnalyst = [
+  {
+    no: "One",
+    expand: false,
+    heading: "What will I learn in this Data Analyst course?",
+    body: `You will learn Data Analysisss, Data Visualization, Data Cleaning, Data Manipulation, Data Modeling, and Data Science with practical projects.`
+  },
+  {
+    no: "Two",
+    expand: false,
+    heading: "Do I need prior experience to join this course?",
+    body: `Anyone with basic computer knowledge can join—students, graduates, working professionals, or career switchers. No coding background is required.`
+  },
+  {
+    no: "Three",
+    expand: false,
+    heading: "Will I receive a certificate after completing the course?",
+    body: `Yes, you will get a recognized Data Analyst Certification after successful completion.`
   },
   {
     no: "Four",

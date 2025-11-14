@@ -6,7 +6,7 @@ import { accordionList1 } from "data/faq";
 export default function FAQ1() {
   return (
     <Fragment>
-      <h2 className="fs-15 text-uppercase text-orange mb-3 text-center">A frequently asked questions (FAQ)</h2>
+      <h2 className="fs-15 text-uppercase text-primary mb-3 text-center">A frequently asked questions (FAQ)</h2>
       <h3 className="display-4 mb-10 px-lg-12 px-xl-15 text-center">
         If you don't see an answer to your question, you can send us an email from our contact form.
       </h3>

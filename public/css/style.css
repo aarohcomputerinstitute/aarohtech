@@ -18,10 +18,10 @@ Author URI:	https://ui-lib.com
   --bs-gray-700: #2f353a;
   --bs-gray-800: #21262c;
   --bs-gray-900: #1e2228;
-  --bs-blue: #3f78e0;
+  --bs-blue: #007BFF;
   --bs-sky: #5eb9f0;
   --bs-purple: #747ed1;
-  --bs-grape: #605dba;
+  --bs-grape: #6f42c1;
   --bs-violet: #a07cc5;
   --bs-pink: #d16b86;
   --bs-fuchsia: #e668b3;
@@ -37,16 +37,16 @@ Author URI:	https://ui-lib.com
   --bs-light: #fefefe;
   --bs-gray: #f6f7f9;
   --bs-dark: #262b32;
-  --bs-primary: #F17519;
-  --bs-secondary: #aab0bc;
+  --bs-primary: #007BFF;
+  --bs-secondary: #6f42c1;
   --bs-success: #45c4a0;
   --bs-info: #54a8c7;
   --bs-warning: #fab758;
   --bs-danger: #e2626b;
-  --bs-blue-rgb: 63, 120, 224;
+  --bs-blue-rgb: 0, 123, 255;
   --bs-sky-rgb: 94, 185, 240;
   --bs-purple-rgb: 116, 126, 209;
-  --bs-grape-rgb: 96, 93, 186;
+  --bs-grape-rgb: 111, 66, 193;
   --bs-violet-rgb: 160, 124, 197;
   --bs-pink-rgb: 209, 107, 134;
   --bs-fuchsia-rgb: 230, 104, 179;
@@ -6243,7 +6243,7 @@ fieldset:disabled .btn {
   --bs-card-cap-padding-y: 0.9rem;
   --bs-card-cap-padding-x: 2rem;
   --bs-card-cap-bg: transparent;
-  --bs-card-cap-color: ;
+  --bs-card-cap-color:var(--bs-primary);
   --bs-card-height: ;
   --bs-card-color: ;
   --bs-card-bg: var(--bs-white);
@@ -34941,8 +34941,8 @@ button.hamburger span {
   font-family: "Unicons";
   position: absolute;
   left: 1.3rem;
-  content: "\e932";
-  font-size: 1.15rem;
+  display: inline-block;
+  color: var(--bs-primary) !important;
   font-weight: normal;
   width: 1rem;
   margin-top: -0.25rem;
@@ -34952,6 +34952,10 @@ button.hamburger span {
 }
 .accordion-wrapper .card-header button.collapsed {
   color: #343f52;
+}
+
+.accordion-wrapper .card-header button.collapsed:before {
+  color: var(--bs-primary) !important;
 }
 .accordion-wrapper .card-header button.collapsed:before {
   content: "\e92d";
@@ -34981,6 +34985,7 @@ button.hamburger span {
 }
 .accordion-item.icon button > span i {
   font-size: 1rem;
+  color: var(--bs-primary) !important;
 }
 
 .collapse-link {
@@ -35555,10 +35560,8 @@ button.hamburger span {
   position: absolute;
   font-family: "Unicons";
   content: "\e951";
-  text-align: center;
-  line-height: 2.3rem;
-  font-size: 1.2rem;
-  color: var(--bs-primary);
+  font-size: 1.1rem;
+  color: var(--bs-primary) !important;
   left: 0;
   top: 0;
   height: 2.3rem;

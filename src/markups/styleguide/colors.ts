@@ -2,9 +2,9 @@ const bgColorMarkup = `<div className="bg-yellow" />
 <div className="bg-pale-yellow" />
 <div className="bg-soft-yellow" />
   
-<div className="bg-orange" />
-<div className="bg-pale-orange" />
-<div className="bg-soft-orange" />
+<div className="bg-primary" />
+<div className="bg-pale-primary" />
+<div className="bg-soft-primary" />
   
 <div className="bg-red" />
 <div className="bg-pale-red" />

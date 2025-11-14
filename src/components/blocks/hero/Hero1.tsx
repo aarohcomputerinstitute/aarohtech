@@ -1,6 +1,6 @@
 export default function Hero1() {
   return (
-    <section className="wrapper bg-gradient-orange">
+    <section className="wrapper bg-gradient-primary">
       <div className="container pt-10 pt-md-14 pb-8 text-center">
         <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
           <div className="col-lg-7">
@@ -19,7 +19,7 @@ export default function Hero1() {
             <p className="lead fs-lg mb-7">
               Become a skilled MERN Stack Developer with expert-led training, real projects, and job-ready skills. Learn MongoDB, Express, React, and Node.js to build modern web applications from scratch.
             </p>
-            <a className="btn btn-orange rounded-pill me-2">Join Now</a>
+            <a className="btn btn-primary rounded-pill me-2">Join Now</a>
           </div>
         </div>
       </div>

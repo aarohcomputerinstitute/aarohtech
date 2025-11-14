@@ -7,10 +7,11 @@ interface AccordionProps {
   heading: string;
   expand: boolean;
   type?: "plain" | "shadow-lg";
+  className?: string;
 }
 // ==================================================
 
-export default function Accordion({ no, body, heading, expand, type }: AccordionProps) {
+export default function Accordion({ no, body, heading, expand, type, className }: AccordionProps) {
   return (
     <div className={clsx({ "card accordion-item": true, [type || ""]: true })}>
       <div className="card-header" id={`heading${no}`}>
@@ -19,7 +20,7 @@ export default function Accordion({ no, body, heading, expand, type }: Accordion
           aria-controls={`collapse${no}`}
           data-bs-target={`#collapse${no}`}
           aria-expanded={expand ? "true" : "false"}
-          className={expand ? "accordion-button" : "collapsed"}>
+          className={clsx(expand ? "accordion-button" : "collapsed", className)}>
           {heading}
         </button>
       </div>

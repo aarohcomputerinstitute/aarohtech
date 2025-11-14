@@ -2,7 +2,7 @@ import AccordionList from "components/common/AccordionList";
 
 export default function About22() {
   return (
-    <section className="wrapper bg-gradient-reverse-orange">
+    <section className="wrapper bg-gradient-reverse-primary">
       <div className="container pb-14 pb-md-16">
         <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
           <div className="col-lg-7">
@@ -17,7 +17,7 @@ export default function About22() {
           </div>
 
           <div className="col-lg-5">
-            <h2 className="fs-15 text-uppercase text-orange mb-3">Why Choose Us?</h2>
+            <h2 className="fs-15 text-uppercase text-primary mb-3">Why Choose Us?</h2>
             <h3 className="display-3 mb-7">We bring solutions to make learning easier.
 </h3>
             <AccordionList />

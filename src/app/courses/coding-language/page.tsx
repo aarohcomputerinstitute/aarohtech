@@ -25,7 +25,7 @@ export default function CodingLanguage() {
             <NextLink
               href="#"
               title="Contact"
-              className="btn btn-sm btn-orange rounded-pill "
+              className="btn btn-sm btn-primary rounded-pill "
             />
           }
         />

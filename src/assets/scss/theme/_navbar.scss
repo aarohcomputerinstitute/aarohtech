@@ -148,3 +148,10 @@ button.hamburger {
 .navbar.navbar-dark button.hamburger {
   color: $navbar-dark-color;
 }
+// Override dropdown toggle color for navbar
+.navbar-expand-lg.navbar-light
+  .dropdown:not(.dropdown-submenu)
+  > .dropdown-toggle:after {
+  color: var(--bs-primary) !important;
+  border: none !important;
+}

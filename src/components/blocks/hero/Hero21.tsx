@@ -22,9 +22,9 @@ export default function Hero21() {
             <h1 className="display-1 fs-54 mb-5 mx-md-n5 mx-lg-0 mt-7">
               A tech institute <br className="d-md-none" />
               for learning <br className="d-md-none" />
-              <ReplaceMe className="rotator-fade text-orange">
-                web development,digital marketing,salesforce
-                devlopment/admin,mobile development
+              <ReplaceMe className="rotator-fade text-primary">
+                Web Development,Digital Marketing,Salesforce
+                Sevlopment/Admin,App Development,AI Tools,Programming Language
               </ReplaceMe>
             </h1>
 
@@ -37,7 +37,7 @@ export default function Hero21() {
             </p>
 
             <span>
-              <a className="btn btn-lg btn-orange rounded-pill me-2">
+              <a className="btn btn-lg btn-primary rounded-pill me-2">
                 Get Started
               </a>
             </span>

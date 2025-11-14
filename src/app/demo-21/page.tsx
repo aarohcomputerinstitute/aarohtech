@@ -4,12 +4,10 @@ import Navbar from "components/blocks/navbar/navbar-1";
 import { FAQ6 } from "components/blocks/faq";
 import { Team4 } from "components/blocks/team";
 import { Hero21 } from "components/blocks/hero";
-import { About22 } from "components/blocks/about";
 import { Facts15 } from "components/blocks/facts";
 import { Footer13 } from "components/blocks/footer";
 import { Process14 } from "components/blocks/process";
 import { Services24 } from "components/blocks/services";
-import { Portfolio3 } from "components/blocks/portfolio";
 import { Testimonial17 } from "components/blocks/testimonial";
 import NextLink from "components/reuseable/links/NextLink";
 
@@ -25,7 +23,7 @@ export default function Demo21() {
             <NextLink
               href="#"
               title="Contact"
-              className="btn btn-sm btn-orange rounded-pill "
+              className="btn btn-sm btn-primary rounded-pill "
             />
           }
         />

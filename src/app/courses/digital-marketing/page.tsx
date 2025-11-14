@@ -22,7 +22,7 @@ export default function DigitalMarketing() {
             <NextLink
               href="#"
               title="Contact"
-              className="btn btn-sm btn-orange rounded-pill "
+              className="btn btn-sm btn-primary rounded-pill "
             />
           }
         />
@@ -52,7 +52,7 @@ export default function DigitalMarketing() {
         <div className="container pt-lg-8">
                       <div className="row">
                         <div className="col-12 text-center mb-16">
-                          <h2 className="display-2 text-orange mb-0">Get Certified</h2>
+                          <h2 className="display-2 text-primary mb-0">Get Certified</h2>
                         </div>
                       </div>
                       <Hero2/>
