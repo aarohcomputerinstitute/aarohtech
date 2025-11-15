@@ -26,7 +26,9 @@ export default function AccordionList() {
   return (
     <div className="accordion accordion-wrapper" id="accordionExample">
       {accordions.map((item) => (
-        <Accordion type="plain" key={item.no} {...item} />
+        <div key={item.no} className="accordion-item">
+          <Accordion type="plain" key={item.no} {...item} className="text-primary" />
+        </div>
       ))}
     </div>
   );

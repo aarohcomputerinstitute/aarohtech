@@ -8,5 +8,6 @@ import FAQ7 from './FAQ7';
 import FAQ8 from './FAQ8';
 import FAQexcel from './FAQexcel';
 import FAQdm from './FAQdm';
+import FAQDataAnalyst from './FAQDataAnalyst';
 
-export { FAQ1, FAQ2, FAQ3, FAQ4, FAQ5, FAQ6, FAQ7, FAQ8, FAQexcel, FAQdm };
+export { FAQ1, FAQ2, FAQ3, FAQ4, FAQ5, FAQ6, FAQ7, FAQ8, FAQexcel, FAQdm, FAQDataAnalyst };

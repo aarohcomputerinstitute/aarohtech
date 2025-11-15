@@ -15,7 +15,7 @@ export default function Footer13() {
 
           </h3>
 
-          <NextLink href="#" title="Try Now Free" className="btn btn-orange rounded-pill mb-0 text-nowrap" />
+          <NextLink href="#" title="Try Now Free" className="btn btn-primary rounded-pill mb-0 text-nowrap" />
         </div>
 
         <hr className="mt-11 mb-12" />
@@ -86,7 +86,7 @@ export default function Footer13() {
                           type="submit"
                           name="subscribe"
                           id="mc-embedded-subscribe2"
-                          className="btn btn-orange"
+                          className="btn btn-primary"
                         />
                       </div>
 

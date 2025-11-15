@@ -25,7 +25,7 @@ export default function TallyPrime() {
             <NextLink
               href="#"
               title="Contact"
-              className="btn btn-sm btn-orange rounded-pill "
+              className="btn btn-sm btn-primary rounded-pill "
             />
           }
         />

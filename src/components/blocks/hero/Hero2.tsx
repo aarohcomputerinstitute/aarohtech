@@ -8,9 +8,9 @@ export default function Hero2() {
       <div
         className="col-md-8 offset-md-2 col-lg-6 offset-lg-1 position-relative order-lg-2"
         style={zoomInAnimate("0ms")}>
-        <div className="shape bg-dot orange rellax w-17 h-19" style={{ top: "-1.7rem", left: "-1.5rem" }} />
+        <div className="shape bg-dot primary rellax w-17 h-19" style={{ top: "-1.7rem", left: "-1.5rem" }} />
         <div
-          className="shape rounded bg-soft-orange rellax d-md-block"
+          className="shape rounded bg-soft-primary rellax d-md-block"
           style={{ width: "85%", height: "90%", right: "-0.8rem", bottom: "-1.8rem" }}
         />
 
@@ -36,11 +36,11 @@ export default function Hero2() {
         </p>
         <div className="d-flex justify-content-center justify-content-lg-start">
           <span style={slideInDownAnimate("1200ms")}>
-            <NextLink title="Explore Now" href="#" className="btn btn-orange rounded-pill me-2" />
+            <NextLink title="Explore Now" href="#" className="btn btn-primary rounded-pill me-2" />
           </span>
 
           <span style={slideInDownAnimate("1500ms")}>
-            <NextLink title="Call Now" href="tel:+919828658887" className="btn btn-outline-orange rounded-pill" />
+            <NextLink title="Call Now" href="tel:+919828658887" className="btn btn-outline-primary rounded-pill" />
           </span>
         </div>
       </div>

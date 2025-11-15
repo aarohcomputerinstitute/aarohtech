@@ -78,7 +78,7 @@ export const serviceList1 = [
     icon: Edit,
     linkType: LinkType.yellow,
     title: 'Content Marketing',
-    description: 'Content writing, Blogging, SEO content strategy, Canva designing basics'
+    description: 'Content writing, Blogging, SEO content strategy, Canva designing basics to advance'
   },
   {
     id: 7,
@@ -562,5 +562,72 @@ export const serviceList14 = [
     url: '#',
     title: 'Engagement',
     image: { '1x': '/img/photos/fs3.jpg', '2x': '/img/photos/fs3@2x.jpg 2x' }
+  }
+];
+
+export const dataAnalystCurriculaum = [
+  {
+    id: 1,
+    link: '#',
+    icon: Search,
+    title: 'Fundamentals of Data Analytics',
+    linkType: LinkType.blue,
+    description: 'Data types, analytics lifecycle, understanding business problems, decision-making with data.'
+  },
+  {
+    id: 2,
+    link: '#',
+    icon: Analytics,
+    title: 'Excel for Data Analysis',
+    linkType: LinkType.green,
+    description: 'Advanced formulas, lookup functions, pivot tables, charts, and dashboard creation.'
+  },
+  {
+    id: 3,
+    link: '#',
+    icon: Server,
+    linkType: LinkType.red,
+    title: 'SQL for Data Querying',
+    description: 'Joins, subqueries, filters, aggregations, CTEs, and real-world database case studies.'
+  },
+  {
+    id: 4,
+    link: '#',
+    icon: Script,
+    linkType: LinkType.yellow,
+    title: 'Python for Data Analysis',
+    description: 'NumPy, Pandas, data cleaning, data manipulation, Exploratory Data Analysis (EDA).'
+  },
+  {
+    id: 5,
+    link: '#',
+    icon: CloudComputing,
+    title: 'Data Visualization (Power BI / Tableau)',
+    linkType: LinkType.blue,
+    description: 'Interactive dashboards, DAX basics, KPI tracking, storytelling with visual insights.'
+  },
+  {
+    id: 6,
+    link: '#',
+    icon: Analytics,
+    linkType: LinkType.green,
+    title: 'Statistics & Analytics Fundamentals',
+    description: 'Probability, distributions, correlation, regression, hypothesis testing, A/B testing.'
+  },
+  {
+    id: 7,
+    link: '#',
+    icon: SettingsThree,
+    linkType: LinkType.red,
+    title: 'Data Cleaning & Preprocessing',
+    description: 'Handling missing data, outliers, duplicates, encoding, normalization, feature preparation.'
+  },
+  {
+    id: 8,
+    link: '#',
+    icon: Analytics,
+    linkType: LinkType.yellow,
+    title: 'Business Analytics & Insights',
+    description: 'Building KPIs, interpreting trends, generating insights, presenting reports effectively.'
   }
 ];
