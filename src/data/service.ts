@@ -78,7 +78,7 @@ export const serviceList1 = [
     icon: Edit,
     linkType: LinkType.yellow,
     title: 'Content Marketing',
-    description: 'Content writing, Blogging, SEO content strategy, Canva designing basics'
+    description: 'Content writing, Blogging, SEO content strategy, Canva designing basics to advance'
   },
   {
     id: 7,
