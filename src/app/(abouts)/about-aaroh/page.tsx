@@ -223,7 +223,7 @@ export default function AboutTwo() {
                 <div>
                   <h5 className="mb-1">E-mail</h5>
                   <p className="mb-0">
-                    <a href="mailto:sandbox@email.com" className="link-body">
+                    <a href="mailto:aarohonline@gmail.com" className="link-body">
                       aarohonline@gmail.com
                     </a>
                   </p>

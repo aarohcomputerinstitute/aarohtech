@@ -23,7 +23,7 @@ export default function CodingLanguage() {
           navClassName="navbar navbar-expand-lg classic transparent navbar-light"
           button={
             <NextLink
-              href="#"
+              href="/contact-us"
               title="Contact"
               className="btn btn-sm btn-primary rounded-pill "
             />

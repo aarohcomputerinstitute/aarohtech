@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import { Facts3 } from "components/blocks/facts";
 import { Banner3 } from "components/blocks/banner";
 import { Pricing1 } from "components/blocks/pricing";
-import { Contact3 } from "components/blocks/contact";
+import { Contact6 } from "components/blocks/contact";
 import { Process6 } from "components/blocks/process";
 import { Services8 } from "components/blocks/services";
 
@@ -54,7 +54,7 @@ export default function Services() {
           <Pricing1 roundShape bulletBg />
 
           {/* ========== let's talks section ========== */}
-          <Contact3 />
+          <Contact6 />
         </div>
       </section>
     </Fragment>
