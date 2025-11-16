@@ -34671,6 +34671,22 @@ header {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
+.navbar .navbar-stick .navbar-nav .nav-link {
+  color: #343f52 !important;
+}
+
+/* Change button color in sticky header */
+.navbar-stick .btn-primary {
+  background-color: var(--bs--primary) !important;
+  border-color: #3f78e0 !important;
+  color: #fff !important;
+}
+
+.navbar-stick .btn-primary:hover {
+  background-color: #2f68d0 !important;
+  border-color: #2f68d0 !important;
+}
+
 .navbar .navbar-other .nav-item .nav-link > i {
   font-size: 1.1rem;
 }

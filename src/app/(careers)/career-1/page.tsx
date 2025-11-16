@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 // GLOBAL CUSTOM COMPONENTS
 import MasonryGrid from "components/MasonryGrid";
-import { FAQ2 } from "components/blocks/faq";
+import { FAQ6 } from "components/blocks/faq";
 import { JobPostCard1 } from "components/reuseable/job-cards";
 import NextLink from "components/reuseable/links/NextLink";
 import { ServiceCard3 } from "components/reuseable/service-cards";
@@ -118,7 +118,7 @@ export default function Career() {
       </section>
 
       {/* ========== faq section ========== */}
-      <FAQ2 titleColor="primary" />
+      <FAQ6 />
     </Fragment>
   );
 }

@@ -4,7 +4,7 @@ import { Fragment } from "react";
 import { Element, Link as ScrollLink } from "react-scroll";
 // GLOBAL CUSTOM COMPONENTS
 import Navbar from "components/blocks/navbar/navbar-1";
-import { Footer8 } from "components/blocks/footer";
+import { Footer13 } from "components/blocks/footer";
 import Breadcrumb from "components/reuseable/Breadcrumb";
 import NextLink from "components/reuseable/links/NextLink";
 // CUSTOM DATA
@@ -284,7 +284,7 @@ export default function Terms() {
       </main>
 
       {/* ========== footer section ========== */}
-      <Footer8 />
+      <Footer13 />
     </Fragment>
   );
 }
