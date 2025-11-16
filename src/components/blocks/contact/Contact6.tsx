@@ -28,7 +28,7 @@ export default function Contact6() {
 
               <div>
                 <h5 className="mb-1">Address</h5>
-                <address>Moonshine St. 14/05 Light City, London</address>
+                <address>C1 Kalyanpuri, Niwaru Link Road, Kalwar Road, Govindpura, Jhotwara, Jaipur, Rajasthan, India 302012</address>
               </div>
             </div>
 
@@ -39,7 +39,7 @@ export default function Contact6() {
 
               <div>
                 <h5 className="mb-1">Phone</h5>
-                <p>00 (123) 456 78 90</p>
+                <p>+91 9828658887</p>
               </div>
             </div>
 
@@ -51,8 +51,8 @@ export default function Contact6() {
               <div>
                 <h5 className="mb-1">E-mail</h5>
                 <p className="mb-0">
-                  <a href="mailto:sandbox@email.com" className="link-body">
-                    sandbox@email.com
+                  <a href="mailto:aarohonline@gmail.com" className="link-body">
+                   aarohonline@gmail.com
                   </a>
                 </p>
               </div>

@@ -4,7 +4,7 @@ import { Fragment, PropsWithChildren } from "react";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 // GLOBAL CUSTOM COMPONENTS
-import { Footer13, Footer8 } from "components/blocks/footer";
+import { Footer13,} from "components/blocks/footer";
 import Navbar from "components/blocks/navbar/navbar-1";
 import NextLink from "components/reuseable/links/NextLink";
 
@@ -26,8 +26,8 @@ export default function AboutLayout({ children }: PropsWithChildren) {
           button={
             <NextLink
               title="Contact"
-              href="#"
-              className="btn btn-sm btn-orange rounded-pill"
+              href="/contact-us"
+              className="btn btn-sm btn-primary rounded-pill"
             />
           }
         />
