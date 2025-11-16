@@ -1,6 +1,7 @@
 "use client";
 
 import { Fragment, memo, ReactElement, useRef } from "react";
+import React from "react";
 import clsx from "clsx";
 // -------- CUSTOM HOOKS -------- //
 import useSticky from "hooks/useSticky";
@@ -129,7 +130,9 @@ export default function NavbarOne({
       <HeaderRight
         cart={cart}
         info={info}
-        button={button}
+        button={button ? React.cloneElement(button, {
+          className: `${button.props.className} ${sticky ? 'sticky-nav-button' : ''}`
+        }) : null}
         search={search}
         social={social}
         language={language}

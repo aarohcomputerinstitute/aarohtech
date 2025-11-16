@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 // GLOBAL CUSTOM COMPONENTS
 import Navbar from "components/blocks/navbar/navbar-1";
-import { Footer8 } from "components/blocks/footer";
+import { Footer13 } from "components/blocks/footer";
 import BlogDetailsTemplate from "components/common/BlogDetailsTemplate";
 import NextLink from "components/reuseable/links/NextLink";
 
@@ -84,7 +84,7 @@ export default function BlogDetailsOne() {
       </main>
 
       {/* ========== footer section ========== */}
-      <Footer8 />
+      <Footer13 />
     </Fragment>
   );
 }

@@ -23,7 +23,7 @@ export default function Footer13() {
         <div className="row gy-6 gy-lg-0">
           <div className="col-md-4 col-lg-3">
             <div className="widget">
-              <Image alt="logo" width={134} height={26} src="/img/logo-aaroh.png" className="mb-4" />
+              <Image alt="logo" width={134} height={26} src="/img/logo-aaroh-light.png" className="mb-4" />
 
               <p className="mb-4">
                 © 2025 AAROH. <br className="d-none d-lg-block" />

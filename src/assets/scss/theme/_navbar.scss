@@ -39,10 +39,12 @@ header {
       .logo-dark {
         display: inline-block;
       }
-      .btn:not(.btn-expand):not(.btn-gradient) {
-        background: var(--#{$prefix}primary);
-        border-color: var(--#{$prefix}primary);
-        color: var(--#{$prefix}white);
+      .btn:not(.btn-expand):not(.btn-gradient),
+      .sticky-nav-button,
+      .navbar-other .nav-item .btn.sticky-nav-button {
+        background: var(--#{$prefix}primary) !important;
+        border-color: var(--#{$prefix}primary) !important;
+        color: var(--#{$prefix}white) !important;
       }
     }
   }

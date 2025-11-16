@@ -2,7 +2,7 @@ import { Fragment, useState } from "react";
 // GLOBAL CUSTOM COMPONENTS
 import Switch from "components/reuseable/Switch";
 import { PricingCard1 } from "components/reuseable/pricing-cards";
-import { FAQ5 } from "../faq";
+import { FAQ6 } from "../faq";
 // CUSTOM DATA
 import { pricingList3 } from "data/pricing";
 
@@ -41,7 +41,7 @@ export default function Pricing8() {
           </div>
 
           {/* ========== faq section ========== */}
-          <FAQ5 />
+          <FAQ6 />
         </div>
       </div>
     </Fragment>

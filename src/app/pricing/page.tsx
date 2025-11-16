@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 // GLOBAL CUSTOM COMPONENTS
-import { Footer8 } from "components/blocks/footer";
+import { Footer13 } from "components/blocks/footer";
 import { Pricing2 } from "components/blocks/pricing";
 import { CTA3 } from "components/blocks/call-to-action";
 import Navbar from "components/blocks/navbar/navbar-1";
@@ -118,8 +118,7 @@ export default function Pricing() {
         <CTA3 />
       </main>
 
-      {/* ========== footer section ========== */}
-      <Footer8 />
+      {/* ========== footer section ========== */} 
     </Fragment>
   );
 }
