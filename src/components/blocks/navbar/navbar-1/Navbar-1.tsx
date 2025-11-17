@@ -12,9 +12,6 @@ import SocialLinks from "components/reuseable/SocialLinks";
 // LOCAL CUSTOM COMPONENTS
 import Info from "../components/Info";
 import Search from "../components/search";
-import Signin from "../components/signin";
-import Signup from "../components/signup";
-import MiniCart from "../components/mini-cart";
 import HeaderRight from "../components/header-right";
 import FancyHeader from "../components/fancy-header";
 import BlogNavItem from "../components/blog-nav-item";
@@ -166,20 +163,11 @@ export default function NavbarOne({
         )}
       </nav>
 
-      {/* ============= signin modal ============= */}
-      <Signin />
-
-      {/* ============= signup modal ============= */}
-      <Signup />
-
       {/* ============= info sidebar ============= */}
       {info && <Info />}
 
       {/* ============= show search box ============= */}
       {search && <Search />}
-
-      {/* ============= cart sidebar ============= */}
-      {cart && <MiniCart />}
     </Fragment>
   );
 }

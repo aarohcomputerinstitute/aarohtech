@@ -565,6 +565,7 @@ export const serviceList14 = [
   }
 ];
 
+// used in the data analyst course curriculaum block
 export const dataAnalystCurriculaum = [
   {
     id: 1,
@@ -629,5 +630,73 @@ export const dataAnalystCurriculaum = [
     linkType: LinkType.yellow,
     title: 'Business Analytics & Insights',
     description: 'Building KPIs, interpreting trends, generating insights, presenting reports effectively.'
+  }
+];
+
+// used in the tally course curriculaum block
+export const tallyCourseCurriculaum = [
+  {
+    id: 1,
+    link: '#',
+    icon: Search,  // For finding and setting up basic features
+    title: 'Tally Prime Basics',
+    linkType: LinkType.yellow,
+    description: `Company creation, ledger & group setup, voucher types, and accounting fundamentals.`
+  },
+  {
+    id: 2,
+    link: '#',
+    icon: Script,  // For accounting documents and records
+    title: 'Accounting & Bookkeeping',
+    linkType: LinkType.red,
+    description: `Journal entries, contra, payment, receipt, sales & purchase vouchers, debit/credit notes.`
+  },
+  {
+    id: 3,
+    link: '#',
+    icon: Verify,  // For tax verification
+    linkType: LinkType.green,
+    title: 'SGST & Taxation in Tally',
+    description: `GST setup, GST returns, input/output GST, RCM, e-invoice, and tax reports.`
+  },
+  {
+    id: 4,
+    link: '#',
+    icon: ShopTwo,  // For inventory/shop management
+    linkType: LinkType.blue,
+    title: 'Inventory Management',
+    description: `Stock items, units, Godowns, batch-wise details, pricing, stock valuation, and reports.`
+  },
+  {
+    id: 5,
+    link: '#',
+    icon: Team,  // For employee management
+    linkType: LinkType.blue,
+    title: 'Payroll & Employee Management',
+    description: `Salary structure, attendance, payroll processing, PF/ESI setup, and payroll reports.`
+  },
+  {
+    id: 6,
+    link: '#',
+    icon: Team,  // For financial charts and analysis
+    linkType: LinkType.yellow,
+    title: 'Financial Reports & Analysis',
+    description: 'Balance sheet, profit & loss, cash flow, ratio analysis, and business insights.'
+  },
+  {
+    id: 7,
+    link: '#',
+    icon: Shield,  // For compliance and security
+    linkType: LinkType.red,
+    title: 'TDS & Compliance Management',
+    description: 'TDS setup, TDS deductions, TDS returns, statutory reports, and compliance tracking.'
+  },
+  {
+    id: 8,
+    link: '#',
+    icon: Server,  // For data management
+    linkType: LinkType.yellow,
+    title: 'Data Management & Security',
+    description: 'Company data backup/restore, data migration, user roles, password protection, and audit features.'
   }
 ];
