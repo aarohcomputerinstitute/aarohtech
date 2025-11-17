@@ -1,8 +1,8 @@
 import { ServiceCard1 } from "components/reuseable/service-cards";
 // CUSTOM DATA
-import { serviceList1 } from "data/service";
+import { tallyCourseCurriculaum } from "data/service";
 
-export default function Services1() {
+export default function TallyCourseCurriculaum() {
   return (
     <section className="wrapper bg-light">
       <div className="container pt-16 pb-16">
@@ -12,7 +12,7 @@ export default function Services1() {
             <h3 className="display-4 px-xl-10">
               What You'll Master in This Course
             </h3>
-            <p className=" mb-10 px-xl-10">Master strategy to excel in digital marketing and build a successful career in the digital marketing industry.</p>
+            <p className=" mb-10 px-xl-10">Gain practical accounting skills with Tally Prime, GST, payroll, and business finance to build a strong career in accounting.</p>
           </div>
         </div>
 
@@ -28,7 +28,7 @@ export default function Services1() {
           />
 
           <div className="row gx-md-5 gy-5 text-center">
-            {serviceList1.map((item) => (
+            {tallyCourseCurriculaum.map((item) => (
               <ServiceCard1
                 key={item.id}
                 Icon={item.icon}

@@ -275,3 +275,37 @@ export const accordionListdataAnalyst = [
     body: `Yes, after successfully completing your course, you’ll receive a recognized certificate from Aaroh Computer Classes — useful for jobs, internships, and portfolio building.`
   }
 ];
+
+// used in the faq tally course block
+export const accordionListTally = [
+  {
+    no: "One",
+    expand: false,
+    heading: "What will I learn in this Tally course?",
+    body: `You will learn Tally Prime, GST accounting, inventory management, payroll, voucher entry, and complete business accounting with hands-on practice.`
+  },
+  {
+    no: "Two",
+    expand: false,
+    heading: "Do I need prior experience to join this Tally course?",
+    body: `No prior knowledge is required. This Tally course is beginner-friendly and covers accounting basics to advanced Tally Prime features step-by-step.`
+  },
+  {
+    no: "Three",
+    expand: false,
+    heading: "Will I receive a certificate after completing the course?",
+    body: `Yes, you will receive an industry-recognized Tally certification, useful for accounting jobs and interviews.`
+  },
+  {
+    no: "Four",
+    expand: false,
+    heading: "Do you offer placement assistance?",
+    body: `Yes, we provide job assistance, resume building, interview preparation, and help you apply for accounting and bookkeeping roles.`
+  },
+  {
+    no: "Five",
+    expand: false,
+    heading: "What career opportunities are available after this Tally course?",
+    body: `After completing the course, you can work as an Accountant, Tally Operator, GST Executive, Billing Executive, or Accounts Assistant in companies.`
+  }
+];

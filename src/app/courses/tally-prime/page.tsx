@@ -2,13 +2,14 @@ import { Fragment } from "react";
 import { Metadata } from "next";
 // GLOBAL CUSTOM COMPONENTS
 import Navbar from "components/blocks/navbar/navbar-1";
-import { FAQdm } from "components/blocks/faq";
 import { HeroDigitalMarketing, HeroGetCertificate } from "components/blocks/hero";
 import { About22 } from "components/blocks/about";
 import { Facts15 } from "components/blocks/facts";
 import { Footer13 } from "components/blocks/footer";
 import { Services1 } from "components/blocks/services";
 import NextLink from "components/reuseable/links/NextLink";
+import FAQTally from "components/blocks/faq/FAQTally";
+import HeroTallyPrime from "components/blocks/hero/HeroTallyPrime";
 
 export const metadata: Metadata = {
   title: 'Tally Prime Course in Jaipur | Learn Tally with Certification',
@@ -95,7 +96,7 @@ export default function TallyPrime() {
       {/* ========== main content ========== */}
       <main className="content-wrapper">
         {/* ========== hero section ========== */}
-        <HeroDigitalMarketing />
+        <HeroTallyPrime />
          
          {/* ========== company facts section ========== */}
         <div className="container pt-6 pb-6">
@@ -110,7 +111,7 @@ export default function TallyPrime() {
 
         <section className="wrapper bg-light">
           {/* ========== faq section ========== */}
-          <FAQdm />
+          <FAQTally />
         </section>
 
         <div className="container pt-lg-8">
