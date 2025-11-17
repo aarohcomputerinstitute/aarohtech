@@ -2,7 +2,7 @@ import NextLink from "components/reuseable/links/NextLink";
 // CUSTOM UTILS
 import { slideInDownAnimate } from "utils/animation";
 
-export default function Hero12() {
+export default function HeroDigitalMarketing() {
   return (
     <section className="wrapper bg-soft-primary">
       <div className="container pt-10 pb-10 pt-md-14 pb-md-10">

@@ -2,7 +2,7 @@ import { Fragment } from "react";
 // GLOBAL CUSTOM COMPONENTS
 import Navbar from "components/blocks/navbar/navbar-1";
 import { FAQDataAnalyst } from "components/blocks/faq";
-import { Hero2 } from "components/blocks/hero";
+import {HeroGetCertificate } from "components/blocks/hero";
 import { About22 } from "components/blocks/about";
 import { Facts15 } from "components/blocks/facts";
 import { Footer13 } from "components/blocks/footer";
@@ -55,7 +55,7 @@ export default function DataAnalyst() {
                           <h2 className="display-2 text-primary mb-0">Get Certified</h2>
                         </div>
                       </div>
-                      <Hero2/>
+                      <HeroGetCertificate/>
           </div>
       </main>
 

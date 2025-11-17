@@ -1,8 +1,9 @@
 import ReplaceMe from "components/ReplaceMe";
+
 // CUSTOM DATA
 import { clientList } from "data/client";
 
-export default function Hero21() {
+export default function HeroMain() {
   return (
     <section className="wrapper bg-light">
       <div className="container pt-10 pt-md-14 pb-14 pb-md-16 text-center">
@@ -22,6 +23,7 @@ export default function Hero21() {
             <h1 className="display-1 fs-54 mb-5 mx-md-n5 mx-lg-0 mt-7">
               A tech institute <br className="d-md-none" />
               for learning <br className="d-md-none" />
+
               <ReplaceMe className="rotator-fade text-primary">
                 Web Development,Digital Marketing,Salesforce
                 Sevlopment/Admin,App Development,AI Tools,Programming Language

@@ -2,7 +2,7 @@ import NextLink from "components/reuseable/links/NextLink";
 // CUSTOM UTILS LIBRARY FUNCTIONS
 import { slideInDownAnimate, zoomInAnimate } from "utils/animation";
 
-export default function Hero2() {
+export default function HeroGetCertificate() {
   return (
     <div className="row gx-lg-0 gx-xl-8 gy-10 gy-md-13 gy-lg-0 mb-7 mb-md-10 mb-lg-16 align-items-center">
       <div

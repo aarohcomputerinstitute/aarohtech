@@ -1,5 +1,5 @@
-import Hero1 from "./Hero1";
-import Hero2 from "./Hero2";
+import HeroWebDev from "./HeroWebDev";
+import HeroGetCertificate from "./HeroGetCertificate";
 import Hero3 from "./Hero3";
 import Hero4 from "./Hero4";
 import Hero5 from "./Hero5";
@@ -9,7 +9,7 @@ import Hero8 from "./Hero8";
 import Hero9 from "./Hero9";
 import Hero10 from "./Hero10";
 import Hero11 from "./Hero11";
-import Hero12 from "./Hero12";
+import HeroDigitalMarketing from "./HeroDigitalMarketing";
 import Hero13 from "./Hero13";
 import Hero14 from "./Hero14";
 import Hero15 from "./Hero15";
@@ -18,7 +18,7 @@ import Hero17 from "./Hero17";
 import Hero18 from "./Hero18";
 import Hero19 from "./Hero19";
 import Hero20 from "./Hero20";
-import Hero21 from "./Hero21";
+import HeroMain from "./HeroMain";
 import Hero22 from "./Hero22";
 import Hero23 from "./Hero23";
 import Hero24 from "./Hero24";
@@ -36,8 +36,8 @@ import Hero35 from "./Hero35";
 import Hero36 from "./Hero36";
 
 export {
-  Hero1,
-  Hero2,
+  HeroWebDev,
+  HeroGetCertificate,
   Hero3,
   Hero4,
   Hero5,
@@ -47,7 +47,7 @@ export {
   Hero9,
   Hero10,
   Hero11,
-  Hero12,
+  HeroDigitalMarketing,
   Hero13,
   Hero14,
   Hero15,
@@ -56,7 +56,7 @@ export {
   Hero18,
   Hero19,
   Hero20,
-  Hero21,
+  HeroMain,
   Hero22,
   Hero23,
   Hero24,

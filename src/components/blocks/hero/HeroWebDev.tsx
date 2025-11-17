@@ -1,4 +1,4 @@
-export default function Hero1() {
+export default function HeroWebDev() {
   return (
     <section className="wrapper bg-gradient-primary">
       <div className="container pt-10 pt-md-14 pb-8 text-center">
