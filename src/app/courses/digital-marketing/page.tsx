@@ -2,11 +2,10 @@ import { Fragment } from "react";
 // GLOBAL CUSTOM COMPONENTS
 import Navbar from "components/blocks/navbar/navbar-1";
 import { FAQdm } from "components/blocks/faq";
-import { Hero12, Hero2 } from "components/blocks/hero";
+import { HeroDigitalMarketing, HeroGetCertificate } from "components/blocks/hero";
 import { About22 } from "components/blocks/about";
 import { Facts15 } from "components/blocks/facts";
 import { Footer13 } from "components/blocks/footer";
-import { Process14 } from "components/blocks/process";
 import { Services1 } from "components/blocks/services";
 import NextLink from "components/reuseable/links/NextLink";
 
@@ -31,7 +30,7 @@ export default function DigitalMarketing() {
       {/* ========== main content ========== */}
       <main className="content-wrapper">
         {/* ========== hero section ========== */}
-        <Hero12 />
+        <HeroDigitalMarketing />
          
          {/* ========== company facts section ========== */}
         <div className="container pt-6 pb-6">
@@ -55,7 +54,7 @@ export default function DigitalMarketing() {
                           <h2 className="display-2 text-primary mb-0">Get Certified</h2>
                         </div>
                       </div>
-                      <Hero2/>
+                      <HeroGetCertificate/>
           </div>
       </main>
 

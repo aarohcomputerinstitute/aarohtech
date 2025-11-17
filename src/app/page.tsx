@@ -6,19 +6,11 @@ import CountUp from "components/reuseable/CountUp";
 import Carousel from "components/reuseable/Carousel";
 import NextLink from "components/reuseable/links/NextLink";
 // CUSTOM ICON COMPONENT
-import Safe from "icons/solid/Safe";
-import Layers from "icons/solid/Layers";
-import Share from "icons/solid-mono/Share";
-import Puzzle from "icons/solid-mono/Puzzle";
-import PenTool from "icons/solid-duo/PenTool";
-import Devices from "icons/solid-mono/Devices";
-import GlobeTwo from "icons/solid-mono/GlobeTwo";
 import { Footer13 } from "components/blocks/footer";
-import { Hero21 } from "components/blocks/hero";
+import {HeroMain } from "components/blocks/hero";
 import { About22 } from "components/blocks/about";
 import { Process14 } from "components/blocks/process";
 import { Team4 } from "components/blocks/team";
-import { Portfolio3 } from "components/blocks/portfolio";
 import { Testimonial17 } from "components/blocks/testimonial";
 import { FAQ6 } from "components/blocks/faq";
 import { Facts15 } from "components/blocks/facts";
@@ -45,7 +37,7 @@ export default function Home() {
       {/* ========== main content ========== */}
       <main className="content-wrapper">
         {/* ========== hero section ========== */}
-        <Hero21 />
+        <HeroMain />
 
         {/* ========== services section ========== */}
         <Services24 />

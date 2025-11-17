@@ -2,7 +2,7 @@ import { Fragment } from "react";
 // GLOBAL CUSTOM COMPONENTS
 import Navbar from "components/blocks/navbar/navbar-1";
 import { FAQ1 } from "components/blocks/faq";
-import { Hero1, Hero2} from "components/blocks/hero";
+import { HeroWebDev, HeroGetCertificate} from "components/blocks/hero";
 import { About22 } from "components/blocks/about";
 import { Facts15 } from "components/blocks/facts";
 import { Footer13 } from "components/blocks/footer";
@@ -31,7 +31,7 @@ export default function WebDevelopment() {
       {/* ========== main content ========== */}
       <main className="content-wrapper">
         {/* ========== hero section ========== */}
-        <Hero1 />
+        <HeroWebDev />
 
         {/* ==========  course curriculum ========== */}
         <Services20 />
@@ -56,7 +56,7 @@ export default function WebDevelopment() {
                 <h2 className="display-2 text-primary mb-0">Get Certified</h2>
               </div>
             </div>
-            <Hero2/>
+            <HeroGetCertificate/>
           </div>
         </section>
       </main>
