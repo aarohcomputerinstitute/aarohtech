@@ -37,6 +37,8 @@ import Services36 from "./Services36";
 import Services37 from "./Services37";
 import Services38 from "./Services38";
 import DaCourseCurriculaum from "./DaCourseCurriculaum";
+import AdvanceExcelCurriculaum from "./AdvanceExcelCurriculaum";
+import CodingLanguageCurriculaum from "./CodingLanguageCurriculaum";
 
 export {
   Services1,
@@ -78,4 +80,6 @@ export {
   Services37,
   Services38,
   DaCourseCurriculaum,
+  AdvanceExcelCurriculaum,
+  CodingLanguageCurriculaum
 };

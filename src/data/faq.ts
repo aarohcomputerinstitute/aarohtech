@@ -309,3 +309,73 @@ export const accordionListTally = [
     body: `After completing the course, you can work as an Accountant, Tally Operator, GST Executive, Billing Executive, or Accounts Assistant in companies.`
   }
 ];
+
+
+// used in the faq Advance Excel Course block
+export const accordionListAdvanceExcel = [
+  {
+    no: "One",
+    expand: false,
+    heading: "What will I learn in this Advanced Excel course?",
+    body: `You will learn advanced formulas, data analysis, PivotTables, dashboards, Power Query, automation, and professional reporting skills.`
+  },
+  {
+    no: "Two",
+    expand: false,
+    heading: "Do I need prior experience to join this course?",
+    body: `Basic Excel knowledge is helpful but not mandatory. The course starts from essential concepts and moves to advanced tools.`
+  },
+  {
+    no: "Three",
+    expand: false,
+    heading: "Will I receive a certificate after completing the course?",
+    body: `Yes, you will receive an Advanced Excel Certification upon successful completion of the course.`
+  },
+  {
+    no: "Four",
+    expand: false,
+    heading: "Do you offer placement assistance?",
+    body: `Yes, we provide resume building, interview preparation, and job guidance for roles like MIS Executive, Data Analyst, and Accounting positions.`
+  },
+  {
+    no: "Five",
+    expand: false,
+    heading: "What career opportunities are available after this course?",
+    body: `You can apply for roles such as MIS Executive, Data Analyst, Accountant, HR Executive, Back Office Assistant, and Business Analyst.`
+  }
+];
+
+
+// used in the faq Coding Language Course block
+export const accordionListCodingLanguage = [
+  {
+    no: "One",
+    expand: false,
+    heading: "What will I learn in this Coding Languages course?",
+    body: `You will learn C, C++, Java, Python, and JavaScript along with programming fundamentals, logic building, problem-solving, and real-world project development.`
+  },
+  {
+    no: "Two",
+    expand: false,
+    heading: "Do I need prior programming experience to join?",
+    body: `No, beginners can easily join. The course starts from basic programming concepts and gradually moves toward advanced topics and real coding practice.`
+  },
+  {
+    no: "Three",
+    expand: false,
+    heading: "Will I get a certificate after completing the course?",
+    body: `Yes, you will receive a Coding Languages Certification that can help you in job applications, internships, and building your portfolio.`
+  },
+  {
+    no: "Four",
+    expand: false,
+    heading: "Do you provide placement assistance for coding courses?",
+    body: `Yes, we offer resume building, interview preparation, coding test practice, and job guidance for roles like Software Developer, Web Developer, and Programmer.`
+  },
+  {
+    no: "Five",
+    expand: false,
+    heading: "What career opportunities are available after this course?",
+    body: `You can apply for roles such as Software Developer, Web Developer, Python Developer, Java Developer, Front-end Developer, Back-end Developer, and Programming Tutor.`
+  }
+];

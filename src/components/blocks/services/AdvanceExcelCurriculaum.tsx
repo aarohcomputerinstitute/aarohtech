@@ -1,8 +1,8 @@
 import { ServiceCard1 } from "components/reuseable/service-cards";
 // CUSTOM DATA
-import { DigitalMarketingCourseCurriculaum } from "data/service";
+import { AdvanceExcelCourseCurriculaum } from "data/service";
 
-export default function TallyCourseCurriculaum() {
+export default function AdvanceExcelCurriculaum() {
   return (
     <section className="wrapper bg-light">
       <div className="container pt-16 pb-16">
@@ -28,7 +28,7 @@ export default function TallyCourseCurriculaum() {
           />
 
           <div className="row gx-md-5 gy-5 text-center">
-            {DigitalMarketingCourseCurriculaum.map((item) => (
+            {AdvanceExcelCourseCurriculaum.map((item) => (
               <ServiceCard1
                 key={item.id}
                 Icon={item.icon}

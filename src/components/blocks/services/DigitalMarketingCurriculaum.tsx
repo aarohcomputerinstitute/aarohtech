@@ -1,6 +1,6 @@
 import { ServiceCard1 } from "components/reuseable/service-cards";
 // CUSTOM DATA
-import { DigitalMarketingCourseCurriculaum } from "data/service";
+import { tallyCourseCurriculaum } from "data/service";
 
 export default function TallyCourseCurriculaum() {
   return (
@@ -28,7 +28,7 @@ export default function TallyCourseCurriculaum() {
           />
 
           <div className="row gx-md-5 gy-5 text-center">
-            {DigitalMarketingCourseCurriculaum.map((item) => (
+            {tallyCourseCurriculaum.map((item) => (
               <ServiceCard1
                 key={item.id}
                 Icon={item.icon}

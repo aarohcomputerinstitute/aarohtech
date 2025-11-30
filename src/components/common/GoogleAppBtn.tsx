@@ -8,11 +8,11 @@ export default function GoogleAppBtn() {
     <div className="d-flex justify-content-center justify-content-lg-start" style={slideInDownAnimate("900ms")}>
       <span style={slideInDownAnimate("1200ms")}>
         <NextLink
-          href="#"
+          href="/contact-us"
           className="btn btn-primary btn-icon btn-icon-start rounded me-2"
           title={
             <Fragment>
-              <i className="uil uil-apple" /> App Store
+              <i className="uil uil-document-layout-left" /> Join Now
             </Fragment>
           }
         />
@@ -20,11 +20,11 @@ export default function GoogleAppBtn() {
 
       <span style={slideInDownAnimate("1500ms")}>
         <NextLink
-          href="#"
+          href="tel:919828658887"
           className="btn btn-green btn-icon btn-icon-start rounded"
           title={
             <Fragment>
-              <i className="uil uil-google-play" /> Google Play
+              <i className="uil uil-phone"/> Call Now
             </Fragment>
           }
         />

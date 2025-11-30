@@ -34,10 +34,13 @@ import Hero33 from "./Hero33";
 import Hero34 from "./Hero34";
 import Hero35 from "./Hero35";
 import Hero36 from "./Hero36";
+import HeroAdvanceExcel from "./HeroAdvanceExcel";
+import HeroCodingCourses from "./HeroCodingCourses";
 
 export {
   HeroWebDev,
   HeroGetCertificate,
+  HeroCodingCourses,
   Hero3,
   Hero4,
   Hero5,
@@ -71,5 +74,6 @@ export {
   Hero33,
   Hero34,
   Hero35,
-  Hero36
+  Hero36,
+  HeroAdvanceExcel
 };
