@@ -700,3 +700,161 @@ export const tallyCourseCurriculaum = [
     description: 'Company data backup/restore, data migration, user roles, password protection, and audit features.'
   }
 ];
+
+// used in the AdvanceExcel course curriculaum block
+export const AdvanceExcelCourseCurriculaum = [
+  {
+    id: 1,
+    link: '#',
+    icon: Settings,  // Represents settings and fundamentals
+    title: 'Advanced Excel Fundamentals',
+    linkType: LinkType.yellow,
+    description: `Master advanced formulas, functions, cell referencing, conditional formatting, and data cleanup techniques used in professional reporting.`
+  },
+  {
+    id: 2,
+    link: '#',
+    icon: Analytics,  // Perfect for data analysis and visualization
+    title: 'Data Analysis & Visualization',
+    linkType: LinkType.red,
+    description: `Work with PivotTables, PivotCharts, slicers, Power Query, and data modeling to analyze and present complex data efficiently and many more.`
+  },
+  {
+    id: 3,
+    link: '#',
+    icon: SettingsThree,  // Represents advanced settings and automation
+    title: 'Excel Functions & Automation',
+    linkType: LinkType.blue,
+    description: `Learn Lookup functions (VLOOKUP, XLOOKUP), IF formulas, text/date functions, arrays, macros basics, and task automation.`
+  },
+  {
+    id: 4,
+    link: '#',
+    icon: CloudComputing,  // For business intelligence and reporting
+    title: 'Dashboards & Business Reporting',
+    linkType: LinkType.green,
+    description: `Create interactive dashboards with charts, KPIs, Power BI-style visuals, and dynamic models for MIS, finance, HR, and business analytics.`
+  }
+];
+
+
+
+// used in the Coding Language course curriculaum block
+export const CodingLanguageCourseCurriculaum = [
+  {
+    id: 1,
+    link: '#',
+    icon: Settings,  // For system-level programming (C)
+    title: 'C Programming',
+    linkType: LinkType.yellow,
+    description: `Learn the fundamentals of programming including variables, loops, conditions, arrays, pointers, functions, and memory management — perfect for beginners.`
+  },
+  {
+    id: 2,
+    link: '#',
+    icon: SettingsThree,  // For complex systems (C++)
+    title: 'C++ Programming',
+    linkType: LinkType.red,
+    description: `Master Object-Oriented Programming concepts such as classes, objects, inheritance, polymorphism, abstraction, and work with STL.`
+  },
+  {
+    id: 3,
+    link: '#',
+    icon: CloudComputing,  // For enterprise applications (Java)
+    title: 'Java Programming',
+    linkType: LinkType.blue,
+    description: `Learn Java fundamentals, OOP concepts, packages, exception handling, multithreading, and backend development used in real-world software applications & many more.`
+  },
+  {
+    id: 4,
+    link: '#',
+    icon: Browser,  // For Python's versatility in web and automation
+    title: 'Python Programming',
+    linkType: LinkType.green,
+    description: `Understand Python basics to advanced topics including functions, OOP, file handling, modules, and automation scripts widely used.`
+  }
+];
+
+// used in the Digital Marketing course curriculum block
+export const DigitalMarketingCourseCurriculaum = [
+  {
+    id: 1,
+    link: '#',
+    icon: Search,  // Good for SEO
+    title: 'SEO – Search Engine Optimization',
+    linkType: LinkType.yellow,
+    description: `On-page SEO, off-page SEO, keyword research, technical SEO, backlinks, Google ranking factors, and website optimization techniques.`
+  },
+  {
+    id: 2,
+    link: '#',
+    icon: Script,  // Good for content
+    title: 'Content Marketing & Copywriting',
+    linkType: LinkType.red,
+    description: `Blog writing, content strategy, content planning, SEO-friendly content, sales copywriting, storytelling, and brand messaging.`
+  },
+  {
+    id: 3,
+    link: '#',
+    icon: Megaphone,  // Better for ads
+    title: 'Google Ads & PPC Advertising',
+    linkType: LinkType.green,
+    description: `Search ads, display ads, shopping ads, YouTube ads, remarketing, conversion tracking, and Google Ads campaign optimization.`
+  },
+  {
+    id: 4,
+    link: '#',
+    icon: Team,  // Team for social engagement
+    title: 'Social Media Marketing (SMM)',
+    linkType: LinkType.blue,
+    description: `Facebook marketing, Instagram marketing, Twitter/X strategy, LinkedIn branding, social media ads, and engagement optimization.`
+  },
+  {
+    id: 5,
+    link: '#',
+    icon: ChatTwo,  // Better for email communication
+    title: 'Email Marketing & Automation',
+    linkType: LinkType.blue,
+    description: `Lead nurturing, email funnels, Mailchimp/SendinBlue tools, automation sequences, and high-converting email templates.`
+  },
+  {
+    id: 6,
+    link: '#',
+    icon: Browser,  // Better for website design
+    title: 'Website Design with WordPress',
+    linkType: LinkType.yellow,
+    description: 'WordPress setup, themes, plugins, landing page creation, website optimization, and blogging for digital marketing.'
+  },
+  {
+    id: 7,
+    link: '#',
+    icon: Verify,  // Better for reputation
+    title: 'Branding & Online Reputation Management (ORM)',
+    linkType: LinkType.red,
+    description: 'Brand identity creation, personal branding, review management, crisis handling, and online trust-building strategies.'
+  },
+  {
+    id: 8,
+    link: '#',
+    icon: Analytics,  // Perfect for analytics
+    title: 'Analytics, Tracking & Reporting',
+    linkType: LinkType.yellow,
+    description: 'Google Analytics 4 (GA4), Search Console, tracking setup, insights, competitor analysis, and performance reporting.'
+  },
+  {
+    id: 9,
+    link: '#',
+    icon: ShopTwo,  // Better for e-commerce
+    title: 'E-commerce Marketing',
+    linkType: LinkType.green,
+    description: 'E-commerce SEO, product optimization, Shopify, WooCommerce, Google Merchant Center, and online sales growth strategies.'
+  },
+  {
+    id: 10,
+    link: '#',
+    icon: Director,  // Better for career/freelancing
+    title: 'Freelancing & Digital Marketing Career',
+    linkType: LinkType.blue,
+    description: 'Portfolio building, client acquisition, Fiverr/Upwork training, interview preparation, and professional growth roadmap.'
+  }
+];

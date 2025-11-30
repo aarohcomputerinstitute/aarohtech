@@ -1,8 +1,8 @@
 import { ServiceCard1 } from "components/reuseable/service-cards";
 // CUSTOM DATA
-import { DigitalMarketingCourseCurriculaum } from "data/service";
+import { CodingLanguageCourseCurriculaum } from "data/service";
 
-export default function TallyCourseCurriculaum() {
+export default function CodingLanguageCurriculaum() {
   return (
     <section className="wrapper bg-light">
       <div className="container pt-16 pb-16">
@@ -10,9 +10,9 @@ export default function TallyCourseCurriculaum() {
           <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
             <h2 className="fs-20 text-uppercase b-3 text-primary">Course Curriculaum</h2>
             <h3 className="display-4 px-xl-10">
-              What You'll Master in This Course
+              What You’ll Learn in This Coding Languages Program
             </h3>
-            <p className=" mb-10 px-xl-10">Gain practical accounting skills with Tally Prime, GST, payroll, and business finance to build a strong career in accounting.</p>
+            <p className=" mb-10 px-xl-10">Build strong foundations in multiple programming languages, understand core concepts, and develop real-world coding skills for software development, web development, and tech careers.</p>
           </div>
         </div>
 
@@ -28,7 +28,7 @@ export default function TallyCourseCurriculaum() {
           />
 
           <div className="row gx-md-5 gy-5 text-center">
-            {DigitalMarketingCourseCurriculaum.map((item) => (
+            {CodingLanguageCourseCurriculaum.map((item) => (
               <ServiceCard1
                 key={item.id}
                 Icon={item.icon}
