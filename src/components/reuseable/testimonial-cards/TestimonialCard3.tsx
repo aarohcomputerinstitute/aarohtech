@@ -4,7 +4,7 @@ import clsx from "clsx";
 // =================================================
 interface TestimonialCard3Props {
   name: string;
-  image: string;
+  // image: string;
   review: string;
   shadow?: boolean;
   designation: string;
@@ -14,7 +14,7 @@ interface TestimonialCard3Props {
 
 export default function TestimonialCard3({
   name,
-  image,
+  // image,
   review,
   shadow,
   hideRating,
@@ -29,9 +29,9 @@ export default function TestimonialCard3({
           <p>“{review}”</p>
 
           <div className="blockquote-details">
-            <figure className="rounded-circle w-12 overflow-hidden">
+            {/* <figure className="rounded-circle w-12 overflow-hidden">
               <Image alt="team" width={100} height={100} src={image} className="w-100 h-auto" />
-            </figure>
+            </figure> */}
 
             <div className="info">
               <h5 className="mb-0">{name}</h5>

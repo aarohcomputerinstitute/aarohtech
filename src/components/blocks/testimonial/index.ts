@@ -1,7 +1,7 @@
 import Testimonial1 from "./Testimonial1";
 import Testimonial2 from "./Testimonial2";
 import Testimonial3 from "./Testimonial3";
-import Testimonial4 from "./Testimonial4";
+import TestimonialWebDev from "./TestimonialWebDev";
 import Testimonial5 from "./Testimonial5";
 import Testimonial6 from "./Testimonial6";
 import Testimonial7 from "./Testimonial7";
@@ -32,7 +32,7 @@ export {
   Testimonial1,
   Testimonial2,
   Testimonial3,
-  Testimonial4,
+  TestimonialWebDev,
   Testimonial5,
   Testimonial6,
   Testimonial7,

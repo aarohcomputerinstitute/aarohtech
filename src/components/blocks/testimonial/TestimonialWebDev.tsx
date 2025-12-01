@@ -4,9 +4,9 @@ import { TestimonialCard3 } from "components/reuseable/testimonial-cards";
 // CUSTOM UTILS LIBRARY FUNCTIONS
 import carouselBreakpoints from "utils/carouselBreakpoints";
 // CUSTOM DATA
-import { testimonialList2 } from "data/testimonial-list";
+import { testimonialListwebdevcourse } from "data/testimonial-list";
 
-export default function Testimonial4() {
+export default function TestimonialWebDev() {
   return (
     <div className="wrapper bg-light">
       <div className="container py-14 py-md-1">
@@ -26,7 +26,7 @@ export default function Testimonial4() {
             grabCursor
             navigation={false}
             breakpoints={carouselBreakpoints}>
-            {testimonialList2.map((item, i) => (
+            {testimonialListwebdevcourse.map((item, i) => (
               <div className="item-inner" key={i}>
                 <TestimonialCard3 {...item} />
               </div>

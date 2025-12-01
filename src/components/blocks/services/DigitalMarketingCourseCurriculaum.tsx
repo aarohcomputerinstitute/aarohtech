@@ -2,7 +2,7 @@ import { ServiceCard1 } from "components/reuseable/service-cards";
 // CUSTOM DATA
 import { DigitalMarketingCourseCurriculaum } from "data/service";
 
-export default function TallyCourseCurriculaum() {
+export default function DMCourseCurriculaum() {
   return (
     <section className="wrapper bg-light">
       <div className="container pt-16 pb-16">

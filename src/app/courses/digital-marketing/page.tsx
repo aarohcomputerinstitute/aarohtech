@@ -6,7 +6,7 @@ import { HeroDigitalMarketing, HeroGetCertificate } from "components/blocks/hero
 import { About22 } from "components/blocks/about";
 import { Facts15 } from "components/blocks/facts";
 import { Footer13 } from "components/blocks/footer";
-import { Services1 } from "components/blocks/services";
+import { DigitalMarketingCourseCurriculaum } from "components/blocks/services";
 import NextLink from "components/reuseable/links/NextLink";
 
 export default function DigitalMarketing() {
@@ -38,7 +38,7 @@ export default function DigitalMarketing() {
         </div>
 
         {/* ========== services section ========== */}
-        <Services1 />
+        <DigitalMarketingCourseCurriculaum />
 
         {/* ========== why choose us section ========== */}
         <About22 />

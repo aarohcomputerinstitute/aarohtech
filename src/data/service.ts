@@ -18,9 +18,14 @@ import Browser from 'icons/lineal/Browser';
 import Director from 'icons/solid-duo/Director';
 import Settings from 'icons/lineal/Settings';
 import Telephone from 'icons/lineal/Telephone';
+import Megaphone from 'icons/lineal/Megaphone';
+import Email from 'icons/lineal/Email';
+import BarChart from 'icons/lineal/BarChart';
+import Smartphone from 'icons/lineal/Smartphone';
 import SearchTwo from 'icons/lineal/SearchTwo';
 import Analytics from 'icons/lineal/Analytics';
-import Megaphone from 'icons/lineal/Megaphone';
+import Rocket from 'icons/lineal/Rocket';
+import LightBulb from 'icons/lineal/LightBulb';
 import ClockThree from 'icons/lineal/ClockThree';
 import DeliveryBox from 'icons/solid-mono/DeliveryBox';
 import CloudNetwork from 'icons/solid-duo/CloudNetwork';
@@ -780,81 +785,65 @@ export const DigitalMarketingCourseCurriculaum = [
   {
     id: 1,
     link: '#',
-    icon: Search,  // Good for SEO
-    title: 'SEO – Search Engine Optimization',
+    icon: Search,
+    title: 'Search Engine Optimization (SEO)',
     linkType: LinkType.yellow,
-    description: `On-page SEO, off-page SEO, keyword research, technical SEO, backlinks, Google ranking factors, and website optimization techniques.`
+    description: `Master on-page, off-page, and technical SEO techniques. Learn keyword research, content optimization, link building, and analytics to improve search rankings.`
   },
   {
     id: 2,
     link: '#',
-    icon: Script,  // Good for content
-    title: 'Content Marketing & Copywriting',
-    linkType: LinkType.red,
-    description: `Blog writing, content strategy, content planning, SEO-friendly content, sales copywriting, storytelling, and brand messaging.`
+    icon: Megaphone,
+    title: 'Social Media Marketing',
+    linkType: LinkType.blue,
+    description: `Develop strategies for major platforms (Facebook, Instagram, LinkedIn, Twitter). Learn content creation, community management, and paid advertising.`
   },
   {
     id: 3,
     link: '#',
-    icon: Megaphone,  // Better for ads
-    title: 'Google Ads & PPC Advertising',
+    icon: Email,
+    title: 'Email Marketing',
     linkType: LinkType.green,
-    description: `Search ads, display ads, shopping ads, YouTube ads, remarketing, conversion tracking, and Google Ads campaign optimization.`
+    description: `Build effective email campaigns, automation workflows, list segmentation, and performance tracking to maximize engagement and conversions.`
   },
   {
     id: 4,
     link: '#',
-    icon: Team,  // Team for social engagement
-    title: 'Social Media Marketing (SMM)',
-    linkType: LinkType.blue,
-    description: `Facebook marketing, Instagram marketing, Twitter/X strategy, LinkedIn branding, social media ads, and engagement optimization.`
+    icon: Rocket,
+    title: 'Pay-Per-Click (PPC) Advertising',
+    linkType: LinkType.red,
+    description: `Master Google Ads, Facebook Ads, and LinkedIn Ads. Learn campaign setup, keyword research, ad copywriting, and conversion optimization.`
   },
   {
     id: 5,
     link: '#',
-    icon: ChatTwo,  // Better for email communication
-    title: 'Email Marketing & Automation',
-    linkType: LinkType.blue,
-    description: `Lead nurturing, email funnels, Mailchimp/SendinBlue tools, automation sequences, and high-converting email templates.`
+    icon: LightBulb,
+    title: 'Content Marketing',
+    linkType: LinkType.violet,
+    description: `Develop content strategies, create engaging blog posts, videos, and infographics. Learn content distribution and performance measurement.`
   },
   {
     id: 6,
     link: '#',
-    icon: Browser,  // Better for website design
-    title: 'Website Design with WordPress',
-    linkType: LinkType.yellow,
-    description: 'WordPress setup, themes, plugins, landing page creation, website optimization, and blogging for digital marketing.'
+    icon: BarChart,
+    title: 'Web Analytics',
+    linkType: LinkType.orange,
+    description: `Implement and interpret Google Analytics, track user behavior, set up goals, and create data-driven marketing strategies.`
   },
   {
     id: 7,
     link: '#',
-    icon: Verify,  // Better for reputation
-    title: 'Branding & Online Reputation Management (ORM)',
-    linkType: LinkType.red,
-    description: 'Brand identity creation, personal branding, review management, crisis handling, and online trust-building strategies.'
+    icon: Smartphone,
+    title: 'Mobile Marketing',
+    linkType: LinkType.fuchsia,
+    description: `Optimize for mobile users, create mobile ads, SMS marketing, and leverage mobile apps for customer engagement.`
   },
   {
     id: 8,
     link: '#',
-    icon: Analytics,  // Perfect for analytics
-    title: 'Analytics, Tracking & Reporting',
+    icon: LightBulb,
+    title: 'Marketing Strategy & Planning',
     linkType: LinkType.yellow,
-    description: 'Google Analytics 4 (GA4), Search Console, tracking setup, insights, competitor analysis, and performance reporting.'
-  },
-  {
-    id: 9,
-    link: '#',
-    icon: ShopTwo,  // Better for e-commerce
-    title: 'E-commerce Marketing',
-    linkType: LinkType.green,
-    description: 'E-commerce SEO, product optimization, Shopify, WooCommerce, Google Merchant Center, and online sales growth strategies.'
-  },
-  {
-    id: 10,
-    link: '#',
-    icon: Director,  // Better for career/freelancing
-    title: 'Freelancing & Digital Marketing Career',
-    linkType: LinkType.blue,
-    description: 'Portfolio building, client acquisition, Fiverr/Upwork training, interview preparation, and professional growth roadmap.'
+    description: `Develop comprehensive digital marketing strategies, set KPIs, create marketing funnels, and measure ROI effectively.`
   }
 ];

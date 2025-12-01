@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import Navbar from "components/blocks/navbar/navbar-1";
 import { FAQ6 } from "components/blocks/faq";
 import { Team4 } from "components/blocks/team";
-import { Hero21 } from "components/blocks/hero";
+import { Hero9 } from "components/blocks/hero";
 import { About22 } from "components/blocks/about";
 import { Facts15 } from "components/blocks/facts";
 import { Footer13 } from "components/blocks/footer";
@@ -34,7 +34,7 @@ export default function AdvanceExcel() {
       {/* ========== main content ========== */}
       <main className="content-wrapper">
         {/* ========== hero section ========== */}
-        <Hero21 />
+        <Hero9 />
 
         {/* ========== services section ========== */}
         <Services24 />

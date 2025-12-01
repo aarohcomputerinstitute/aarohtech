@@ -1,4 +1,4 @@
-import Services1 from "./Services1";
+import Services1 from "./DigitalMarketingCourseCurriculaum";
 import Services2 from "./Services2";
 import Services3 from "./Services3";
 import Services4 from "./Services4";
@@ -39,6 +39,9 @@ import Services38 from "./Services38";
 import DaCourseCurriculaum from "./DaCourseCurriculaum";
 import AdvanceExcelCurriculaum from "./AdvanceExcelCurriculaum";
 import CodingLanguageCurriculaum from "./CodingLanguageCurriculaum";
+import TallyCourseCurriculaum from "./TallyCourseCurriculaum";
+import DigitalMarketingCourseCurriculaum from "./DigitalMarketingCourseCurriculaum";
+
 
 export {
   Services1,
@@ -81,5 +84,7 @@ export {
   Services38,
   DaCourseCurriculaum,
   AdvanceExcelCurriculaum,
-  CodingLanguageCurriculaum
+  CodingLanguageCurriculaum,
+  TallyCourseCurriculaum,
+  DigitalMarketingCourseCurriculaum
 };

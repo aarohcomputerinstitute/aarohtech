@@ -6,7 +6,7 @@ import { HeroDigitalMarketing, HeroGetCertificate } from "components/blocks/hero
 import { About22 } from "components/blocks/about";
 import { Facts15 } from "components/blocks/facts";
 import { Footer13 } from "components/blocks/footer";
-import { Services1 } from "components/blocks/services";
+import {TallyCourseCurriculaum } from "components/blocks/services";
 import NextLink from "components/reuseable/links/NextLink";
 import FAQTally from "components/blocks/faq/FAQTally";
 import HeroTallyPrime from "components/blocks/hero/HeroTallyPrime";
@@ -104,7 +104,7 @@ export default function TallyPrime() {
         </div>
 
         {/* ========== services section ========== */}
-        <Services1 />
+        <TallyCourseCurriculaum />
 
         {/* ========== why choose us section ========== */}
         <About22 />

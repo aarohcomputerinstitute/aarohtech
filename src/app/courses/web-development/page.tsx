@@ -7,7 +7,7 @@ import { About22 } from "components/blocks/about";
 import { Facts15 } from "components/blocks/facts";
 import { Footer13 } from "components/blocks/footer";
 import { Services20 } from "components/blocks/services";
-import { Testimonial4 } from "components/blocks/testimonial";
+import { TestimonialWebDev } from "components/blocks/testimonial";
 import NextLink from "components/reuseable/links/NextLink";
 
 export default function WebDevelopment() {
@@ -45,7 +45,7 @@ export default function WebDevelopment() {
             </div>
 
           {/* ========== customer section ========== */}
-          <Testimonial4 />
+          <TestimonialWebDev />
           <div className="container pt-12 pt-lg-8 pb-14 pb-md-16">
           {/* ========== faq section ========== */}
           <FAQ1/>

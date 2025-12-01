@@ -26,22 +26,22 @@ export const testimonialList1 = [
   }
 ];
 
-export const testimonialList2 = [
+export const testimonialListwebdevcourse = [
   {
     name: 'Ayush Verma',
-    image: '/img/avatars/te7.jpg',
+    // image: '/img/avatars/te7.jpg',
     designation: 'Full Stack Developer',
-    review: 'Thanks to this course, I mastered MERN Stack with real-world projects. I now feel confident applying for developer roles.'
+    review: 'Thanks to this course, I mastered MERN Stack with real-world projects. I now feel confident applying for job.'
   },
   {
     name: 'Priya Mehra',
-    image: '/img/avatars/te8.jpg',
+    // image: '/img/avatars/te8.jpg',
     designation: 'Frontend Intern',
     review: 'The live mentorship and hands-on assignments made coding super easy. I got my first internship within months!'
   },
   {
     name: 'Rohan Singh',
-    image: '/img/avatars/te9.jpg',
+    // image: '/img/avatars/te9.jpg',
     designation: 'Backend Developer',
     review: 'Amazing curriculum! I learned HTML, CSS, JavaScript, React & Node.js step-by-step. Best course for placements!'
   }

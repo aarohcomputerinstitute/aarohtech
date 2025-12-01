@@ -1,19 +1,15 @@
 import { Fragment } from "react";
 // GLOBAL CUSTOM COMPONENTS
 import Navbar from "components/blocks/navbar/navbar-1";
-import { FAQ6 } from "components/blocks/faq";
-import { Team4 } from "components/blocks/team";
-import { Hero21 } from "components/blocks/hero";
+import { FAQCodingLanguage } from "components/blocks/faq";
+import { HeroCodingCourses, HeroGetCertificate } from "components/blocks/hero";
 import { About22 } from "components/blocks/about";
 import { Facts15 } from "components/blocks/facts";
 import { Footer13 } from "components/blocks/footer";
-import { Process14 } from "components/blocks/process";
-import { Services24 } from "components/blocks/services";
-import { Portfolio3 } from "components/blocks/portfolio";
-import { Testimonial17 } from "components/blocks/testimonial";
+import { CodingLanguageCurriculaum} from "components/blocks/services";
 import NextLink from "components/reuseable/links/NextLink";
 
-export default function CodingLanguage() {
+export default function CodingCourse() {
   return (
     <Fragment>
       {/* ========== header ========== */}
@@ -34,35 +30,32 @@ export default function CodingLanguage() {
       {/* ========== main content ========== */}
       <main className="content-wrapper">
         {/* ========== hero section ========== */}
-        <Hero21 />
+        <HeroCodingCourses />
+         
+         {/* ========== company facts section ========== */}
+        <div className="container pt-6 pb-6">
+            <Facts15 />
+        </div>
 
         {/* ========== services section ========== */}
-        <Services24 />
-
-        {/* ========== our strategy section ========== */}
-        <Process14 />
+        <CodingLanguageCurriculaum />
 
         {/* ========== why choose us section ========== */}
         <About22 />
 
         <section className="wrapper bg-light">
-          <div className="container pt-12 pt-lg-8 pb-14 pb-md-16">
-            {/* ========== company facts section ========== */}
-            <Facts15 />
-
-            {/* ========== team section ========== */}
-            <Team4 />
-          </div>
-
-          {/* ========== projects section ========== */}
-          <Portfolio3 />
-
-          {/* ========== customer section ========== */}
-          <Testimonial17 />
-
           {/* ========== faq section ========== */}
-          <FAQ6 />
+          <FAQCodingLanguage />
         </section>
+
+        <div className="container pt-lg-8">
+                      <div className="row">
+                        <div className="col-12 text-center mb-16">
+                          <h2 className="display-2 text-primary mb-0">Get Certified</h2>
+                        </div>
+                      </div>
+                      <HeroGetCertificate/>
+          </div>
       </main>
 
       {/* ========== footer section ========== */}
