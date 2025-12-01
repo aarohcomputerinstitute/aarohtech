@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { PropsWithChildren } from "react";
 import { Manrope } from "next/font/google";
+import ClientBody from "components/ClientBody";
 
 import ThemeProvider from "theme/ThemeProvider";
 import Progress from "components/Progress";
@@ -34,18 +35,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
-    <html lang="en">
-      <body className={manrope.className} suppressHydrationWarning={true}>
-        <ThemeProvider>{children}</ThemeProvider>
-
-        {/* USED FOR SCROLL ANIMATION */}
-        <ScrollCue />
-
-        {/* USED FOR PAGE SCROLL PROGRESS BAR */}
-        <PageProgress />
-
-        {/* USED FOR PROGRESS BAR ANIMATE */}
-        <Progress />
+    <html lang="en" className={manrope.className} suppressHydrationWarning>
+      <body suppressHydrationWarning>
+        <ClientBody>
+          <ThemeProvider>
+            <PageProgress />
+            <Progress />
+            <ScrollCue />
+            {children}
+          </ThemeProvider>
+        </ClientBody>
       </body>
     </html>
   );

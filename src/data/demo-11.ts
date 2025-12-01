@@ -146,5 +146,80 @@ const blogList = [
   },
 ];
 
+// Teams data
+const teams = [
+  {
+    id: 1,
+    name: 'Coriss Ambady',
+    designation: 'Financial Analyst',
+    image: '/img/avatars/t1.jpg',
+    social: {
+      twitter: '#',
+      facebook: '#',
+      linkedin: '#'
+    }
+  },
+  {
+    id: 2,
+    name: 'Cory Zamora',
+    designation: 'Marketing Specialist',
+    image: '/img/avatars/t2.jpg',
+    social: {
+      twitter: '#',
+      facebook: '#',
+      linkedin: '#'
+    }
+  },
+  {
+    id: 3,
+    name: 'Nikolas Brooten',
+    designation: 'Sales Manager',
+    image: '/img/avatars/t3.jpg',
+    social: {
+      twitter: '#',
+      facebook: '#',
+      linkedin: '#'
+    }
+  },
+  {
+    id: 4,
+    name: 'Jackie Sanders',
+    designation: 'Investment Planner',
+    image: '/img/avatars/t4.jpg',
+    social: {
+      twitter: '#',
+      facebook: '#',
+      linkedin: '#'
+    }
+  }
+];
 
-export { list, blogList };
+// Testimonials data
+const testimonialList = [
+  {
+    id: 1,
+    name: 'Coriss Ambady',
+    designation: 'Financial Analyst',
+    review: 'Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio consectetur adipiscing dapibus.',
+    rating: 5,
+    image: '/img/avatars/te1.jpg'
+  },
+  {
+    id: 2,
+    name: 'Cory Zamora',
+    designation: 'Marketing Specialist',
+    review: 'Fusce dapibus tellus ac cursus tortor mauris condimentum fermentum massa justo sit amet purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.',
+    rating: 5,
+    image: '/img/avatars/te2.jpg'
+  },
+  {
+    id: 3,
+    name: 'Nikolas Brooten',
+    designation: 'Sales Manager',
+    review: 'Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget porta ac consectetur vestibulum.',
+    rating: 5,
+    image: '/img/avatars/te3.jpg'
+  }
+];
+
+export { list, blogList, teams, testimonialList };

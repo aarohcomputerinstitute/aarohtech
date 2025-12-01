@@ -1,0 +1,7 @@
+/* Import Bootstrap */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Import custom SCSS */
+@import '../assets/scss/style.scss';
+
+/* Add any additional global styles here */

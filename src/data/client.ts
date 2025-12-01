@@ -1,5 +1,5 @@
 // used in the client-1, hero-21 block
-const clientList = [
+export const clientList = [
   '/img/brands/c1.png',
   '/img/brands/c2.png',
   '/img/brands/c3.png',
@@ -9,7 +9,7 @@ const clientList = [
 ];
 
 // used in the client-4, client-5 block
-const clientList2 = [
+export const clientList2 = [
   '/img/brands/z1.png',
   '/img/brands/z2.png',
   '/img/brands/z3.png',
@@ -19,5 +19,3 @@ const clientList2 = [
   '/img/brands/z7.png',
   '/img/brands/z8.png'
 ];
-
-export { clientList, clientList2 };
