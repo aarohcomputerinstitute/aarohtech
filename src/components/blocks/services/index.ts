@@ -41,6 +41,7 @@ import AdvanceExcelCurriculaum from "./AdvanceExcelCurriculaum";
 import CodingLanguageCurriculaum from "./CodingLanguageCurriculaum";
 import TallyCourseCurriculaum from "./TallyCourseCurriculaum";
 import DigitalMarketingCourseCurriculaum from "./DigitalMarketingCourseCurriculaum";
+import RscitCourseCurriculaum from "./RscitCourseCurriculaum";
 
 
 export {
@@ -86,5 +87,6 @@ export {
   AdvanceExcelCurriculaum,
   CodingLanguageCurriculaum,
   TallyCourseCurriculaum,
-  DigitalMarketingCourseCurriculaum
-};
+  DigitalMarketingCourseCurriculaum,
+  RscitCourseCurriculaum,
+};  

@@ -379,3 +379,49 @@ export const accordionListCodingLanguage = [
     body: `You can apply for roles such as Software Developer, Web Developer, Python Developer, Java Developer, Front-end Developer, Back-end Developer, and Programming Tutor.`
   }
 ];
+
+// used in the faqrscit course block
+export const accordionListrscit = [
+  {
+    no: "One",
+    expand: false,
+    heading: "What is RSCIT and what will I learn in this course?",
+    body: `RSCIT (Rajasthan State Certificate in Information Technology) is a government-recognized computer literacy program. You'll learn Computer Fundamentals, MS Windows, MS Office (Word, Excel, PowerPoint), Internet & Email, Computer Security, and Digital Payments including UPI and e-governance services.`
+  },
+  {
+    no: "Two",
+    expand: false,
+    heading: "Do I need prior computer knowledge to join RSCIT?",
+    body: `No, absolutely not! RSCIT is designed for complete beginners. The course starts from basics like how to use a mouse and keyboard, making it perfect for anyone who wants to learn computers from scratch.`
+  },
+  {
+    no: "Three",
+    expand: false,
+    heading: "Is RSCIT certificate recognized by the government?",
+    body: `Yes, RSCIT is a government-recognized certificate issued by Rajasthan Knowledge Corporation Limited (RKCL). It's widely accepted for government jobs, educational purposes, and employment in Rajasthan.`
+  },
+  {
+    no: "Four",
+    expand: false,
+    heading: "How long is the RSCIT course duration?",
+    body: `The RSCIT course typically runs for 3 months with regular classes. We offer flexible timings with both online and classroom training options at our Jaipur center to suit your schedule.`
+  },
+  {
+    no: "Five",
+    expand: false,
+    heading: "What can I do after completing RSCIT certification?",
+    body: `After RSCIT, you'll have essential computer skills for office work, government job applications, online form filling, digital payments, and further computer education. It opens doors to basic computer operator jobs and is often required for government positions in Rajasthan.`
+  },
+  {
+    no: "Six",
+    expand: false,
+    heading: "Will I get practical hands-on training in RSCIT?",
+    body: `Yes! Our RSCIT course includes extensive practical training on computers where you'll practice MS Office, internet browsing, email, and digital payments. You'll work on real computers to build confidence and skills.`
+  },
+  {
+    no: "Seven",
+    expand: false,
+    heading: "Is there an exam for RSCIT certification?",
+    body: `Yes, RSCIT has a final examination conducted by RKCL. We provide complete exam preparation, mock tests, and practice sessions to help you pass confidently and obtain your government-recognized RSCIT certificate.`
+  }
+];

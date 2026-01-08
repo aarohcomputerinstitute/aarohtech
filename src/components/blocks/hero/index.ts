@@ -24,7 +24,7 @@ import Hero23 from "./Hero23";
 import Hero24 from "./Hero24";
 import Hero25 from "./Hero25";
 import Hero26 from "./Hero26";
-import Hero27 from "./Hero27";
+import HeroRscit from "./HeroRscit";
 import Hero28 from "./Hero28";
 import Hero29 from "./Hero29";
 import Hero30 from "./Hero30";
@@ -65,7 +65,7 @@ export {
   Hero24,
   Hero25,
   Hero26,
-  Hero27,
+  HeroRscit,
   Hero28,
   Hero29,
   Hero30,

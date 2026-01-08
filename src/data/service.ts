@@ -396,7 +396,7 @@ export const serviceList10 = [
     title: 'Frontend Development',
     description: `Design and build modern, responsive user interfaces using HTML, CSS, JavaScript, and React. Create fast and interactive web pages for all devices.`
   },
- 
+
   {
     id: 2,
     linkUrl: '#',
@@ -845,5 +845,73 @@ export const DigitalMarketingCourseCurriculaum = [
     title: 'Marketing Strategy & Planning',
     linkType: LinkType.yellow,
     description: `Develop comprehensive digital marketing strategies, set KPIs, create marketing funnels, and measure ROI effectively.`
+  }
+];
+
+// used in the rscit course curriculum block
+export const RscitCourseCurriculaum = [
+  {
+    id: 1,
+    link: '#',
+    icon: Settings,
+    title: 'Computer Fundamentals & Introduction',
+    linkType: LinkType.yellow,
+    description: `Learn computer basics, hardware components, input/output devices, memory, storage, and operating system fundamentals.`
+  },
+  {
+    id: 2,
+    link: '#',
+    icon: CloudComputing,
+    title: 'MS Windows & File Management',
+    linkType: LinkType.blue,
+    description: `Master Windows OS, desktop operations, file/folder management, Control Panel, accessories, and system utilities.`
+  },
+  {
+    id: 3,
+    link: '#',
+    icon: Script,
+    title: 'MS Word (Word Processing)',
+    linkType: LinkType.green,
+    description: `Create and format documents, use styles, tables, mail merge, headers/footers, and professional document creation.`
+  },
+  {
+    id: 4,
+    link: '#',
+    icon: Analytics,
+    title: 'MS Excel (Spreadsheet)',
+    linkType: LinkType.red,
+    description: `Work with formulas, functions, charts, data sorting, filtering, basic calculations, and spreadsheet management.`
+  },
+  {
+    id: 5,
+    link: '#',
+    icon: Browser,
+    title: 'MS PowerPoint (Presentations)',
+    linkType: LinkType.violet,
+    description: `Design professional presentations with slides, animations, transitions, multimedia, and effective presentation skills.`
+  },
+  {
+    id: 6,
+    link: '#',
+    icon: CloudComputing,
+    title: 'Internet & Email',
+    linkType: LinkType.orange,
+    description: `Browse websites, search engines, email creation, sending/receiving emails, attachments, and internet safety basics.`
+  },
+  {
+    id: 7,
+    link: '#',
+    icon: Shield,
+    title: 'Computer Security & Safety',
+    linkType: LinkType.fuchsia,
+    description: `Understand viruses, antivirus software, password security, safe browsing, data backup, and cyber safety practices.`
+  },
+  {
+    id: 8,
+    link: '#',
+    icon: Smartphone,
+    title: 'Digital Payments & E-Governance',
+    linkType: LinkType.blue,
+    description: `Learn UPI, digital wallets, online payments, e-government services, Aadhar, PAN, and Digital India initiatives.`
   }
 ];
