@@ -396,7 +396,6 @@ export const serviceList10 = [
     title: 'Frontend Development',
     description: `Design and build modern, responsive user interfaces using HTML, CSS, JavaScript, and React. Create fast and interactive web pages for all devices.`
   },
-
   {
     id: 2,
     linkUrl: '#',
