@@ -637,6 +637,77 @@ export const dataAnalystCurriculaum = [
   }
 ];
 
+
+// used in the AI Automation course curriculaum block
+export const aiAutomationCurriculaum = [
+  {
+    id: 1,
+    link: '#',
+    icon: LightBulb,
+    title: 'Introduction to AI & Generative Models',
+    linkType: LinkType.yellow,
+    description: 'Understand AI fundamentals, Large Language Models (LLMs), GPT architecture, AI capabilities, limitations, and real-world applications.'
+  },
+  {
+    id: 2,
+    link: '#',
+    icon: Edit,
+    title: 'Prompt Engineering Mastery',
+    linkType: LinkType.blue,
+    description: 'Master zero-shot, few-shot, chain-of-thought prompting, structured prompts, role-based prompts, and advanced techniques for optimal AI outputs.'
+  },
+  {
+    id: 3,
+    link: '#',
+    icon: Rocket,
+    linkType: LinkType.green,
+    title: 'AI Tools for Content Creation',
+    description: 'Learn ChatGPT, Jasper, Copy.ai for text generation, Midjourney, DALL-E, Stable Diffusion for image creation, and content workflows.'
+  },
+  {
+    id: 4,
+    link: '#',
+    icon: Settings,
+    linkType: LinkType.red,
+    title: 'Productivity & Workflow Automation',
+    description: 'Integrate AI with Zapier, automate emails, meeting transcription, task management, and build efficient AI-powered workflows.'
+  },
+  {
+    id: 5,
+    link: '#',
+    icon: Analytics,
+    title: 'Professional AI Usage',
+    linkType: LinkType.violet,
+    description: 'Use AI for data analysis, market research, business reporting, competitive analysis, and strategic decision-making processes.'
+  },
+  {
+    id: 6,
+    link: '#',
+    icon: CloudComputing,
+    linkType: LinkType.orange,
+    title: 'Video & Audio AI Tools',
+    description: 'Explore synthetic media, voice cloning (ElevenLabs), video generation (Runway, Synthesia), and audio content automation.'
+  },
+  {
+    id: 7,
+    link: '#',
+    icon: SettingsThree,
+    linkType: LinkType.fuchsia,
+    title: 'Building Custom AI Agents',
+    description: 'Create custom GPTs, autonomous AI agents, chatbots, and specialized AI assistants for specific business use cases.'
+  },
+  {
+    id: 8,
+    link: '#',
+    icon: Shield,
+    linkType: LinkType.blue,
+    title: 'AI Ethics & Future of Work',
+    description: 'Understand AI ethics, privacy concerns, responsible AI usage, staying ahead with emerging AI trends, and career opportunities.'
+  }
+];
+
+
+
 // used in the tally course curriculaum block
 export const tallyCourseCurriculaum = [
   {
@@ -914,3 +985,73 @@ export const RscitCourseCurriculaum = [
     description: `Learn UPI, digital wallets, online payments, e-government services, Aadhar, PAN, and Digital India initiatives.`
   }
 ];
+
+
+// used in the Video Editing course curriculaum block
+export const videoEditingCurriculaum = [
+  {
+    id: 1,
+    link: '#',
+    icon: LightBulb,
+    title: 'Introduction to Video Editing',
+    linkType: LinkType.yellow,
+    description: 'Understand the principles of editing, storytelling, file formats, codecs, frame rates, and setting up your project workflow.'
+  },
+  {
+    id: 2,
+    link: '#',
+    icon: Edit,
+    title: 'Adobe Premiere Pro Mastery',
+    linkType: LinkType.blue,
+    description: 'Master the interface, cutting technqiues, transitions, multi-cam editing, keyframing, and exporting high-quality videos for various platforms.'
+  },
+  {
+    id: 3,
+    link: '#',
+    icon: Rocket,
+    linkType: LinkType.green,
+    title: 'Motion Graphics with After Effects',
+    description: 'Create stunning visual effects, titles, intro/outros, tracking, and animations to add a professional polish to your video projects.'
+  },
+  {
+    id: 4,
+    link: '#',
+    icon: Settings,
+    linkType: LinkType.red,
+    title: 'Color Grading (DaVinci Resolve)',
+    description: 'Learn color correction and color grading theories. Master scopes, LUTs, and matching shots to create cinematic looks using DaVinci Resolve.'
+  },
+  {
+    id: 5,
+    link: '#',
+    icon: Analytics,
+    title: 'Audio Editing & Sound Design',
+    linkType: LinkType.violet,
+    description: 'Professional audio mixing, noise reduction using Adobe Audition, syncing audio, and adding sound effects/background music effectively.'
+  },
+  {
+    id: 6,
+    link: '#',
+    icon: CloudComputing,
+    linkType: LinkType.orange,
+    title: 'Social Media & Reels Editing',
+    description: 'Techniques for short-form content (Instagram Reels, YouTube Shorts), fast-paced editing, subtitles (captions), and retention strategies.'
+  },
+  {
+    id: 7,
+    link: '#',
+    icon: SettingsThree,
+    linkType: LinkType.fuchsia,
+    title: 'Green Screen & VFX',
+    description: 'Advanced techniques like Chroma Keying (Green Screen), masking, rotoscoping, and compositing to place subjects in any environment.'
+  },
+  {
+    id: 8,
+    link: '#',
+    icon: Shield,
+    linkType: LinkType.blue,
+    title: 'Career & Freelancing',
+    description: 'Building a portfolio/showreel, finding freelance clients, understanding copyright laws, and monetization strategies for video editors.'
+  }
+];
+

@@ -42,6 +42,8 @@ import CodingLanguageCurriculaum from "./CodingLanguageCurriculaum";
 import TallyCourseCurriculaum from "./TallyCourseCurriculaum";
 import DigitalMarketingCourseCurriculaum from "./DigitalMarketingCourseCurriculaum";
 import RscitCourseCurriculaum from "./RscitCourseCurriculaum";
+import AiautomationCourseCurriculaum from "./AiautomationCourseCurriculaum";
+import VideoEditingCurriculaum from "./VideoEditingCurriculaum";
 
 
 export {
@@ -89,4 +91,6 @@ export {
   TallyCourseCurriculaum,
   DigitalMarketingCourseCurriculaum,
   RscitCourseCurriculaum,
+  AiautomationCourseCurriculaum,
+  VideoEditingCurriculaum
 };  

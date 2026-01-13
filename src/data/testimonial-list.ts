@@ -26,6 +26,25 @@ export const testimonialList1 = [
   }
 ];
 
+// used in the about-aaroh page
+export const testimonialList2 = [
+  {
+    name: 'Rahul Sharma',
+    designation: 'Software Engineer',
+    review: `Aaroh Computer Classes transformed my career. The instructors are highly knowledgeable and the hands-on training approach made learning practical and effective.`
+  },
+  {
+    name: 'Priya Patel',
+    designation: 'Data Analyst',
+    review: `Best institute in Jaipur for computer courses. The curriculum is up-to-date with industry standards and the placement support is excellent.`
+  },
+  {
+    name: 'Amit Kumar',
+    designation: 'Web Developer',
+    review: `I learned everything from basics to advanced web development here. The faculty is supportive and the learning environment is amazing.`
+  }
+];
+
 export const testimonialListwebdevcourse = [
   {
     name: 'Ayush Verma',

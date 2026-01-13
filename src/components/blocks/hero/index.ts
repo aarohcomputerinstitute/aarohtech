@@ -36,6 +36,8 @@ import Hero35 from "./Hero35";
 import Hero36 from "./Hero36";
 import HeroAdvanceExcel from "./HeroAdvanceExcel";
 import HeroCodingCourses from "./HeroCodingCourses";
+import HeroAIatuomation from "./HeroAIatuomation";
+import HeroVideoEditingCourse from "./HeroVideoEditingCourse";
 
 export {
   HeroWebDev,
@@ -75,5 +77,7 @@ export {
   Hero34,
   Hero35,
   Hero36,
-  HeroAdvanceExcel
+  HeroAdvanceExcel,
+  HeroAIatuomation,
+  HeroVideoEditingCourse
 };

@@ -425,3 +425,109 @@ export const accordionListrscit = [
     body: `Yes, RSCIT has a final examination conducted by RKCL. We provide complete exam preparation, mock tests, and practice sessions to help you pass confidently and obtain your government-recognized RSCIT certificate.`
   }
 ];
+
+
+// used in the faq ai automation course block
+export const accordionListAiautomation = [
+  {
+    no: "One",
+    expand: false,
+    heading: "What will I learn in this AI Automation course?",
+    body: `You will master AI tools like ChatGPT, Midjourney, DALL-E, prompt engineering techniques, workflow automation with Zapier, content creation, video/audio AI tools, and building custom AI agents for professional use.`
+  },
+  {
+    no: "Two",
+    expand: false,
+    heading: "Do I need coding experience to learn AI automation?",
+    body: `No coding experience required! This course is designed for everyone—students, professionals, entrepreneurs, and career switchers. We focus on using AI tools and prompt engineering, not programming.`
+  },
+  {
+    no: "Three",
+    expand: false,
+    heading: "Which AI tools will I learn to use?",
+    body: `You'll learn ChatGPT, Jasper, Copy.ai for text; Midjourney, DALL-E, Stable Diffusion for images; ElevenLabs for voice; Runway and Synthesia for video; plus automation tools like Zapier and custom GPT creation.`
+  },
+  {
+    no: "Four",
+    expand: false,
+    heading: "Will I receive a certificate after completing the AI Automation course?",
+    body: `Yes, you will receive a recognized AI Automation Certification from Aaroh Computer Classes after successful completion, valuable for your resume and career advancement.`
+  },
+  {
+    no: "Five",
+    expand: false,
+    heading: "What career opportunities are available after learning AI automation?",
+    body: `You can work as an AI Automation Specialist, Prompt Engineer, AI Content Creator, Workflow Automation Consultant, or use AI to boost productivity in marketing, business analysis, content creation, and entrepreneurship.`
+  },
+  {
+    no: "Six",
+    expand: false,
+    heading: "How long does the AI Automation course take to complete?",
+    body: `The AI Automation course duration is typically 6-8 weeks with flexible batch timings. You'll get hands-on practice with real AI tools and complete practical projects to build your portfolio.`
+  },
+  {
+    no: "Seven",
+    expand: false,
+    heading: "Who will teach this AI Automation course?",
+    body: `This course is taught by experienced instructors Ram Sir and Abhishek Bhardwaj Sir, who have extensive expertise in AI tools, digital marketing, and automation technologies. They provide personalized guidance and industry insights.`
+  },
+  {
+    no: "Eight",
+    expand: false,
+    heading: "Will I get practical hands-on training with AI tools?",
+    body: `Absolutely! The course includes extensive practical training where you'll work directly with ChatGPT, Midjourney, DALL-E, and other AI platforms. You'll create real content, automate workflows, and build AI-powered projects under expert guidance.`
+  }
+];
+
+// used in the faq video editing course block
+export const accordionListVideoEditing = [
+  {
+    no: "One",
+    expand: false,
+    heading: "Which software will I learn in this Video Editing course?",
+    body: `You will master industry-standard software including **Adobe Premiere Pro** for editing, **Adobe After Effects** for visual effects/motion graphics, and **DaVinci Resolve** for advanced color grading. We also cover audio editing tools like **Adobe Audition** to ensure your videos sound professional.`
+  },
+  {
+    no: "Two",
+    expand: false,
+    heading: "Do I need a high-end PC to join this course?",
+    body: `While video editing requires good hardware, you don't need to own a supercomputer to start learning. We provide fully equipped computer labs with high-performance workstations at our institute. For home practice, a decent laptop with 8GB-16GB RAM and a basic dedicated GPU is recommended.`
+  },
+  {
+    no: "Three",
+    expand: false,
+    heading: "Is this course suitable for beginners?",
+    body: `Absolutely! This course is designed for complete beginners. We start with the basics of video formats, codecs, and interface navigation before moving to advanced editing techniques, transitions, and effects. No prior editing experience is required.`
+  },
+  {
+    no: "Four",
+    expand: false,
+    heading: "What are the career opportunities after this course?",
+    body: `The specialized content creator economy is booming. After this course, you can work as a Video Editor, YouTuber, Motion Graphics Artist, Colorist, or Freelance Editor. Opportunities exist in film production houses, marketing agencies, news channels, and corporate media teams.`
+  },
+  {
+    no: "Five",
+    expand: false,
+    heading: "Will I get hands-on projects?",
+    body: `Yes, practice is key. You will work on real-world projects such as creating YouTube visuals, cinematic travel vlogs, corporate interviews, music videos, and social media reels. You will leave with a professional portfolio of your work.`
+  },
+  {
+    no: "Six",
+    expand: false,
+    heading: "Who is the instructor for this course?",
+    body: `You will be trained by **Ram Sir**, who has extensive experience in video production and post-production. His practical teaching style ensures you understand not just the 'how', but also the 'why' behind creative editing decisions.`
+  },
+  {
+    no: "Seven",
+    expand: false,
+    heading: "Do you provide certification?",
+    body: `Yes, upon successful completion of the course and project submissions, you will be awarded a **Professional Video Editing Certification** from Aaroh Tech and AI Institute, which adds significant value to your resume.`
+  },
+  {
+    no: "Eight",
+    expand: false,
+    heading: "How long is the course duration?",
+    body: `The course typically takes **2 to 3 months** to complete, depending on your learning pace and batch selection. We offer flexible timings including weekend batches for working professionals and students.`
+  }
+];
+
