@@ -14,9 +14,9 @@ export default function Blogs() {
           navClassName="navbar navbar-expand-lg classic transparent navbar-light"
           button={
             <NextLink
-              href="#"
+              href="/contact-us"
               title="Contact"
-              className="btn btn-sm btn-orange rounded-pill "
+              className="btn btn-sm btn-primary rounded-pill "
             />
           }
         />
@@ -24,7 +24,7 @@ export default function Blogs() {
 
       {/* ========== main content ========== */}
       <main className="content-wrapper container pb-15">
-        <Blog2/>  
+        <Blog2 />
       </main>
 
       {/* ========== footer section ========== */}

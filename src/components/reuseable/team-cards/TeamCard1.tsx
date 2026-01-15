@@ -13,6 +13,7 @@ interface TeamCard1Props {
   description: string;
   facebookUrl: string;
   dribbbleUrl: string;
+  youtubeUrl?: string;
 }
 // ==========================================================
 
@@ -24,6 +25,7 @@ export default function TeamCard1({
   designation,
   facebookUrl,
   dribbbleUrl,
+  youtubeUrl,
   shadow = false
 }: TeamCard1Props) {
   return (
@@ -41,6 +43,7 @@ export default function TeamCard1({
           <IconLink href={twitterUrl} icon={<i className="uil uil-twitter" />} />
           <IconLink href={facebookUrl} icon={<i className="uil uil-facebook-f" />} />
           <IconLink href={dribbbleUrl} icon={<i className="uil uil-dribbble" />} />
+          {youtubeUrl && <IconLink href={youtubeUrl} icon={<i className="uil uil-youtube" />} />}
         </nav>
       </div>
     </div>

@@ -8,7 +8,7 @@ import NextLink from 'components/reuseable/links/NextLink';
 
 export default function BlogDetails({ params }: { params: { slug: string } }) {
   // Find the blog post with the matching slug
-  const blog = blogList.find(blog => 
+  const blog = blogList.find(blog =>
     blog.title.toLowerCase().replace(/\s+/g, '-') === params.slug
   ) as BlogPost;
 
@@ -28,7 +28,7 @@ export default function BlogDetails({ params }: { params: { slug: string } }) {
             <NextLink
               href="/contact"
               title="Contact"
-              className="btn btn-sm btn-orange rounded-pill"
+              className="btn btn-sm btn-primary rounded-pill"
             />
           }
         />
@@ -61,7 +61,7 @@ export default function BlogDetails({ params }: { params: { slug: string } }) {
                       <div className="post-content mt-5">
                         <RichTextContent content={blog.description} />
                       </div>
-                      
+
                       {/* Blog Content */}
                       {blog.content && (
                         <div className="mt-8">
