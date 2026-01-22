@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Fragment } from "react";
 // GLOBAL CUSTOM COMPONENTS
-import { Footer8 } from "components/blocks/footer";
+import { Footer13 } from "components/blocks/footer";
 import Navbar from "components/blocks/navbar/navbar-1";
 import Carousel from "components/reuseable/Carousel";
 import VideoPlyr from "components/reuseable/VideoPlyr";
@@ -112,7 +112,7 @@ export default function BlogOne() {
       </main>
 
       {/* ========== footer section ========== */}
-      <Footer8 />
+      <Footer13 />
     </Fragment>
   );
 }

@@ -6,10 +6,11 @@ import RichTextContent from 'components/common/RichTextContent';
 import { BlogPost } from 'types/blog';
 import NextLink from 'components/reuseable/links/NextLink';
 
-export default function BlogDetails({ params }: { params: { slug: string } }) {
+export default async function BlogDetails({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   // Find the blog post with the matching slug
   const blog = blogList.find(blog =>
-    blog.title.toLowerCase().replace(/\s+/g, '-') === params.slug
+    blog.title.toLowerCase().replace(/\s+/g, '-') === slug
   ) as BlogPost;
 
   // Return 404 if blog post not found

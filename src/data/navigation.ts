@@ -173,8 +173,8 @@ const aboutNavigation = [
 
 // online academy links
 const onlineAcademyNavigation = [
-  { id: 1, url: "https://www.youtube.com/@aarohtechacademy", title: "Free Courses",target:"_blank" },
-  { id: 2, url: "#", title: "Paid Courses",target:"_blank" },
+  { id: 1, url: "https://www.youtube.com/@aarohtechacademy", title: "Free Courses", target: "_blank" },
+  { id: 2, url: "#", title: "Paid Courses", target: "_blank" },
 ];
 // documentation pages links
 const documentationNavigation = {

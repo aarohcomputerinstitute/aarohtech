@@ -1,7 +1,7 @@
 import DocLayout from "components/layouts/DocLayout";
 import CodeHighlight from "components/reuseable/CodeHighlight";
-import Signin from "components/blocks/navbar/components/signin";
-import Signup from "components/blocks/navbar/components/signup";
+// import Signin from "components/blocks/navbar/components/signin";
+// import Signup from "components/blocks/navbar/components/signup";
 // MARKUPS
 import { cookieMarkup, subscriptionMarkup, signinMarkup, signupMarkup } from "markups/elements/modal";
 // CUSTOM DATA
@@ -196,7 +196,7 @@ export default function Modal() {
               Sign In
             </button>
 
-            <Signin />
+            {/* <Signin /> */}
           </div>
 
           <div className="card-footer position-relative">
@@ -227,7 +227,7 @@ export default function Modal() {
               Sign Up
             </button>
 
-            <Signup />
+            {/* <Signup /> */}
           </div>
 
           <div className="card-footer position-relative">

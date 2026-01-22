@@ -457,7 +457,7 @@ export const serviceList12 = [
   {
     id: 1,
     title: 'Web Development',
-    image: { '1x': '/img/illustrations/i24.png', '2x': '/img/illustrations/i24@2x.png 2x' },
+    image: { '1x': '/img/illustrations/web-development-course.png', '2x': '/img/illustrations/web-development-course@2x.png 2x' },
     description: `Learn full-stack website creation using HTML, CSS, JavaScript, React, and Node.js. Build fast, responsive, and user-friendly web applications.`,
     gotolink: '/courses/web-development',
   },
