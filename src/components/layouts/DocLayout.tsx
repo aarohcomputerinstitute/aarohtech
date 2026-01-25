@@ -201,7 +201,7 @@ export default function DocLayout({
             </div>
           </div>
 
-          <img className="img-fluid" src="/img/demos/f1.png" srcSet="/img/demos/f1@2x.png 2x" alt="demo" />
+          <img className="img-fluid" src="/img/thumbnails/f1.png" srcSet="/img/thumbnails/f1@2x.png 2x" alt="demo" />
         </div>
       </section>
     </Fragment>

@@ -4,15 +4,16 @@ import clsx from "clsx";
 import IconLink from "../links/IconLink";
 
 // ==========================================================
+// ==========================================================
 interface TeamCard1Props {
   name: string;
   image: string;
   shadow?: boolean;
-  twitterUrl: string;
+  twitterUrl?: string;
   designation: string;
   description: string;
-  facebookUrl: string;
-  dribbbleUrl: string;
+  facebookUrl?: string;
+  dribbbleUrl?: string;
   youtubeUrl?: string;
 }
 // ==========================================================
@@ -40,9 +41,9 @@ export default function TeamCard1({
         <p className="mb-2">{description}</p>
 
         <nav className="nav social mb-0">
-          <IconLink href={twitterUrl} icon={<i className="uil uil-twitter" />} />
-          <IconLink href={facebookUrl} icon={<i className="uil uil-facebook-f" />} />
-          <IconLink href={dribbbleUrl} icon={<i className="uil uil-dribbble" />} />
+          {twitterUrl && <IconLink href={twitterUrl} icon={<i className="uil uil-twitter" />} />}
+          {facebookUrl && <IconLink href={facebookUrl} icon={<i className="uil uil-facebook-f" />} />}
+          {dribbbleUrl && <IconLink href={dribbbleUrl} icon={<i className="uil uil-dribbble" />} />}
           {youtubeUrl && <IconLink href={youtubeUrl} icon={<i className="uil uil-youtube" />} />}
         </nav>
       </div>

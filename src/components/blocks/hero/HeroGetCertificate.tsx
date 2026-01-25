@@ -14,8 +14,8 @@ export default function HeroGetCertificate() {
           style={{ width: "85%", height: "90%", right: "-0.8rem", bottom: "-1.8rem" }}
         />
 
-        <figure className="rounded">
-          <img src="/img/photos/about7.jpg" srcSet="/img/photos/about7@2x.jpg 2x" alt="hero" />
+        <figure className="rounded shadow-lg">
+          <img src="/img/certificate.svg" alt="Certificate of Completion" className="img-fluid" />
         </figure>
       </div>
 

@@ -5,24 +5,24 @@ import IconLink from "../links/IconLink";
 interface TeamCard2Props {
   name: string;
   image: string;
-  twitterUrl: string;
   designation: string;
   description: string;
-  facebookUrl: string;
-  dribbbleUrl: string;
+  facebookUrl?: string;
   youtubeUrl?: string;
+  linkedinUrl?: string;
+  instagramUrl?: string;
 }
 // ==========================================================
 
 export default function TeamCard2({
   name,
   image,
-  twitterUrl,
   description,
   designation,
   facebookUrl,
-  dribbbleUrl,
-  youtubeUrl
+  youtubeUrl,
+  linkedinUrl,
+  instagramUrl
 }: TeamCard2Props) {
   return (
     <div className="text-center">
@@ -35,9 +35,9 @@ export default function TeamCard2({
       <p className="mb-2">{description}</p>
 
       <nav className="nav social justify-content-center text-center mb-0">
-        <IconLink href={twitterUrl} icon={<i className="uil uil-twitter" />} />
-        <IconLink href={facebookUrl} icon={<i className="uil uil-facebook-f" />} />
-        <IconLink href={dribbbleUrl} icon={<i className="uil uil-dribbble" />} />
+        {facebookUrl && <IconLink href={facebookUrl} icon={<i className="uil uil-facebook-f" />} />}
+        {instagramUrl && <IconLink href={instagramUrl} icon={<i className="uil uil-instagram" />} />}
+        {linkedinUrl && <IconLink href={linkedinUrl} icon={<i className="uil uil-linkedin" />} />}
         {youtubeUrl && <IconLink href={youtubeUrl} icon={<i className="uil uil-youtube" />} />}
       </nav>
     </div>

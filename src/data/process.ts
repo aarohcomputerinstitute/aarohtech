@@ -151,20 +151,20 @@ export const processList7 = [
   {
     id: 1,
     Icon: LightBulb,
-    title: "Collect Ideas",
-    description: "Nulla vitae elit libero pharetra augue dapibus."
+    title: "Career Counseling",
+    description: "We analyze your skills and interests to craft a personalized roadmap for your tech career."
   },
   {
     id: 2,
     Icon: PieChartTwo,
-    title: "Data Analysis",
-    description: "Vivamus sagittis lacus augue laoreet vel."
+    title: "Practical Training",
+    description: "Learn by building real-world projects using the latest AI tools and industry workflows."
   },
   {
     id: 3,
-    Icon: Design,
-    title: "Magic Touch",
-    description: "Cras mattis consectetur purus sit amet."
+    Icon: Rocket,
+    title: "Job Placement",
+    description: "Get interview-ready with resume reviews, mock interviews, and direct placement support."
   }
 ];
 

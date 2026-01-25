@@ -1,13 +1,10 @@
 import { Fragment } from "react";
 // GLOBAL CUSTOM COMPONENTS
-import ReplaceMe from "components/ReplaceMe";
 import Navbar from "components/blocks/navbar/navbar-1";
-import CountUp from "components/reuseable/CountUp";
-import Carousel from "components/reuseable/Carousel";
 import NextLink from "components/reuseable/links/NextLink";
 // CUSTOM ICON COMPONENT
 import { Footer13 } from "components/blocks/footer";
-import {HeroMain } from "components/blocks/hero";
+import { HeroMain } from "components/blocks/hero";
 import { About22 } from "components/blocks/about";
 import { Process14 } from "components/blocks/process";
 import { Team4 } from "components/blocks/team";

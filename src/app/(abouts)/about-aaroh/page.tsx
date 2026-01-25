@@ -17,27 +17,27 @@ import { testimonialList2 } from "data/testimonial-list";
 const serviceList2 = [
   {
     id: 1,
-    title: "Marketing",
+    title: "Digital Marketing & SEO",
     Icon: <Megaphone />,
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`,
+    description: `Master SEO, Google Ads, and Social Media Marketing. Learn to drive traffic and generate leads using modern AI-powered marketing tools to dominate the digital landscape.`,
   },
   {
     id: 2,
-    title: "Strategy",
+    title: "IT Career Strategy",
     Icon: <Target className="icon-svg-md text-green mb-3" />,
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`,
+    description: `Strategic career planning from 12th grade to high-paying tech jobs. We provide personalized mentorship and industry-aligned roadmaps for students entering the IT sector.`,
   },
   {
     id: 3,
-    title: "Development",
+    title: "Full Stack Development",
     Icon: <SettingsThree />,
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`,
+    description: `Become a top-tier developer. Learn React.js, Next.js, Node.js, and Python. Build real-world applications and deploy them to the cloud with expert guidance.`,
   },
   {
     id: 4,
     Icon: <BarChart />,
-    title: "Data Analysis",
-    description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.`,
+    title: "Data Science & Analytics",
+    description: `Unlock the power of data. Master Advanced Excel, Power BI, SQL, and Python for Data Science. Transform raw data into actionable business insights.`,
   },
 ];
 
@@ -49,9 +49,9 @@ export default function AboutTwo() {
         <div className="container pt-10 pb-20 pt-md-14 pb-md-23 text-center">
           <div className="row">
             <div className="col-xl-5 mx-auto mb-6">
-              <h1 className="display-1 mb-3">About Aaroh</h1>
+              <h1 className="display-1 mb-3">About Aaroh Tech</h1>
               <p className="lead mb-0">
-                A one stop solution to learn all about technologies.
+                Jaipur's Premier Institute for AI, Data Science, and Computer Education.
               </p>
             </div>
           </div>
@@ -81,15 +81,13 @@ export default function AboutTwo() {
 
             <div className="col-lg-6">
               <h3 className="display-5 mb-5">
-                The full service we are offering is specifically designed to
-                meet your business needs and projects.
+                We empower students with practical tech skills to launch high-paying careers in 2026.
               </h3>
 
               <p>
-                Integer posuere erat a ante venenatis dapibus posuere velit
-                aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at
-                eros. Praesent commodo cursus magna, vel scelerisque nisl
-                consectetur duis mollis commodo.
+                At <strong>Aaroh Tech & AI Institute</strong>, we bridge the gap between traditional education and industry demands.
+                Whether you want to become a <strong>Web Developer, Data Analyst, or Digital Marketer</strong>, our specialized
+                courses are designed to get you job-ready in 6 months. We focus on hands-on project based learning, not just theory.
               </p>
             </div>
           </div>

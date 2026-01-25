@@ -17,8 +17,8 @@ export default function DemosNavItem() {
                 <Link href={url} className="dropdown-item">
                   <img
                     alt={title}
-                    src={`/img/demos/${thumnail}.jpg`}
-                    srcSet={`/img/demos/${thumnail}@2x.jpg 2x`}
+                    src={`/img/thumbnails/${thumnail}.jpg`}
+                    srcSet={`/img/thumbnails/${thumnail}@2x.jpg 2x`}
                     className="rounded lift d-none d-lg-block"
                   />
                   <span className="d-lg-none">{title}</span>

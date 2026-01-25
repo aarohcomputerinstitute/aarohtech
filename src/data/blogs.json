@@ -1,0 +1,119 @@
+[
+    {
+        "id": "1",
+        "title": "Best Computer Courses After 12th in 2026: A Complete Guide for Students",
+        "slug": "best-computer-courses-after-12th-2026",
+        "category": "Computer Courses & Training",
+        "image": "/images/blog/computer_courses.png",
+        "content": "<p>Finishing 12th grade is a massive milestone, but it brings the biggest question of your young life: <strong>&quot;What now?&quot;</strong></p><p>If you are confused between traditional college degrees and skill-based courses, you are not alone. In 2026, the job market has changed drastically. Companies like Google, Tesla, and huge Indian startups are prioritizing <strong>skills over degrees</strong>.</p><p>Whether you are from a Science, Commerce, or Arts background, the IT sector is open for you. Here is a detailed breakdown of the <strong>best job-oriented computer courses</strong> you can join right after 12th to secure a high-paying career.</p><h2>1. Data Analytics &amp; Data Science</h2><p>Data is the new oil. Every company, from Amazon to Swiggy, needs people to analyze data. If you love numbers and patterns, this is for you.</p><ul><li><strong>What you learn:</strong> Excel, SQL, Power BI, Python.</li><li><strong>Career Scope:</strong> Data Analyst, Business Analyst.</li><li><strong>Salary Potential:</strong> ₹4 Lakh - ₹10 Lakh/year for freshers.</li></ul><h2>2. Full Stack Web Development</h2><p>Every business needs a website. A Full Stack Developer can build both the &quot;front end&quot; (what you see) and the &quot;back end&quot; (how it works).</p><ul><li><strong>Why choose this?</strong> High demand, remote work options, freelance opportunities.</li><li><strong>Tech Stack:</strong> HTML, CSS, JavaScript, React, Node.js.</li></ul><h2>3. Digital Marketing</h2><p>If coding scares you but you love creativity and social media, Digital Marketing is your goldmine.</p><ul><li><strong>What you learn:</strong> SEO, Social Media Marketing, Google Ads, Content Strategy.</li><li><strong>Career Path:</strong> SEO Specialist, Brand Manager, Social Media Manager.</li></ul><h2>Why Choose Short-Term Courses at Aaroh Tech?</h2><p>At <strong>Aaroh Tech &amp; AI Institute</strong>, we don't just teach theory. We focus on <strong>Practical Training</strong>. Our 6-month diploma courses come with:</p><ul><li>Live Projects</li><li>100% Placement Assistance</li><li>AI Tools training included</li></ul><p><strong>Your Future Starts Now.</strong> Don't just follow the herd. Choose a career that excites you.</p>",
+        "created_at": "2026-01-25T10:00:00Z"
+    },
+    {
+        "id": "2",
+        "title": "Full Stack Web Developer Roadmap 2026: From Beginner to Pro",
+        "slug": "full-stack-web-developer-roadmap",
+        "category": "Web Development",
+        "image": "/images/blog/web_development.png",
+        "content": "<p>You&#39;ve heard the rumors: <em>&quot;AI will replace programmers.&quot;</em> Let&#39;s bust that myth right now. AI is a tool, not a replacement. In 2026, developers who use AI are <strong>10x more productive</strong> and higher paid. Becoming a Full Stack Developer is still one of the smartest career moves you can make.</p><p>This is your ultimate step-by-step roadmap to becoming a web developer this year.</p><h2>Phase 1: The Foundation (Frontend)</h2><p>This is the face of the website—everything the user interacts with.</p><ul><li><strong>HTML5 &amp; CSS3:</strong> Learn semantic HTML and Flexbox/Grid for layout.</li><li><strong>JavaScript (The King):</strong> You cannot skip this. Learn DOM manipulation, ES6 features, and async programming.</li><li><strong>Frameworks:</strong> React.js is the industry standard. Learn Hooks and State Management.</li></ul><h2>Phase 2: The Logic (Backend)</h2><p>This is the brain of the application.</p><ul><li><strong>Node.js:</strong> Allows you to run JavaScript on the server.</li><li><strong>Express.js:</strong> Makes building APIs easy.</li><li><strong>Databases:</strong> Start with <strong>MongoDB</strong> (NoSQL) as it pairs perfectly with JavaScript. Later, learn SQL.</li></ul><h2>Phase 3: The Glue (DevOps &amp; Tools)</h2><ul><li><strong>Git &amp; GitHub:</strong> Version control is non-negotiable.</li><li><strong>Deployment:</strong> Learn to host your apps on Vercel or AWS.</li></ul><h2>How Aaroh Tech Helps You Master This</h2><p>Watching YouTube tutorials is passive. At <strong>Aaroh Tech</strong>, you build real clones of Netflix, Amazon, and Portfolio sites. You graduate with a <strong>working portfolio</strong>, not just a certificate.</p><p>Ready to code your first line? Join our upcoming batch!</p>",
+        "created_at": "2026-01-24T10:00:00Z"
+    },
+    {
+        "id": "3",
+        "title": "Java vs Python: Which Language Should You Learn in 2026?",
+        "slug": "java-vs-python-software-development",
+        "category": "Software Development",
+        "image": "/images/blog/software_dev.png",
+        "content": "<p>It is the classic battle of the titans: <strong>Java</strong> vs <strong>Python</strong>. If you are a beginner looking to start your software development journey, picking the first language can be paralyzing. Let’s break it down simply—human to human.</p><h2>Python: The Friendly Giant</h2><p>Python is famous for being easy to read. It looks almost like English code.</p><ul><li><strong>Best For:</strong> Data Science, Artificial Intelligence (AI), Machine Learning, scripting, and automation.</li><li><strong>Why Learn It?</strong> It has the fastest learning curve. You can build something useful in days, not months.</li><li><strong>Job Market:</strong> Huge demand in AI startups and data-driven companies.</li></ul><h2>Java: The Enterprise Backbone</h2><p>Java is verbose and strict, but powerful.</p><ul><li><strong>Best For:</strong> Android App Development, Large Banking Systems, Enterprise Software.</li><li><strong>Why Learn It?</strong> It teaches you strict coding discipline and Object-Oriented Programming (OOP) perfectly. Once you know Java, learning other languages is easy.</li><li><strong>Job Market:</strong> MNCs (TCS, Infosys, Wipro) hire thousands of Java developers every year.</li></ul><h2>The Verdict?</h2><p>If you want to enter the world of <strong>AI and rapid development</strong>, go with <strong>Python</strong>.</p><p>If you aim for a stable job in a <strong>large massive MNC</strong> or want to build <strong>Android Apps</strong>, choose <strong>Java</strong>.</p><p>At <strong>Aaroh Tech &amp; AI Institute</strong>, we teach both tracks with industry-level projects. Why not book a trial class and see which syntax you prefer?</p>",
+        "created_at": "2026-01-23T10:00:00Z"
+    },
+    {
+        "id": "4",
+        "title": "5 Revolutionary AI Tools Every Student Needs in 2026 (Forget ChatGPT)",
+        "slug": "best-ai-tools-for-students-2026",
+        "category": "Artificial Intelligence (AI) & AI Tools",
+        "image": "/images/blog/ai_tools.png",
+        "content": "<p>We all know ChatGPT. It changed the world. But in 2026, relying only on ChatGPT is like using a flip phone in the smartphone era. There is a whole ecosystem of specialized AI tools that can supercharge your learning, coding, and creativity.</p><p>Here are the top 5 AI tools you need to master now:</p><h2>1. Perplexity AI (The Research King)</h2><p>Google is full of SEO spam and ads. Perplexity gives you direct answers with <strong>real citations and sources</strong>. It is essential for writing assignments and research papers.</p><h2>2. GitHub Copilot (The Coding Partner)</h2><p>For IT students, this is magic. It predicts your code before you type it. It helps you debug faster and learn best practices in real-time.</p><h2>3. Gamma App (Presentations in Seconds)</h2><p>Stop wasting hours aligning text boxes in PowerPoint. Gamma generates stunning, professional presentations from a simple text prompt.</p><h2>4. Canva Magic Studio</h2><p>Need a poster or social media post? Canva&#39;s AI features let you edit images, remove backgrounds, and generate assets instantly.</p><h2>5. Blackbox AI</h2><p>A specialized coding AI that can answer programming questions better than general chat bots.</p><h2>Mastering AI at Aaroh Tech</h2><p>We don't just teach you <em>about</em> AI; we teach you <em>with</em> AI. Our curriculum integrates these tools so you learn to be an <strong>AI-Augmented Professional</strong>. The future isn't AI replacing humans; it's humans with AI replacing humans without AI.</p>",
+        "created_at": "2026-01-22T10:00:00Z"
+    },
+    {
+        "id": "5",
+        "title": "SEO vs Google Ads: The Ultimate Guide for Small Businesses",
+        "slug": "seo-vs-google-ads-small-business",
+        "category": "Digital Marketing",
+        "image": "/images/blog/digital_marketing.png",
+        "content": "<p>If you are a business owner or a marketing student, you face this dilemma constantly: <strong>&quot;Should we spend money on Ads (PPC) or time on SEO?&quot;</strong></p><p>Let’s analyze this with a simple analogy.</p><h2>Google Ads (PPC): The Water Tap</h2><p>Imagine a water tap. You pay the bill, you turn it on, and water (traffic) flows instantly. You get leads immediately.</p><ul><li><strong>Pros:</strong> Instant results, precise targeting.</li><li><strong>Cons:</strong> Expensive. The moment you stop paying, the traffic stops completely.</li></ul><h2>SEO (Search Engine Optimization): Digging a Well</h2><p>Digging a well takes hard work. You dig for weeks (creating content, optimizing keywords) and see nothing. But once you hit the water source, you get free water for years.</p><ul><li><strong>Pros:</strong> Free long-term traffic, builds huge brand trust.</li><li><strong>Cons:</strong> Takes 3-6 months to show results.</li></ul><h2>The Winning Strategy: Hybrid</h2><p>The smartest brands use <strong>Google Ads</strong> for immediate sales (like during a launch) while consistently building their <strong>SEO</strong> for long-term dominance.</p><p>At <strong>Aaroh Tech</strong>, our Digital Marketing course covers both. You will run live ad campaigns with real budgets and also rank a website on Google’s first page. Become a complete marketer with us.</p>",
+        "created_at": "2026-01-21T10:00:00Z"
+    },
+    {
+        "id": "6",
+        "title": "Is Graphic Design Still a Good Career in the Age of AI?",
+        "slug": "graphic-design-career-scope-ai",
+        "category": "Graphic Design",
+        "image": "/images/blog/graphic_design.png",
+        "content": "<p>With tools like Midjourney and DALL-E generating art in seconds, is there any scope left for human graphic designers?</p><p>The short answer: <strong>YES, but the role has changed.</strong></p><p>AI can generate an image, but it cannot understand <strong>Brand Identity, Human Emotion, and User Experience (UX)</strong>. A robot doesn&#39;t know why a specific shade of blue makes a customer trust a bank, or why a specific button placement increases sales.</p><h2>The New Designer</h2><p>Companies aren&#39;t looking for people who can just &quot;make a logo.&quot; They are looking for:</p><ul><li><strong>Visual Storytellers:</strong> Who can convey a message through design.</li><li><strong>UI/UX Designers:</strong> Who design app interfaces that are easy to use.</li><li><strong>AI-Smart Designers:</strong> Who use AI to speed up their workflow, not fear it.</li></ul><p>Tools like <strong>Adobe Photoshop, Illustrator, and Figma</strong> are still industry standards. If you have a creative eye, technology is just a brush. At <strong>Aaroh Tech</strong>, we teach you design principles that AI cannot replicate.</p>",
+        "created_at": "2026-01-20T10:00:00Z"
+    },
+    {
+        "id": "7",
+        "title": "High Paying IT Jobs You Can Get Without a Tech Degree",
+        "slug": "high-paying-it-jobs-no-degree",
+        "category": "IT Career Guidance",
+        "image": "/images/blog/software_dev.png",
+        "content": "<p>Gone are the days when you needed a 4-year B.Tech degree to enter the IT world. Giants like Google, Apple, and Tesla have removed degree requirements. Why? Because these companies care about <strong>what you can build</strong>, not what you studied on paper.</p><p>Here are the top high-paying IT roles you can crack with just skills and certifications:</p><h2>1. Web Developer</h2><p>If you can build a functioning, beautiful website, no one cares about your degree. Your portfolio is your proof.</p><h2>2. Digital Marketer</h2><p>This is a results-driven field. If you can drive sales and traffic for a client, you are hired. Period.</p><h2>3. UI/UX Designer</h2><p>This role needs empathy and creativity. A psychology student often makes a better UX designer than a CS engineer!</p><h2>4. Freelancer</h2><p>Work with international clients on Upwork or Fiverr. They pay in dollars, and they never ask for a college transcript – they ask for your previous extensive.</p><h2>How to Start?</h2><p>Get skilled. Build a portfolio. Network. That&#39;s the Aaroh Tech formula. Our 6-month intensive courses are designed to give you exactly what employers want.</p>",
+        "created_at": "2026-01-19T10:00:00Z"
+    },
+    {
+        "id": "8",
+        "title": "Why You Should Start Your Coding Journey with Python",
+        "slug": "why-start-coding-with-python",
+        "category": "Programming Languages",
+        "image": "/images/blog/software_dev.png",
+        "content": "<p>If you have never written a line of code in your life, languages like C++ or Java might look like alien hieroglyphics. They are scary. They have complex syntax.</p><p>Enter <strong>Python</strong>.</p><h2>Why Python is Perfect for Beginners</h2><p><strong>1. It reads like English:</strong><br>In Java, printing &quot;Hello&quot; takes 5 lines. In Python? It’s just:<br><code>print(&quot;Hello&quot;)</code><br>Simple.</p><p><strong>2. It is Powerful:</strong><br>Don&#39;t let the simplicity fool you. Python powers:</p><ul><li><strong>Instagram &amp; Spotify:</strong> Backend systems.</li><li><strong>NASA:</strong> Data analysis.</li><li><strong>Google:</strong> Search algorithms.</li></ul><p><strong>3. Versatility:</strong><br>Learn Python once, and you can pivot into Web Development (Django), Data Science (Pandas), or AI (TensorFlow).</p><p>At <strong>Aaroh Tech</strong>, we recommend Python as the first language for 90% of students. It builds confidence and gets you building real programs fast.</p>",
+        "created_at": "2026-01-18T10:00:00Z"
+    },
+    {
+        "id": "9",
+        "title": "Student Showcase: How Rohit Built a Full E-commerce App in 3 Months",
+        "slug": "student-project-ecommerce-app",
+        "category": "Student Projects & Case Studies",
+        "image": "/images/blog/web_development.png",
+        "content": "<p>At Aaroh Tech, we believe in <strong>&quot;Learning by Doing.&quot;</strong></p><p>Meet Rohit. He joined us with zero coding knowledge—he didn&#39;t even know what an API was. Three months into our Full Stack Web Development course, he built <strong>&quot;KartZone&quot;</strong>, a fully functional e-commerce web application.</p><h2>What Makes His Project Special?</h2><ul><li><strong>User Authentication:</strong> Secure Login/Signup functionality.</li><li><strong>Product Management:</strong> Admin panel to add/edit products.</li><li><strong>Shopping Cart:</strong> Real-time cart updates using Redux.</li><li><strong>Payment Gateway:</strong> Integrated Razorpay for dummy transactions.</li></ul><p>When Rohit presented this project at his internship interview, he didn&#39;t need to explain his skills. He just showed the app. He got the job instantly.</p><p><strong>Projects speak louder than resumes.</strong> Come visit our campus to see live projects built by our current students!</p>",
+        "created_at": "2026-01-17T10:00:00Z"
+    },
+    {
+        "id": "10",
+        "title": "RSCIT & Tally Prime: The Essential Dual Certification for Govt Jobs",
+        "slug": "rscit-tally-prime-govt-jobs",
+        "category": "Certifications & Course Syllabus",
+        "image": "/images/blog/computer_courses.png",
+        "content": "<p>In Rajasthan, if you are aiming for a government job, you likely know the importance of <strong>RSCIT</strong> (Rajasthan State Certificate in Information Technology). It is a mandatory requirement for almost all state govt vacancies.</p><p>But why stop there?</p><h2>The Power Combination: RSCIT + Tally Prime</h2><p>While RSCIT makes you eligible for govt jobs, adding <strong>Tally Prime</strong> makes you employable in the private sector immediately. Every small and medium business needs an accountant who knows Tally.</p><ul><li><strong>RSCIT covers:</strong> Basic Computing, MS Office, Internet usage.</li><li><strong>Tally Prime covers:</strong> Accounting, GST, Inventory Management, Payroll.</li></ul><p>By doing both, you secure a safety net. If the government exam takes time, you can easily earn ₹15k-₹25k per month as an accountant in the meantime.</p><p><strong>Aaroh Tech</strong> is an authorized center. We provide comprehensive study materials and practical lab sessions to ensure you clear your exams with 'A' Grade.</p>",
+        "created_at": "2026-01-16T10:00:00Z"
+    },
+    {
+        "id": "11",
+        "title": "The Rise of No-Code Development: Building Apps Without Coding",
+        "slug": "rise-of-no-code-development",
+        "category": "Tech News & Trends",
+        "image": "/images/blog/ai_tools.png",
+        "content": "<p>Imagine building a clone of Uber or Airbnb without writing a single line of code. Sounds impossible? In 2026, it is reality.</p><p>The <strong>No-Code Revolution</strong> is taking over. Tools like <strong>Bubble, Webflow, Framer, and Glide</strong> allow non-technical founders to build powerful applications visually.</p><h2>Does this mean coding is dead?</h2><p>No. No-code tools have limits. For highly complex, scalable apps, traditional coding is still king. However, No-Code is a <strong>superpower for developers</strong>. It allows you to prototype ideas in days instead of months.</p><p>At Aaroh Tech, we encourage our students to explore these tools. Understanding the logic of app building is more important than syntax. Stay ahead of the curve by keeping up with these tech trends.</p>",
+        "created_at": "2026-01-15T10:00:00Z"
+    },
+    {
+        "id": "12",
+        "title": "New Batch Announcement: Advanced Excel & Data Analytics Weekend Batch",
+        "slug": "new-batch-advanced-excel",
+        "category": "Institute Updates & Announcements",
+        "image": "/images/blog/computer_courses.png",
+        "content": "<p><strong>Exciting News for Working Professionals!</strong></p><p>We received numerous requests from office-goers who wanted to upskill but couldn&#39;t attend weekday classes. We listened.</p><p>We are launching a specialized <strong>Weekend Batch for Advanced Excel &amp; Data Analytics</strong> starting this Saturday.</p><h2>Course Highlights:</h2><ul><li><strong>Advanced Excel:</strong> VLOOKUP, XLOOKUP, Pivot Tables, Macros, Dashboard Reporting.</li><li><strong>Data Visualization:</strong> Introduction to Power BI.</li><li><strong>Automation:</strong> Automating daily office tasks to save hours of work.</li></ul><p>This course is designed to make you the &quot;Excel Expert&quot; in your office. Impress your boss and boost your productivity.</p><p><strong>Batch Size:</strong> Limited to 15 seats for personal attention.<br><strong>Timings:</strong> Sat-Sun, 4 PM - 7 PM.</p><p>Call us today to reserve your spot!</p>",
+        "created_at": "2026-01-14T10:00:00Z"
+    },
+    {
+        "id": "13",
+        "title": "The Future of Cloud Computing in 2026: What to Expect",
+        "slug": "future-of-cloud-computing-2026",
+        "category": "Technology",
+        "image": "/images/blog/computer_courses.png",
+        "content": "<p>Cloud computing is the backbone of modern tech. From AWS to Azure, the cloud is growing faster than ever...</p>",
+        "created_at": "2026-01-13T10:00:00Z"
+    }
+]

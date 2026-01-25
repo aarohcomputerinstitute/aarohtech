@@ -7,6 +7,7 @@ import ThemeProvider from "theme/ThemeProvider";
 import Progress from "components/Progress";
 import ScrollCue from "components/ScrollCue";
 import PageProgress from "components/common/PageProgress";
+import WhatsAppButton from "components/common/WhatsAppButton";
 // ANIMATE CSS
 import "animate.css";
 // SWIPER CSS
@@ -42,6 +43,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
             <PageProgress />
             <Progress />
             <ScrollCue />
+            <WhatsAppButton />
             {children}
           </ThemeProvider>
         </ClientBody>
