@@ -1,0 +1,71 @@
+.imageWrapper {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(135deg, #0866FF 0%, #3b82f6 100%);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: visible;
+    z-index: 1;
+}
+
+.imageWrapper::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border: 2px dashed rgba(8, 102, 255, 0.2);
+    border-radius: 50%;
+    animation: rotate 15s linear infinite;
+    z-index: -1;
+}
+
+.memberImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    background: #f8f9fa;
+    transition: all 0.4s ease;
+}
+
+.teamCard:hover .imageWrapper {
+    transform: scale(1.05) rotate(3deg);
+    box-shadow: 0 10px 25px rgba(8, 102, 255, 0.2);
+}
+
+.teamCard:hover .memberImage {
+    border-color: #0866FF;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animateFadeInUp {
+    animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

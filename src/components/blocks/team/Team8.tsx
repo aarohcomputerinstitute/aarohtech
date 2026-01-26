@@ -6,6 +6,7 @@ import { TeamCard2 } from "components/reuseable/team-cards";
 import carouselBreakpoints from "utils/carouselBreakpoints";
 // CUSTOM DATA
 import teams from "data/team-list";
+import styles from "./Team8.module.css";
 
 export default function Team8() {
   return (
@@ -34,8 +35,14 @@ export default function Team8() {
           <div className="col-lg-8">
             <div className="swiper-container text-center mb-6">
               <Carousel grabCursor navigation={false} breakpoints={carouselBreakpoints}>
-                {teams.map((team) => (
-                  <TeamCard2 key={team.id} {...team} />
+                {teams.map((team, index) => (
+                  <div
+                    key={team.id}
+                    className={styles.animateFadeInUp}
+                    style={{ animationDelay: `${0.2 + index * 0.1}s` }}
+                  >
+                    <TeamCard2 {...team} />
+                  </div>
                 ))}
               </Carousel>
             </div>

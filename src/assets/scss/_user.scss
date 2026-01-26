@@ -16,14 +16,15 @@
   --bs-btn-disabled-bg: var(--bs-orange);
   --bs-btn-disabled-border-color: var(--bs-orange);
 }
+
 .text-orange {
   color: var(--bs-orange) !important;
 }
-.navbar-expand-lg.navbar-light
-  .dropdown:not(.dropdown-submenu)
-  > .dropdown-toggle:after {
+
+.navbar-expand-lg.navbar-light .dropdown:not(.dropdown-submenu)>.dropdown-toggle:after {
   color: var(--bs-orange);
 }
+
 .navbar.navbar-light.fixed .btn:not(.btn-expand):not(.btn-gradient) {
   background: var(--bs-orange);
   border-color: var(--bs-orange);

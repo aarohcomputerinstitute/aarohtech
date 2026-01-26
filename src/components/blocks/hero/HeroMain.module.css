@@ -1,0 +1,568 @@
+/* Hero Section Styles */
+.heroSection {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Entrance Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animateFadeInUp {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animateFadeInRight {
+    animation: fadeInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animateFadeInScale {
+    animation: fadeInScale 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay1 {
+    animation-delay: 0.1s;
+    opacity: 0;
+}
+
+.delay2 {
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+.delay3 {
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+.delay4 {
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+
+.delay5 {
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+
+.heroGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Left Content Area */
+.heroContent {
+    max-width: 650px;
+}
+
+.heroHeading {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: #1a202c;
+}
+
+.brandHighlight {
+    background: linear-gradient(135deg, #0866FF 0%, #1e3a8a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+.heroDescription {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #4a5568;
+    margin-bottom: 24px;
+}
+
+/* Checkmark Grid - Two Columns */
+.checkmarkGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 20px;
+    margin-bottom: 24px;
+}
+
+.checkmarkItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkIcon {
+    width: 20px;
+    height: 20px;
+    color: #0866FF;
+    flex-shrink: 0;
+}
+
+.checkmarkItem span {
+    font-size: 0.9rem;
+    color: #2d3748;
+    font-weight: 500;
+}
+
+/* CTA Row */
+.ctaRow {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.ctaButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #0866FF 0%, #1e3a8a 100%);
+    color: white;
+    font-weight: 700;
+    font-size: 0.938rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(8, 102, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.ctaButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+}
+
+.ctaButton:hover::before {
+    left: 100%;
+}
+
+.ctaButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(8, 102, 255, 0.5);
+    color: white;
+}
+
+.satisfactionBadge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.percentageText {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #0866FF;
+    line-height: 1;
+}
+
+.badgeLabel {
+    font-size: 0.75rem;
+    color: #4a5568;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* Right Visual Area - Circular Image */
+.heroVisual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleContainer {
+    position: relative;
+    width: 480px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Dotted Rings */
+.dottedRing1,
+.dottedRing2,
+.dottedRing3 {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px dotted #0866FF;
+    opacity: 0.3;
+    z-index: 5;
+}
+
+.dottedRing1 {
+    width: 440px;
+    height: 440px;
+    animation: pulse 4s ease-in-out infinite;
+}
+
+.dottedRing2 {
+    width: 480px;
+    height: 480px;
+    animation: pulse 4s ease-in-out infinite 1.3s;
+    border-color: #1e3a8a;
+}
+
+.dottedRing3 {
+    width: 520px;
+    height: 520px;
+    animation: pulse 4s ease-in-out infinite 2.6s;
+    border-color: #3b82f6;
+}
+
+.circleOuter {
+    position: relative;
+    width: 420px;
+    height: 420px;
+    z-index: 1;
+}
+
+.circleInner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.circleImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Floating Badges */
+.floatingBadge {
+    position: absolute;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    font-size: 0.813rem;
+    color: #667eea;
+    border: 2px solid #667eea;
+    animation: float 3s ease-in-out infinite;
+    z-index: 10;
+}
+
+.badge1 {
+    top: 10%;
+    right: -10%;
+    animation-delay: 0s;
+}
+
+.badge2 {
+    bottom: 20%;
+    left: -15%;
+    animation-delay: 1s;
+}
+
+.badge3 {
+    top: 50%;
+    right: -15%;
+    animation-delay: 2s;
+}
+
+.badgeText {
+    white-space: nowrap;
+}
+
+/* Animations */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+
+    50% {
+        transform: scale(1.03);
+        opacity: 0.6;
+    }
+}
+
+/* Responsive Design */
+@media (min-width: 992px) {
+    .heroGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 991px) {
+    .heroSection {
+        padding: 60px 0;
+    }
+
+    .heroGrid {
+        gap: 50px;
+    }
+
+    .heroContent {
+        max-width: 100%;
+    }
+
+    .heroHeading {
+        font-size: 1.75rem;
+    }
+
+    .circleContainer {
+        width: 400px;
+        height: 400px;
+    }
+
+    .circleOuter {
+        width: 320px;
+        height: 320px;
+    }
+
+    .dottedRing1 {
+        width: 340px;
+        height: 340px;
+    }
+
+    .dottedRing2 {
+        width: 370px;
+        height: 370px;
+    }
+
+    .dottedRing3 {
+        width: 400px;
+        height: 400px;
+    }
+
+    .badge1 {
+        right: -5%;
+    }
+
+    .badge2 {
+        left: -8%;
+    }
+
+    .badge3 {
+        right: -8%;
+    }
+}
+
+@media (max-width: 767px) {
+    .heroSection {
+        padding: 40px 0;
+    }
+
+    .heroHeading {
+        font-size: 1.5rem;
+    }
+
+    .heroDescription {
+        font-size: 0.95rem;
+    }
+
+    .featureGrid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .featureColumn {
+        gap: 16px;
+    }
+
+    .iconCircle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .featureIcon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .featureTitle {
+        font-size: 1rem;
+    }
+
+    .featureDesc {
+        font-size: 0.813rem;
+    }
+
+    .ctaButton {
+        padding: 16px 32px;
+        font-size: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ctaContainer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .satisfactionBadge {
+        justify-content: center;
+    }
+
+    .circleContainer {
+        width: 320px;
+        height: 320px;
+    }
+
+    .circleOuter {
+        width: 240px;
+        height: 240px;
+    }
+
+    .dottedRing1 {
+        width: 260px;
+        height: 260px;
+    }
+
+    .dottedRing2 {
+        width: 290px;
+        height: 290px;
+    }
+
+    .dottedRing3 {
+        width: 320px;
+        height: 320px;
+    }
+
+    .floatingBadge {
+        padding: 6px 14px;
+        font-size: 0.7rem;
+    }
+
+    .badge1 {
+        top: 5%;
+        right: 0%;
+    }
+
+    .badge2 {
+        bottom: 15%;
+        left: -2%;
+    }
+
+    .badge3 {
+        top: 45%;
+        right: -2%;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroHeading {
+        font-size: 1.35rem;
+    }
+
+    .heroDescription {
+        font-size: 0.875rem;
+    }
+
+    .circleContainer {
+        width: 280px;
+        height: 280px;
+    }
+
+    .circleOuter {
+        width: 200px;
+        height: 200px;
+    }
+
+    .dottedRing1 {
+        width: 220px;
+        height: 220px;
+    }
+
+    .dottedRing2 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .dottedRing3 {
+        width: 280px;
+        height: 280px;
+    }
+
+    .floatingBadge {
+        padding: 4px 10px;
+        font-size: 0.65rem;
+    }
+
+    .badge1 {
+        right: 0%;
+    }
+
+    .badge2 {
+        left: 0%;
+    }
+
+    .badge3 {
+        right: 0%;
+    }
+}

@@ -456,65 +456,65 @@ export const serviceList11 = [
 export const serviceList12 = [
   {
     id: 1,
-    title: 'Web Development',
+    title: 'Full-Stack Web Development',
     image: { '1x': '/img/illustrations/web-development-course.png', '2x': '/img/illustrations/web-development-course@2x.png 2x' },
-    description: `Learn full-stack website creation using HTML, CSS, JavaScript, React, and Node.js. Build fast, responsive, and user-friendly web applications.`,
+    description: `Master Full-Stack Engineering with MERN stack, Next.js, and Cloud deployment. Build enterprise-grade websites and web-apps with industry experts.`,
     gotolink: '/courses/web-development',
   },
   {
     id: 2,
-    title: 'Data Analyst',
-    image: { '1x': '/img/illustrations/i19.png', '2x': '/img/illustrations/i19@2x.png 2x' },
-    description: `Master Excel, SQL, and Python to analyze data and create dashboards. Build skills for high-demand data analytics careers.`,
+    title: 'Advanced Data Analytics',
+    image: { '1x': '/img/illustrations/data-analytics-premium.png', '2x': '/img/illustrations/data-analytics-premium.png 2x' },
+    description: `Become a Data Expert. Master SQL, Python for Data Science, and Power BI dashboards to drive business decisions with data-driven insights.`,
     gotolink: '/courses/data-analyst'
   },
   {
     id: 3,
-    title: 'Digital Marketing',
+    title: 'Digital Marketing Mastery',
     image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
-    description: `Learn SEO, social media ads, and branding strategies to promote businesses online. Gain practical experience with real campaigns.`,
+    description: `Scale businesses with SEO, Performance Marketing, and Content Strategy. Learn advanced ad platforms to become a high-demand Digital Marketer.`,
     gotolink: '/courses/digital-marketing'
   },
   {
     id: 4,
-    title: 'AI Automation',
+    title: 'AI & Machine Learning',
     image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
-    description: `Learn AI tools, workflows, and automation systems to streamline business tasks and increase productivity efficiently.`,
+    description: `Master Generative AI, Large Language Models (LLMs), and Automation workflows. Build AI-powered tools that solve real-world industrial problems.`,
     gotolink: '/courses/ai-automation'
   },
   {
     id: 5,
-    title: 'Coding Language',
+    title: 'Modern Programming Languages',
     image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
-    description: `Learn popular programming languages with hands-on practice to build logic, real applications, and problem-solving skills.`,
+    description: `Build a solid foundation with Python, C++, and Java. Learn clean-coding practices and data structures used by top-tier tech companies.`,
     gotolink: '/courses/coding-language'
   },
   {
     id: 6,
-    title: 'Video Editing',
+    title: 'Cinematic Video Editing',
     image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
-    description: `Edit professional videos using advanced tools to create engaging content for brands, social media, and storytelling.`,
+    description: `Learn professional post-production techniques using Adobe Premiere Pro and After Effects. Create high-impact content for brands and social media.`,
     gotolink: '/courses/video-editing'
   },
   {
     id: 7,
-    title: 'Advance Excel',
+    title: 'Advanced Business Excel',
     image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
-    description: `Master formulas, dashboards, and data analysis tools to boost productivity and professional reporting skills.`,
+    description: `Master Power Query, VBA Macros, and Financial Modeling. Optimize business processes and automate reporting with pro-level Excel techniques.`,
     gotolink: '/courses/advance-excel'
   },
   {
     id: 8,
-    title: 'Tally Prime',
+    title: 'Tally Prime & Taxation',
     image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
-    description: `Learn accounting, GST, billing, and inventory management using industry-standard Tally Prime software effectively.`,
+    description: `Expert-led training in Financial Accounting, GST compliance, and E-filing with Tally Prime. Gain essential skills for modern finance roles.`,
     gotolink: '/courses/tally-prime'
   },
   {
     id: 9,
-    title: 'RSCIT',
+    title: 'RSCIT & Digital Literacy',
     image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
-    description: `Basic computer course for beginners to learn digital skills, internet usage, typing, and essential applications and many more.`,
+    description: `Get certified in essential computer skills. Learn Typing, Internet safety, and office applications through Rajasthan's standard IT certification course.`,
     gotolink: '/courses/rscit'
   }
 ];
