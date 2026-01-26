@@ -1,15 +1,15 @@
 const footerNav = [
-  { title: 'About Us', url: '#' },
-  { title: 'Contact Us', url: '#' },
-  { title: 'Terms of Use', url: '#' },
-  { title: 'Privacy Policy', url: '#' }
+  { title: 'About Us', url: '/about-aaroh' },
+  { title: 'Contact Us', url: '/contact-us' },
+  { title: 'Terms of Use', url: '/terms#terms-conditions' },
+  { title: 'Privacy Policy', url: '/terms#privacy-policy' }
 ];
 
 export const helps = [
-  { id: 1, title: 'Support', url: '#' },
-  { id: 2, title: 'Get Started', url: '#' },
-  { id: 3, title: 'Terms of Use', url: '#' },
-  { id: 4, title: 'Privacy Policy', url: '#' }
+  { id: 1, title: 'Support', url: '/contact-us' },
+  { id: 2, title: 'Get Started', url: '/about-aaroh' },
+  { id: 3, title: 'Terms of Use', url: '/terms#terms-conditions' },
+  { id: 4, title: 'Privacy Policy', url: '/terms#privacy-policy' }
 ];
 
 export const learnMore = [

@@ -14,7 +14,14 @@ import Megaphone from "icons/lineal/Megaphone";
 import SettingsThree from "icons/lineal/SettingsThree";
 // CUSTOM DATA
 import { testimonialList2 } from "data/testimonial-list";
-const serviceList2 = [
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Aaroh Tech - Jaipur's Premier AI & Tech Institute",
+  description: "Learn more about Aaroh Tech & AI Institute. We empower students with practical skills in AI, Data Science, Web Development, and Digital Marketing to launch successful IT careers.",
+};
+
+const SERVICES = [
   {
     id: 1,
     title: "Digital Marketing & SEO",
@@ -41,7 +48,7 @@ const serviceList2 = [
   },
 ];
 
-export default function AboutTwo() {
+export default function AboutAaroh() {
   return (
     <Fragment>
       {/* ========== page title section ========== */}
@@ -93,7 +100,7 @@ export default function AboutTwo() {
           </div>
 
           <div className="row gx-lg-8 gx-xl-12 gy-6 gy-md-0 text-center">
-            {serviceList2.map(({ id, Icon, title, description }) => (
+            {SERVICES.map(({ id, Icon, title, description }) => (
               <div className="col-md-6 col-lg-3" key={id}>
                 {Icon}
                 <h4>{title}</h4>

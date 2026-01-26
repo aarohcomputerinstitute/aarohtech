@@ -36,11 +36,6 @@ const projectsNavigation = [
   },
 ];
 
-// blog pages links
-const blogsNavigation = [
-  { id: 2, url: "/blog-2", title: "Blog with Sidebar" },
-];
-
 // about pages links
 const aboutNavigation = [
   { id: 1, url: "/about-aaroh", title: "about aaroh" },
@@ -51,56 +46,6 @@ const onlineAcademyNavigation = [
   { id: 1, url: "https://www.youtube.com/@aarohtechacademy", title: "Free Courses", target: "_blank" },
   { id: 2, url: "#", title: "Paid Courses", target: "_blank" },
 ];
-// documentation pages links
-const documentationNavigation = {
-  usage: [
-    { id: 1, title: "Get Started", url: "/docs" },
-    // { id: 2, title: 'Forms', url: '#' },
-    { id: 3, title: "FAQ", url: "/docs/faq" },
-    { id: 4, title: "Changelog", url: "/docs/changelog" },
-    { id: 5, title: "Credits", url: "/docs/credits" },
-  ],
-  styleguide: [
-    { id: 0, title: "Theme", url: "/docs/styleguide/theme" },
-    { id: 1, title: "Colors", url: "/docs/styleguide/colors" },
-    { id: 2, title: "Fonts", url: "/docs/styleguide/fonts" },
-    { id: 3, title: "SVG Icons", url: "/docs/styleguide/svg-icons" },
-    { id: 4, title: "Font Icons", url: "/docs/styleguide/font-icons" },
-    { id: 5, title: "Illustrations", url: "/docs/styleguide/illustrations" },
-    { id: 6, title: "Backgrounds", url: "/docs/styleguide/backgrounds" },
-    { id: 7, title: "Misc", url: "/docs/styleguide/misc" },
-  ],
-  elements: [
-    { id: 1, title: "Accordion", url: "/docs/elements/accordions" },
-    { id: 2, title: "Alerts", url: "/docs/elements/alerts" },
-    { id: 3, title: "Animations", url: "/docs/elements/animations" },
-    { id: 4, title: "Avatars", url: "/docs/elements/avatars" },
-    { id: 5, title: "Background", url: "/docs/elements/background" },
-    { id: 6, title: "Badges", url: "/docs/elements/badges" },
-    { id: 7, title: "Buttons", url: "/docs/elements/buttons" },
-    { id: 8, title: "Card", url: "/docs/elements/card" },
-    { id: 9, title: "Carousel", url: "/docs/elements/carousel" },
-    { id: 10, title: "Dividers", url: "/docs/elements/dividers" },
-    { id: 11, title: "Form Elements", url: "/docs/elements/form-elements" },
-    { id: 12, title: "Image Hover", url: "/docs/elements/image-hover" },
-    { id: 13, title: "Image Mask", url: "/docs/elements/image-mask" },
-    { id: 14, title: "Lightbox", url: "/docs/elements/lightbox" },
-    { id: 15, title: "Media Player", url: "/docs/elements/media-player" },
-    { id: 16, title: "Modal", url: "/docs/elements/modal" },
-    { id: 17, title: "Pagination", url: "/docs/elements/pagination" },
-    { id: 18, title: "Progressbar", url: "/docs/elements/progressbar" },
-    { id: 19, title: "Shadows", url: "/docs/elements/shadows" },
-    { id: 20, title: "Shapes", url: "/docs/elements/shapes" },
-    { id: 21, title: "Tables", url: "/docs/elements/tables" },
-    { id: 22, title: "Tabs", url: "/docs/elements/tabs" },
-    { id: 23, title: "Text Animations", url: "/docs/elements/text-animation" },
-    { id: 24, title: "Text Highlight", url: "/docs/elements/text-highlight" },
-    { id: 25, title: "Tiles", url: "/docs/elements/tiles" },
-    // { id: 26, title: 'Tooltips & Popovers', url: '/docs/elements/tooltips-popovers' },
-    { id: 27, title: "Typography", url: "/docs/elements/typography" },
-  ],
-};
-
 // blocks pages links
 const blocksNavigation = [
   {
@@ -202,12 +147,9 @@ const blocksNavigation = [
 ];
 
 export {
-
-  blogsNavigation,
   aboutNavigation,
   courses,
   blocksNavigation,
   projectsNavigation,
-  documentationNavigation,
   onlineAcademyNavigation,
 };

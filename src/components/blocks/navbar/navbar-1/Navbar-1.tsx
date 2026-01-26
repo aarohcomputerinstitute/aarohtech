@@ -14,15 +14,10 @@ import Info from "../components/Info";
 import Search from "../components/search";
 import HeaderRight from "../components/header-right";
 import FancyHeader from "../components/fancy-header";
+import OnlineAcademyNavItem from "../components/onlineacademy-nav-item";
 import BlogNavItem from "../components/blog-nav-item";
 import AboutNavItem from "../components/about-nav-item";
 import CoursesNavItem from "../components/courses-nav-item";
-import OnlineAcademyNavItem from "../components/onlineacademy-nav-item";
-import NewsNavItem from "../components/news-nav-item";
-import PagesNavItem from "../components/pages-nav-item";
-import BlocksNavItem from "../components/blocks-nav-item";
-import ProjectsNavItem from "../components/projects-nav-item";
-import DocumentationNavItem from "../components/documentation-nav-item";
 
 // ===================================================================
 interface NavbarProps {

@@ -4,7 +4,7 @@ import { Fragment, PropsWithChildren } from "react";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 // GLOBAL CUSTOM COMPONENTS
-import { Footer13,} from "components/blocks/footer";
+import { Footer13, } from "components/blocks/footer";
 import Navbar from "components/blocks/navbar/navbar-1";
 import NextLink from "components/reuseable/links/NextLink";
 
@@ -17,8 +17,7 @@ export default function AboutLayout({ children }: PropsWithChildren) {
       <header
         className={clsx({
           wrapper: true,
-          "bg-gray": pathname === "/about-1",
-          "bg-soft-primary": pathname === "/about-2",
+          "bg-soft-primary": pathname === "/about-2" || pathname === "/about-aaroh",
         })}
       >
         <Navbar
