@@ -46,10 +46,12 @@ export default function Home() {
         <About22 />
 
         <section className="wrapper bg-light">
-          <div className="container pt-12 pt-lg-8 pb-14 pb-md-16">
+          <div className="container pt-10 pt-md-12 pb-6 pb-md-8">
             {/* ========== company facts section ========== */}
             <Facts15 />
+          </div>
 
+          <div className="container pb-10 pb-md-12">
             {/* ========== team section ========== */}
             <Team4 />
           </div>

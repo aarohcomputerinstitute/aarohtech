@@ -8,22 +8,18 @@ export default function Team4() {
   return (
     <section className={styles.teamSection}>
       <div className="container">
-        <div className={styles.sectionHeader}>
-          <h2 className="fs-16 text-uppercase text-primary mb-3 ls-xl animate">
+        <div className={styles.sectionHeader} data-cue="fadeIn">
+          <h2 className="fs-16 text-uppercase text-primary mb-3 ls-xl">
             Meet Our Experts
           </h2>
-          <h3 className="display-4 animate" style={{ animationDelay: '0.1s' }}>
+          <h3 className="display-4">
             We have a team of industry-leading <span className="text-primary">Professional Mentors</span>
           </h3>
         </div>
 
-        <div className={styles.teamGrid}>
-          {teams.slice(0, 4).map((item, index) => (
-            <div
-              className={`${styles.teamCard} ${styles.animate}`}
-              key={item.id}
-              style={{ animationDelay: `${0.2 + index * 0.1}s` }}
-            >
+        <div className={styles.teamGrid} data-cues="slideInUp">
+          {teams.slice(0, 4).map((item) => (
+            <div className={styles.teamCard} key={item.id}>
               <div className={styles.imageWrapper}>
                 <Image
                   src={item.image}
@@ -39,11 +35,6 @@ export default function Team4() {
               <p className={styles.memberDescription}>{item.description}</p>
 
               <nav className={styles.socialLinks}>
-                {item.twitterUrl && (
-                  <a href={item.twitterUrl} className={styles.socialIcon} aria-label="Twitter">
-                    <i className="uil uil-twitter" />
-                  </a>
-                )}
                 {item.facebookUrl && (
                   <a href={item.facebookUrl} className={styles.socialIcon} aria-label="Facebook">
                     <i className="uil uil-facebook-f" />
@@ -52,6 +43,16 @@ export default function Team4() {
                 {item.youtubeUrl && (
                   <a href={item.youtubeUrl} className={styles.socialIcon} aria-label="YouTube">
                     <i className="uil uil-youtube" />
+                  </a>
+                )}
+                {item.linkedinUrl && (
+                  <a href={item.linkedinUrl} className={styles.socialIcon} aria-label="LinkedIn">
+                    <i className="uil uil-linkedin" />
+                  </a>
+                )}
+                {item.instagramUrl && (
+                  <a href={item.instagramUrl} className={styles.socialIcon} aria-label="Instagram">
+                    <i className="uil uil-instagram" />
                   </a>
                 )}
               </nav>

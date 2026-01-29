@@ -471,50 +471,50 @@ export const serviceList12 = [
   {
     id: 3,
     title: 'Digital Marketing Mastery',
-    image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
+    image: { '1x': '/img/illustrations/digital-marketing-mastery.png', '2x': '/img/illustrations/digital-marketing-mastery@2x.png 2x' },
     description: `Scale businesses with SEO, Performance Marketing, and Content Strategy. Learn advanced ad platforms to become a high-demand Digital Marketer.`,
     gotolink: '/courses/digital-marketing'
   },
   {
     id: 4,
     title: 'AI & Machine Learning',
-    image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
+    image: { '1x': '/img/illustrations/ai-machine-learning.png', '2x': '/img/illustrations/ai-machine-learning@2x.png 2x' },
     description: `Master Generative AI, Large Language Models (LLMs), and Automation workflows. Build AI-powered tools that solve real-world industrial problems.`,
     gotolink: '/courses/ai-automation'
   },
   {
     id: 5,
     title: 'Modern Programming Languages',
-    image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
+    image: { '1x': '/img/illustrations/programming-languages.png', '2x': '/img/illustrations/programming-languages@2x.png 2x' },
     description: `Build a solid foundation with Python, C++, and Java. Learn clean-coding practices and data structures used by top-tier tech companies.`,
     gotolink: '/courses/coding-language'
   },
   {
     id: 6,
     title: 'Cinematic Video Editing',
-    image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
+    image: { '1x': '/img/illustrations/cinematic-video-editing.png', '2x': '/img/illustrations/cinematic-video-editing@2x.png 2x' },
     description: `Learn professional post-production techniques using Adobe Premiere Pro and After Effects. Create high-impact content for brands and social media.`,
     gotolink: '/courses/video-editing'
   },
   {
     id: 7,
     title: 'Advanced Business Excel',
-    image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
+    image: { '1x': '/img/illustrations/advanced-business-excel.png', '2x': '/img/illustrations/advanced-business-excel@2x.png 2x' },
     description: `Master Power Query, VBA Macros, and Financial Modeling. Optimize business processes and automate reporting with pro-level Excel techniques.`,
     gotolink: '/courses/advance-excel'
   },
   {
     id: 8,
     title: 'Tally Prime & Taxation',
-    image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
+    image: { '1x': '/img/illustrations/tally-prime.png', '2x': '/img/illustrations/tally-prime@2x.png 2x' },
     description: `Expert-led training in Financial Accounting, GST compliance, and E-filing with Tally Prime. Gain essential skills for modern finance roles.`,
     gotolink: '/courses/tally-prime'
   },
   {
     id: 9,
     title: 'RSCIT & Digital Literacy',
-    image: { '1x': '/img/illustrations/i18.png', '2x': '/img/illustrations/i18@2x.png 2x' },
-    description: `Get certified in essential computer skills. Learn Typing, Internet safety, and office applications through Rajasthan's standard IT certification course.`,
+    image: { '1x': '/img/illustrations/3d9.png', '2x': '/img/illustrations/3d9@2x.png 2x' },
+    description: `Authorized RKCL Learning Center. Get the official RSCIT certification for government jobs. Master Word, Excel, PowerPoint, and Internet proficiency.`,
     gotolink: '/courses/rscit'
   }
 ];

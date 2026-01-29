@@ -111,54 +111,50 @@ export const accordionList3 = [
   {
     no: "One",
     expand: false,
-    heading: "Where is Aaroh Computer Classes located?",
-    body: `We are located on Kalwar Road, Jaipur — easily accessible from nearby areas. You can visit us for demo classes or course counseling anytime during working hours.`
+    heading: "Where is Aaroh Computer Classes located in Jaipur?",
+    body: `Aaroh Computer Classes is conveniently located on Kalwar Road, Jaipur, Rajasthan. Our institute is easily accessible from nearby areas including Vaishali Nagar, Jagatpura, and Malviya Nagar. You can visit us for free demo classes, course counseling, and enrollment guidance during our working hours (Mon-Sat: 9:00 AM - 7:00 PM).`
   },
   {
     no: "Two",
     expand: false,
-    heading: "What courses do you offer?",
-    body: `We offer a wide range of professional and career-oriented courses including:
-
-MS Office Training (Word, Excel, PowerPoint)
-
-Digital Marketing
-
-Full Stack Web Development
-
-Coding & Programming Classes
-
-Tally and Accounting Software Training`
+    heading: "What computer courses do you offer at Aaroh Computer Classes?",
+    body: `We offer a comprehensive range of professional and career-oriented computer courses including: MS Office Training (Word, Excel, PowerPoint), Advanced Excel with Data Analytics, Digital Marketing Course, Full Stack Web Development (MERN Stack), Coding & Programming Classes (C, C++, Java, Python), Tally Prime with GST, AI Automation & ChatGPT Training, Video Editing (Premiere Pro, After Effects), RSCIT Certification, and Data Analyst Course. All courses include practical training and industry-recognized certification.`
   },
   {
     no: "Three",
     expand: false,
-    heading: "Do you provide practical training?",
-    body: `Yes, all our courses are 100% practical and project-based. Students work on real-life assignments and hands-on projects to develop industry-ready skills.`
+    heading: "Do you provide 100% practical training with real projects?",
+    body: `Yes, absolutely! All our computer courses at Aaroh Computer Classes are 100% practical and project-based. Students work on real-life assignments, industry-relevant projects, and hands-on exercises to develop job-ready skills. You'll build a professional portfolio with live projects that you can showcase to employers during interviews.`
   },
   {
     no: "Four",
     expand: false,
-    heading: "Are your courses suitable for beginners?",
-    body: `Absolutely! Our courses are designed for students, beginners, and working professionals. We start from basics and gradually move to advanced levels with easy-to-follow lessons.`
+    heading: "Are your computer courses suitable for beginners with no experience?",
+    body: `Absolutely! Our courses are designed for students, beginners, working professionals, and career switchers. We start from basic fundamentals and gradually progress to advanced levels with easy-to-follow lessons. Whether you're a 12th pass student, graduate, housewife, or professional looking to upskill, our expert instructors will guide you step-by-step.`
   },
   {
     no: "Five",
     expand: false,
-    heading: "Do you offer certification after course completion?",
-    body: `Yes, after successfully completing your course, you'll receive a recognized certificate from Aaroh Computer Classes — useful for jobs, internships, and portfolio building.`
+    heading: "Do you provide certification after course completion?",
+    body: `Yes, after successfully completing your course and final projects, you'll receive a recognized industry certificate from Aaroh Computer Classes. Our certificates are valuable for job applications, internships, freelancing, and portfolio building. We also provide course completion letters and skill certificates that employers trust.`
   },
   {
     no: "Six",
     expand: false,
-    heading: "What are the class timings?",
-    body: `We offer flexible batch timings — morning, afternoon, and evening slots — to suit school, college, and working schedules.`
+    heading: "What are the class timings and batch schedules?",
+    body: `We offer flexible batch timings to suit everyone's schedule — morning batches (9:00 AM - 12:00 PM), afternoon batches (12:00 PM - 3:00 PM), and evening batches (4:00 PM - 7:00 PM). We also have weekend batches for working professionals and students. You can choose the timing that works best for your school, college, or office schedule.`
   },
   {
     no: "Seven",
     expand: false,
-    heading: "How can I enroll for a course?",
-    body: `You can visit our center, call us, or fill out the inquiry form on our website. Our team will guide you through the registration and course selection process.`
+    heading: "How can I enroll for a computer course at Aaroh?",
+    body: `Enrolling is easy! You can visit our center at Kalwar Road, Jaipur for a free demo class, call us at +91 98286 58887 for instant guidance, or fill out the inquiry form on our website. Our friendly team will help you choose the right course based on your career goals, provide fee details, and guide you through the simple registration process.`
+  },
+  {
+    no: "Eight",
+    expand: false,
+    heading: "Do you offer job placement assistance and interview preparation?",
+    body: `Yes, we provide comprehensive placement assistance including resume building, interview preparation, mock interviews, and job guidance. We help students connect with hiring companies and prepare them for technical interviews. Our career support team assists you in starting your professional journey in IT, digital marketing, web development, and other fields.`
   }
 ];
 

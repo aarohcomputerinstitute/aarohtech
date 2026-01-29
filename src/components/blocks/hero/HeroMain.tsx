@@ -10,20 +10,20 @@ export default function HeroMain() {
       <div className="container">
         <div className={styles.heroGrid}>
           {/* Left Content Area */}
-          <div className={styles.heroContent}>
-            <h1 className={`${styles.heroHeading} ${styles.animateFadeInUp}`}>
+          <div className={styles.heroContent} data-cue="fadeIn">
+            <h1 className={styles.heroHeading}>
               Master Advanced Computer & AI Skills with{" "}
               <span className={styles.brandHighlight}>Aaroh</span>
             </h1>
 
-            <p className={`${styles.heroDescription} ${styles.animateFadeInUp} ${styles.delay1}`}>
+            <p className={styles.heroDescription}>
               Gain industry-leading expertise in Computer Programming, AI Tools, and
               Future-Tech Development. Join Jaipur's premier institute to build a
               high-growth career in the digital era.
             </p>
 
             {/* Two-Column Checkmark List */}
-            <div className={`${styles.checkmarkGrid} ${styles.animateFadeInUp} ${styles.delay2}`}>
+            <div className={styles.checkmarkGrid} data-cues="fadeIn">
               <div className={styles.checkmarkItem}>
                 <svg className={styles.checkIcon} fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -68,7 +68,7 @@ export default function HeroMain() {
             </div>
 
             {/* CTA and Satisfaction */}
-            <div className={`${styles.ctaRow} ${styles.animateFadeInUp} ${styles.delay3}`}>
+            <div className={styles.ctaRow} data-cue="fadeIn" data-delay="300">
               <NextLink
                 href="/courses"
                 className={styles.ctaButton}
@@ -82,7 +82,7 @@ export default function HeroMain() {
           </div>
 
           {/* Right Visual Area - Circular Image */}
-          <div className={`${styles.heroVisual} ${styles.animateFadeInScale}`}>
+          <div className={styles.heroVisual} data-cue="zoomIn">
             <div className={styles.circleContainer}>
               {/* Dotted Rings */}
               <div className={styles.dottedRing1}></div>

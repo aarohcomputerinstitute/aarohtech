@@ -17,13 +17,10 @@ export default function Services24() {
           </h3>
         </div>
 
-        <div className="row grid-view gy-8 gx-lg-8 gx-xl-10">
+        <div className="row grid-view gy-8 gx-lg-8 gx-xl-10" data-cues="slideInUp">
           {serviceList12.map(({ id, image, title, description, gotolink }, index) => (
             <div className="col-md-6 col-lg-4 mb-5" key={id}>
-              <div
-                className={`${styles.courseCard} ${styles.animate}`}
-                style={{ animationDelay: `${0.2 + index * 0.1}s` }}
-              >
+              <div className={styles.courseCard}>
                 <div className={styles.imageWrapper}>
                   <img
                     className={styles.courseImage}
