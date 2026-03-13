@@ -11,14 +11,21 @@ This project has been migrated from MySQL to Supabase (PostgreSQL) and optimized
 
 ## 2. Vercel Deployment
 
-1. Push your code to a GitHub repository.
-2. Link your repository to a new project on [Vercel](https://vercel.com/).
-3. In the **Environment Variables** section, add the following:
+1. Go to your [Vercel Dashboard](https://vercel.com/dashboard).
+2. Click **Add New** > **Project**.
+3. **Import Git Repository**: You will see a list of your repositories. 
+   - Search for `aarohtech`.
+   - Click the **Import** button next to the repository.
+   - **Crucial**: Do NOT try to "Create a Git Repository" again if you have already pushed it to GitHub. Just click "Import" from the existing list.
+4. If you don't see the repository in the list:
+   - Click the dropdown menu where your GitHub username is.
+   - Select **Add GitHub Org or Account** or **Adjust GitHub App Permissions**.
+   - Make sure Vercel has access to the `aarohcomputerinstitute` organization and the `aarohtech` repository.
+5. In the **Environment Variables** section, add the following (copy from your `.env`):
    - `NEXT_PUBLIC_SUPABASE_URL`: Your Supabase Project URL.
    - `NEXT_PUBLIC_SUPABASE_ANON_KEY`: Your Supabase Anon Key.
-   - `SUPABASE_SERVICE_ROLE_KEY`: Your Supabase Service Role Key (for secure backend operations).
-   - `JWT_SECRET`: A random string for secure admin sessions.
-4. Click **Deploy**.
+   - `JWT_SECRET`: Your JWT Secret.
+6. Click **Deploy**.
 
 ## 3. Post-Deployment
 
