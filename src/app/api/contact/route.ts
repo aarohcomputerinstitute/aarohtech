@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod'; // Import zod for validation
-import { dbRequest } from 'lib/db';
+import { supabase } from 'lib/db';
 
 // Define the validation schema using zod
 const contactSchema = z.object({
@@ -34,15 +34,14 @@ export async function POST(req: NextRequest) {
 
         const { name, email, mobile, course, message } = validationResult.data;
 
-        // Securely insert data into the database using parameterized queries
-        const query = `
-      INSERT INTO contacts (name, email, mobile, course, message)
-      VALUES (?, ?, ?, ?, ?)
-    `;
+        // Securely insert data into the database using Supabase
+        const { error } = await supabase
+            .from('contacts')
+            .insert([
+                { name, email, mobile, course: course || null, message }
+            ]);
 
-        const values = [name, email, mobile, course || null, message];
-
-        await dbRequest.execute(query, values);
+        if (error) throw error;
 
         return NextResponse.json(
             { message: 'Message sent successfully' },

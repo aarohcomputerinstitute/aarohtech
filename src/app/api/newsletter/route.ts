@@ -1,20 +1,6 @@
 
 import { NextResponse } from 'next/server';
-import { dbRequest } from 'lib/db';
-
-async function ensureTable() {
-    // Lazy initialization of the table
-    const query = `
-      CREATE TABLE IF NOT EXISTS newsletter_subscribers (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        email VARCHAR(255) NOT NULL UNIQUE,
-        subscribed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-      )
-    `;
-    if (dbRequest) {
-        await dbRequest.query(query);
-    }
-}
+import { supabase } from 'lib/db';
 
 export async function POST(req: Request) {
     try {
@@ -24,18 +10,15 @@ export async function POST(req: Request) {
             return NextResponse.json({ error: "Invalid email address" }, { status: 400 });
         }
 
-        await ensureTable();
+        const { error } = await supabase
+            .from('newsletter_subscribers')
+            .insert([{ email }]);
 
-        if (!dbRequest) throw new Error("Database connection failed");
-
-        // Insert ignore to handle duplicates gracefully or just standard insert
-        try {
-            await dbRequest.query('INSERT INTO newsletter_subscribers (email) VALUES (?)', [email]);
-        } catch (err: any) {
-            if (err.code === 'ER_DUP_ENTRY') {
+        if (error) {
+            if (error.code === '23505') { // Unique constraint violation in Postgres
                 return NextResponse.json({ message: "You are already subscribed!" });
             }
-            throw err;
+            throw error;
         }
 
         return NextResponse.json({ message: "Subscribed successfully" });
@@ -47,12 +30,14 @@ export async function POST(req: Request) {
 
 export async function GET() {
     try {
-        await ensureTable();
+        const { data, error } = await supabase
+            .from('newsletter_subscribers')
+            .select('*')
+            .order('subscribed_at', { ascending: false });
 
-        if (!dbRequest) throw new Error("Database connection failed");
+        if (error) throw error;
 
-        const [rows] = await dbRequest.query('SELECT * FROM newsletter_subscribers ORDER BY subscribed_at DESC');
-        return NextResponse.json(rows);
+        return NextResponse.json(data);
     } catch (error: any) {
         console.error("Newsletter Get Error:", error);
         return NextResponse.json({ error: "Failed to fetch subscribers" }, { status: 500 });

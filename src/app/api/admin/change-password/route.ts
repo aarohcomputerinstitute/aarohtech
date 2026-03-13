@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { dbRequest } from 'lib/db';
+import { supabase } from 'lib/db';
 import { verifyPassword, hashPassword, verifySession } from 'lib/auth';
 
 export async function POST(req: NextRequest) {
@@ -18,13 +18,13 @@ export async function POST(req: NextRequest) {
         }
 
         // 2. Fetch User
-        const [rows]: any = await dbRequest.execute(
-            'SELECT * FROM admin_users WHERE id = ?',
-            [session.sub]
-        );
-        const user = rows[0];
+        const { data: user, error: fetchError } = await supabase
+            .from('admin_users')
+            .select('*')
+            .eq('id', session.sub)
+            .single();
 
-        if (!user) return NextResponse.json({ error: 'User not found' }, { status: 404 });
+        if (fetchError || !user) return NextResponse.json({ error: 'User not found' }, { status: 404 });
 
         // 3. Verify Current Password
         const isValid = await verifyPassword(currentPassword, user.password_hash);
@@ -36,10 +36,12 @@ export async function POST(req: NextRequest) {
         const newHash = await hashPassword(newPassword);
 
         // 5. Update Database
-        await dbRequest.execute(
-            'UPDATE admin_users SET password_hash = ? WHERE id = ?',
-            [newHash, session.sub]
-        );
+        const { error: updateError } = await supabase
+            .from('admin_users')
+            .update({ password_hash: newHash })
+            .eq('id', session.sub);
+
+        if (updateError) throw updateError;
 
         return NextResponse.json({ success: true });
     } catch (error) {

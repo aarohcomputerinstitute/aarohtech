@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { dbRequest } from 'lib/db';
+import { supabase } from 'lib/db';
 import { verifyPassword, signSession } from 'lib/auth';
 
 export async function POST(req: NextRequest) {
@@ -11,14 +11,13 @@ export async function POST(req: NextRequest) {
         }
 
         // Fetch user from DB
-        const [rows]: any = await dbRequest.execute(
-            'SELECT * FROM admin_users WHERE username = ?',
-            [username]
-        );
+        const { data: user, error } = await supabase
+            .from('admin_users')
+            .select('*')
+            .eq('username', username)
+            .single();
 
-        const user = rows[0];
-
-        if (!user) {
+        if (error || !user) {
             return NextResponse.json({ error: 'Invalid credentials' }, { status: 401 });
         }
 

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { dbRequest } from 'lib/db';
+import { supabase } from 'lib/db';
 import { verifySession } from 'lib/auth';
 
 export async function GET(req: NextRequest) {
@@ -9,15 +9,34 @@ export async function GET(req: NextRequest) {
     if (!session) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
 
     try {
-        // Parallel queries
-        const [totalLeadsResult]: any = await dbRequest.execute('SELECT COUNT(*) as count FROM contacts');
-        const [todayLeadsResult]: any = await dbRequest.execute('SELECT COUNT(*) as count FROM contacts WHERE DATE(created_at) = CURDATE()');
-        const [recentLeadsResult]: any = await dbRequest.execute('SELECT * FROM contacts ORDER BY created_at DESC LIMIT 5');
+        // Fetch total leads
+        const { count: totalLeads, error: totalError } = await supabase
+            .from('contacts')
+            .select('*', { count: 'exact', head: true });
+
+        // Fetch today's leads
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const { count: todayLeads, error: todayError } = await supabase
+            .from('contacts')
+            .select('*', { count: 'exact', head: true })
+            .gte('created_at', today.toISOString());
+
+        // Fetch recent leads
+        const { data: recentLeads, error: recentError } = await supabase
+            .from('contacts')
+            .select('*')
+            .order('created_at', { ascending: false })
+            .limit(5);
+
+        if (totalError || todayError || recentError) {
+            throw totalError || todayError || recentError;
+        }
 
         return NextResponse.json({
-            totalLeads: totalLeadsResult[0].count,
-            todayLeads: todayLeadsResult[0].count,
-            recentLeads: recentLeadsResult,
+            totalLeads: totalLeads || 0,
+            todayLeads: todayLeads || 0,
+            recentLeads: recentLeads || [],
         });
 
     } catch (error) {

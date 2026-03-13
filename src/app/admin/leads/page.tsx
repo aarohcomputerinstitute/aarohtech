@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 
 // Simple CSV export function to avoid extra dependencies if possible, 
@@ -32,7 +32,7 @@ export default function AdminLeads() {
     const [dateFilter, setDateFilter] = useState("All");
     const [searchTerm, setSearchTerm] = useState("");
 
-    const fetchLeads = async () => {
+    const fetchLeads = useCallback(async () => {
         setLoading(true);
         const params = new URLSearchParams();
         if (statusFilter !== "All") params.append("status", statusFilter);
@@ -50,11 +50,11 @@ export default function AdminLeads() {
         } finally {
             setLoading(false);
         }
-    };
+    }, [statusFilter, courseFilter, dateFilter, searchTerm]);
 
     useEffect(() => {
         fetchLeads();
-    }, [statusFilter, courseFilter, dateFilter]); // Auto-refetch on filter change
+    }, [fetchLeads]); // fetchLeads is now a stable dependency
 
     const handleSearch = (e: React.FormEvent) => {
         e.preventDefault();

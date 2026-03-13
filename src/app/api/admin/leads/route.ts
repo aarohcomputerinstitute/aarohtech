@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { dbRequest } from 'lib/db';
+import { supabase } from 'lib/db';
 import { verifySession } from 'lib/auth';
 
 export async function GET(req: NextRequest) {
@@ -13,44 +13,49 @@ export async function GET(req: NextRequest) {
         const { searchParams } = new URL(req.url);
         const status = searchParams.get('status');
         const course = searchParams.get('course');
-        const dateFilter = searchParams.get('dateFilter'); // today, week, month
+        const dateFilter = searchParams.get('dateFilter'); // Today, This Week, This Month
         const search = searchParams.get('search');
 
-        let query = 'SELECT * FROM contacts WHERE 1=1';
-        const params: any[] = [];
+        let query = supabase.from('contacts').select('*');
 
         if (status && status !== 'All') {
-            query += ' AND status = ?';
-            params.push(status);
+            query = query.eq('status', status);
         }
 
         if (course && course !== 'All') {
-            query += ' AND course = ?';
-            params.push(course);
+            query = query.eq('course', course);
         }
 
         if (dateFilter) {
-            const today = new Date();
+            const now = new Date();
+            let startDate = new Date();
             if (dateFilter === 'Today') {
-                query += ' AND DATE(created_at) = CURDATE()';
+                startDate.setHours(0, 0, 0, 0);
+                query = query.gte('created_at', startDate.toISOString());
             } else if (dateFilter === 'This Week') {
-                query += ' AND YEAR(created_at) = YEAR(CURDATE()) AND WEEK(created_at) = WEEK(CURDATE())';
+                // Get start of week (Sunday)
+                const day = now.getDay();
+                startDate.setDate(now.getDate() - day);
+                startDate.setHours(0, 0, 0, 0);
+                query = query.gte('created_at', startDate.toISOString());
             } else if (dateFilter === 'This Month') {
-                query += ' AND YEAR(created_at) = YEAR(CURDATE()) AND MONTH(created_at) = MONTH(CURDATE())';
+                startDate.setDate(1);
+                startDate.setHours(0, 0, 0, 0);
+                query = query.gte('created_at', startDate.toISOString());
             }
         }
 
         if (search) {
-            query += ' AND (name LIKE ? OR email LIKE ? OR mobile LIKE ?)';
-            const likeSearch = `%${search}%`;
-            params.push(likeSearch, likeSearch, likeSearch);
+            query = query.or(`name.ilike.%${search}%,email.ilike.%${search}%,mobile.ilike.%${search}%`);
         }
 
-        query += ' ORDER BY created_at DESC';
+        query = query.order('created_at', { ascending: false });
 
-        const [rows]: any = await dbRequest.execute(query, params);
+        const { data, error } = await query;
 
-        return NextResponse.json(rows);
+        if (error) throw error;
+
+        return NextResponse.json(data);
     } catch (error) {
         console.error("Leads API Error:", error);
         return NextResponse.json({ error: "Failed to fetch leads" }, { status: 500 });
@@ -70,7 +75,12 @@ export async function PATCH(req: NextRequest) {
             return NextResponse.json({ error: 'Missing fields' }, { status: 400 });
         }
 
-        await dbRequest.execute('UPDATE contacts SET status = ? WHERE id = ?', [status, id]);
+        const { error } = await supabase
+            .from('contacts')
+            .update({ status })
+            .eq('id', id);
+
+        if (error) throw error;
 
         return NextResponse.json({ success: true });
     } catch (error) {
