@@ -12,10 +12,11 @@ export default function NewBlog() {
     const [loading, setLoading] = useState(false);
     const [imagePreview, setImagePreview] = useState<string | null>(null);
     const [isMounted, setIsMounted] = useState(false);
+    const [categories, setCategories] = useState<any[]>([]);
 
     const [formData, setFormData] = useState({
         title: "",
-        category: "Technology",
+        category: "", // Will be set after categories load
         content: "",
         image: "",
         excerpt: "",
@@ -30,7 +31,23 @@ export default function NewBlog() {
     // Prevent hydration issues by waiting for mount
     useEffect(() => {
         setIsMounted(true);
+        loadCategories();
     }, []);
+
+    const loadCategories = async () => {
+        try {
+            const res = await fetch("/api/admin/categories");
+            const data = await res.json();
+            if (Array.isArray(data)) {
+                setCategories(data);
+                if (data.length > 0) {
+                    setFormData(prev => ({ ...prev, category: data[0].name }));
+                }
+            }
+        } catch (err) {
+            console.error("Failed to load categories", err);
+        }
+    };
 
     const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
         const file = e.target.files?.[0];
@@ -245,14 +262,13 @@ export default function NewBlog() {
                                 value={formData.category}
                                 onChange={(e) => setFormData({ ...formData, category: e.target.value })}
                             >
-                                <option>Technology</option>
-                                <option>Computer Courses</option>
-                                <option>Web Development</option>
-                                <option>AI & Future Tech</option>
-                                <option>Digital Marketing</option>
-                                <option>IT Career Advice</option>
-                                <option>Programming</option>
-                                <option>News & Updates</option>
+                                {categories.length === 0 ? (
+                                    <option disabled>Loading Categories...</option>
+                                ) : (
+                                    categories.map((cat) => (
+                                        <option key={cat.id} value={cat.name}>{cat.name}</option>
+                                    ))
+                                )}
                             </select>
                         </div>
 
@@ -320,4 +336,3 @@ export default function NewBlog() {
         </div>
     );
 }
-
