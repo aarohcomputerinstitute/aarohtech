@@ -1,10 +1,13 @@
 import { NextResponse } from "next/server";
 import { supabase } from "lib/db";
-import { cookies } from "next/headers";
+import { verifySession } from "lib/auth";
 
 async function isAdmin() {
     const cookieStore = await cookies();
-    return cookieStore.get("admin_session")?.value === "true";
+    const token = cookieStore.get("admin_session")?.value;
+    if (!token) return false;
+    const session = await verifySession(token);
+    return !!session;
 }
 
 export async function DELETE(

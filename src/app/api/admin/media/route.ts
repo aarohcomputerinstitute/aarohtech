@@ -1,10 +1,13 @@
 import { NextResponse } from "next/server";
 import { supabase } from "lib/db";
-import { cookies } from "next/headers";
+import { verifySession } from "lib/auth";
 
 async function isAdmin() {
     const cookieStore = await cookies();
-    return cookieStore.get("admin_session")?.value === "true";
+    const token = cookieStore.get("admin_session")?.value;
+    if (!token) return false;
+    const session = await verifySession(token);
+    return !!session;
 }
 
 export async function GET() {
@@ -16,7 +19,7 @@ export async function GET() {
         const { data, error } = await supabase
             .storage
             .from("blog-images")
-            .list("", {
+            .list("images", {
                 limit: 100,
                 offset: 0,
                 sortBy: { column: "created_at", order: "desc" }
@@ -29,7 +32,7 @@ export async function GET() {
             const { data: { publicUrl } } = supabase
                 .storage
                 .from("blog-images")
-                .getPublicUrl(file.name);
+                .getPublicUrl(`images/${file.name}`);
             
             return {
                 ...file,
