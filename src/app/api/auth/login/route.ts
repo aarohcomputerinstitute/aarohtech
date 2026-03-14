@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { supabase } from 'lib/db';
-import { verifyPassword, signSession } from 'lib/auth';
+import { verifyPassword } from 'lib/passwords';
+import { signSession } from 'lib/auth';
 
 export async function POST(req: NextRequest) {
     try {
@@ -35,9 +36,12 @@ export async function POST(req: NextRequest) {
         const response = NextResponse.json({ success: true }, { status: 200 });
 
         // In strict production, ensure secure: true is set (requires HTTPS)
+        const isProd = process.env.NODE_ENV === 'production';
+        const isHttps = req.nextUrl.protocol === 'https:';
+        
         response.cookies.set('admin_session', token, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === 'production',
+            secure: isProd && isHttps,
             sameSite: 'lax',
             path: '/',
             maxAge: 60 * 60 * 24, // 1 day
