@@ -4,10 +4,19 @@ import { verifySession } from 'lib/auth';
 
 export async function GET(req: NextRequest) {
     try {
-        const { data, error } = await supabase
+        const { searchParams } = new URL(req.url);
+        const status = searchParams.get('status');
+
+        let query = supabase
             .from('blogs')
             .select('*')
             .order('created_at', { ascending: false });
+
+        if (status) {
+            query = query.eq('status', status);
+        }
+
+        const { data, error } = await query;
 
         if (error) throw error;
         
@@ -25,15 +34,39 @@ export async function POST(req: NextRequest) {
         const session = await verifySession(token || "");
         if (!session) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
 
-        const { title, category, content, image } = await req.json();
-        const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+        const { 
+            title, 
+            category, 
+            content, 
+            image, 
+            meta_title, 
+            meta_description, 
+            keywords, 
+            excerpt, 
+            author, 
+            status, 
+            is_featured 
+        } = await req.json();
+
+        // Generate slug if not provided, or sanitize it
+        const slug = title.toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/(^-|-$)/g, '');
 
         const newBlog = {
             title,
             slug,
             category,
             content,
-            image
+            image,
+            meta_title: meta_title || title,
+            meta_description: meta_description || excerpt || "",
+            keywords: keywords || "",
+            excerpt: excerpt || "",
+            author: author || "Aaroh Tech",
+            status: status || "published",
+            is_featured: is_featured || false,
+            updated_at: new Date().toISOString()
         };
 
         const { data, error } = await supabase

@@ -18,7 +18,7 @@ export default function BlogList() {
   const ITEMS_PER_PAGE = 12;
 
   useEffect(() => {
-    fetch("/api/admin/blogs")
+    fetch("/api/admin/blogs?status=published")
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data)) {
@@ -171,8 +171,8 @@ export default function BlogList() {
                         </div>
 
                         <div className="post-content mb-4 flex-grow-1">
-                          <p className="mb-0 text-muted line-clamp-3 fs-15 lh-sm"
-                            dangerouslySetInnerHTML={{ __html: blog.content.substring(0, 110) + "..." }}>
+                          <p className="mb-0 text-muted line-clamp-3 fs-15 lh-sm">
+                            {blog.excerpt || "Click to read more about this professional tech insight from Aaroh Expert team."}
                           </p>
                         </div>
 

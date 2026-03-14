@@ -63,10 +63,15 @@ export default function RichEditor({ value, onChange }: RichEditorProps) {
     const modules = useMemo(() => ({
         toolbar: {
             container: [
-                [{ 'header': [1, 2, 3, false] }],
-                ['bold', 'italic', 'underline', 'strike', 'blockquote'],
-                [{ 'list': 'ordered' }, { 'list': 'bullet' }],
-                ['link', 'image'],
+                [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+                [{ 'size': ['small', false, 'large', 'huge'] }],
+                ['bold', 'italic', 'underline', 'strike'],
+                [{ 'color': [] }, { 'background': [] }],
+                [{ 'script': 'sub' }, { 'script': 'super' }],
+                ['blockquote', 'code-block'],
+                [{ 'list': 'ordered' }, { 'list': 'bullet' }, { 'indent': '-1' }, { 'indent': '+1' }],
+                [{ 'direction': 'rtl' }, { 'align': [] }],
+                ['link', 'image', 'video'],
                 ['clean']
             ],
             handlers: {
@@ -76,14 +81,37 @@ export default function RichEditor({ value, onChange }: RichEditorProps) {
     }), []);
 
     const formats = [
-        'header',
-        'bold', 'italic', 'underline', 'strike', 'blockquote',
-        'list', 'bullet',
-        'link', 'image'
+        'header', 'size',
+        'bold', 'italic', 'underline', 'strike',
+        'color', 'background',
+        'script', 'super', 'sub',
+        'blockquote', 'code-block',
+        'list', 'bullet', 'indent',
+        'direction', 'align',
+        'link', 'image', 'video'
     ];
 
     return (
-        <div className="bg-white">
+        <div className="bg-white rounded-3 overflow-hidden border">
+            <style jsx global>{`
+                .ql-container {
+                    font-family: inherit;
+                    font-size: 16px;
+                }
+                .ql-editor {
+                    min-height: 400px;
+                    max-height: 600px;
+                }
+                .ql-toolbar.ql-snow {
+                    border: none;
+                    border-bottom: 1px solid #dee2e6;
+                    background: #f8f9fa;
+                    padding: 10px;
+                }
+                .ql-container.ql-snow {
+                    border: none;
+                }
+            `}</style>
             <ReactQuill
                 quillRef={quillRef}
                 theme="snow"
@@ -91,7 +119,7 @@ export default function RichEditor({ value, onChange }: RichEditorProps) {
                 onChange={onChange}
                 modules={modules}
                 formats={formats}
-                style={{ height: '300px', marginBottom: '50px' }}
+                placeholder="Write your amazing blog content here..."
             />
         </div>
     );

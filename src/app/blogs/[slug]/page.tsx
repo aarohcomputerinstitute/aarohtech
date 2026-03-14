@@ -1,21 +1,60 @@
 import { Fragment } from "react";
 import Navbar from "components/blocks/navbar/navbar-1";
 import { Footer13 } from "components/blocks/footer";
-import path from "path";
 import NextLink from "components/reuseable/links/NextLink";
-import { promises as fs } from "fs";
+import { supabase } from "lib/db";
 import Link from "next/link";
+import { Metadata } from "next";
 
-// Server Component for fetching data
-async function getBlog(slug: string) {
-  const BLOG_FILE = path.join(process.cwd(), 'src/data/blogs.json');
-  try {
-    const data = await fs.readFile(BLOG_FILE, 'utf8');
-    const blogs = JSON.parse(data);
-    return blogs.find((b: any) => b.slug === slug);
-  } catch {
-    return null;
-  }
+// Define the Blog type locally or import it if you have a models file
+interface Blog {
+  id: string;
+  title: string;
+  slug: string;
+  category: string;
+  content: string;
+  image: string;
+  excerpt: string;
+  meta_title: string;
+  meta_description: string;
+  keywords: string;
+  author: string;
+  created_at: string;
+}
+
+// Generate Dynamic Metadata for SEO
+export async function generateMetadata(props: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const params = await props.params;
+  const { data: blog } = await supabase
+    .from('blogs')
+    .select('title, meta_title, meta_description, keywords, image, excerpt')
+    .eq('slug', params.slug)
+    .single();
+
+  if (!blog) return { title: 'Blog Not Found' };
+
+  return {
+    title: blog.meta_title || blog.title,
+    description: blog.meta_description || blog.excerpt || "",
+    keywords: blog.keywords || "",
+    openGraph: {
+      title: blog.meta_title || blog.title,
+      description: blog.meta_description || blog.excerpt || "",
+      images: blog.image ? [blog.image] : [],
+      type: 'article',
+    }
+  };
+}
+
+async function getBlog(slug: string): Promise<Blog | null> {
+  const { data, error } = await supabase
+    .from('blogs')
+    .select('*')
+    .eq('slug', slug)
+    .single();
+
+  if (error || !data) return null;
+  return data;
 }
 
 export default async function BlogDetails(props: { params: Promise<{ slug: string }> }) {
@@ -52,7 +91,7 @@ export default async function BlogDetails(props: { params: Promise<{ slug: strin
                   <h1 className="display-6 display-md-4 mb-4 fw-bold">{blog.title}</h1>
                   <ul className="post-meta mb-5 d-flex justify-content-center align-items-center gap-4 text-muted fs-15">
                     <li className="post-date"><i className="uil uil-calendar-alt me-1"></i><span>{new Date(blog.created_at).toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' })}</span></li>
-                    <li className="post-author"><i className="uil uil-user me-1"></i><span>Aaroh Expert</span></li>
+                    <li className="post-author"><i className="uil uil-user me-1"></i><span>{blog.author || "Aaroh Expert"}</span></li>
                     <li className="post-read"><i className="uil uil-clock me-1"></i><span>5 min read</span></li>
                   </ul>
                 </div>
@@ -72,7 +111,17 @@ export default async function BlogDetails(props: { params: Promise<{ slug: strin
                 <div className="row">
                   <div className="col-lg-10 col-xl-9 mx-auto">
                     <article className="blog-content-classic">
-                      <div className="blog-content-html lead fs-16 fs-md-18 text-dark lh-lg" dangerouslySetInnerHTML={{ __html: blog.content }} />
+                      {/* CSS logic for styling HTML content from Rich Editor */}
+                      <style dangerouslySetInnerHTML={{ __html: `
+                        .blog-content-html h1, .blog-content-html h2, .blog-content-html h3 { margin-top: 2rem; margin-bottom: 1rem; color: #343f52; font-weight: 700; }
+                        .blog-content-html p { margin-bottom: 1.5rem; line-height: 1.8; }
+                        .blog-content-html ul, .blog-content-html ol { margin-bottom: 1.5rem; padding-left: 1.5rem; }
+                        .blog-content-html li { margin-bottom: 0.5rem; }
+                        .blog-content-html img { border-radius: 12px; margin: 2rem 0; max-width: 100%; height: auto; }
+                        .blog-content-html blockquote { border-left: 4px solid #3f78e0; padding: 1.5rem; background: #f0f7ff; font-style: italic; border-radius: 0 12px 12px 0; margin: 2rem 0; }
+                        .blog-content-html pre { background: #1e293b; color: #f8fafc; padding: 1.5rem; border-radius: 12px; margin: 2rem 0; overflow-x: auto; font-family: 'Consolas', 'Monaco', monospace; }
+                      `}} />
+                      <div className="blog-content-html lead fs-16 fs-md-18 text-dark" dangerouslySetInnerHTML={{ __html: blog.content }} />
                     </article>
 
                     {/* Share / Tags Section */}
@@ -80,8 +129,7 @@ export default async function BlogDetails(props: { params: Promise<{ slug: strin
                       <div className="d-flex align-items-center gap-2">
                         <span className="fw-bold text-dark">Share:</span>
                         <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(blog.title)}`} target="_blank" rel="noopener noreferrer" className="btn btn-circle btn-sm btn-twitter"><i className="uil uil-twitter"></i></a>
-                        <a href={`https://www.facebook.com/sharer/sharer.php?u=aaroh.ai`} target="_blank" rel="noopener noreferrer" className="btn btn-circle btn-sm btn-facebook"><i className="uil uil-facebook-f"></i></a>
-                        <a href={`https://www.linkedin.com/shareArticle?mini=true&url=aaroh.ai&title=${encodeURIComponent(blog.title)}`} target="_blank" rel="noopener noreferrer" className="btn btn-circle btn-sm btn-linkedin"><i className="uil uil-linkedin"></i></a>
+                        <a href={`https://www.facebook.com/sharer/sharer.php?u=aarhtech.com/blogs/${blog.slug}`} target="_blank" rel="noopener noreferrer" className="btn btn-circle btn-sm btn-facebook"><i className="uil uil-facebook-f"></i></a>
                       </div>
                       <div>
                         <Link href="/blogs" className="btn btn-soft-primary rounded-pill btn-sm">
