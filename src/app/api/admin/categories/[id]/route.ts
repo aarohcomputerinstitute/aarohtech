@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { supabase } from "@/lib/db";
+import { supabase } from "lib/db";
 import { cookies } from "next/headers";
 
 async function isAdmin() {
