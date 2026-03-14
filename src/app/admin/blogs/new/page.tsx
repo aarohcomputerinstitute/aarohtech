@@ -25,7 +25,7 @@ export default function NewBlog() {
         body.append("file", file);
 
         try {
-            const res = await fetch("/api/upload", { method: "POST", body });
+            const res = await fetch("/api/admin/upload", { method: "POST", body });
             const data = await res.json();
             if (data.success) {
                 setFormData({ ...formData, image: data.url });

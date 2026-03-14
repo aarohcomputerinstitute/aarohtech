@@ -1,61 +1,59 @@
 import { NextRequest, NextResponse } from 'next/server';
-import path from 'path';
-import { promises as fs } from 'fs';
+import { supabase } from 'lib/db';
 import { verifySession } from 'lib/auth';
 
-const BLOG_FILE = path.join(process.cwd(), 'src/data/blogs.json');
-
-// Ensure file exists
-async function ensureFile() {
-    try {
-        await fs.access(BLOG_FILE);
-    } catch {
-        const dir = path.dirname(BLOG_FILE);
-        await fs.mkdir(dir, { recursive: true });
-        await fs.writeFile(BLOG_FILE, '[]', 'utf8');
-    }
-}
-
 export async function GET(req: NextRequest) {
-    await ensureFile();
     try {
-        const data = await fs.readFile(BLOG_FILE, 'utf8');
-        return NextResponse.json(JSON.parse(data));
+        const { data, error } = await supabase
+            .from('blogs')
+            .select('*')
+            .order('created_at', { ascending: false });
+
+        if (error) throw error;
+        
+        return NextResponse.json(data || []);
     } catch (error) {
+        console.error("GET blogs error:", error);
         return NextResponse.json({ error: 'Failed to fetch blogs' }, { status: 500 });
     }
 }
 
 export async function POST(req: NextRequest) {
-    // Auth Check
-    const token = req.cookies.get('admin_session')?.value;
-    const session = await verifySession(token || "");
-    if (!session) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-
-    await ensureFile();
-
     try {
+        // Auth Check
+        const token = req.cookies.get('admin_session')?.value;
+        const session = await verifySession(token || "");
+        if (!session) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+
         const { title, category, content, image } = await req.json();
         const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
         const newBlog = {
-            id: Date.now().toString(),
             title,
             slug,
             category,
             content,
-            image,
-            created_at: new Date().toISOString()
+            image
         };
 
-        const data = JSON.parse(await fs.readFile(BLOG_FILE, 'utf8'));
-        data.unshift(newBlog); // Add to top
+        const { data, error } = await supabase
+            .from('blogs')
+            .insert(newBlog)
+            .select('*')
+            .single();
 
-        await fs.writeFile(BLOG_FILE, JSON.stringify(data, null, 2), 'utf8');
+        if (error) {
+            console.error("Supabase insert error:", error);
+            // Handle unique constraint failure on slug
+            if (error.code === '23505') {
+                return NextResponse.json({ error: 'A blog with a similar title already exists.' }, { status: 400 });
+            }
+            throw error;
+        }
 
-        return NextResponse.json({ success: true, blog: newBlog });
+        return NextResponse.json({ success: true, blog: data });
     } catch (error) {
-        console.error("Blog Save Error", error);
+        console.error("Blog Save Error:", error);
         return NextResponse.json({ error: 'Failed to save blog' }, { status: 500 });
     }
 }
