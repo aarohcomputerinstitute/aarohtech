@@ -2,7 +2,17 @@
 
 import { useMemo, useRef, forwardRef } from 'react';
 import dynamic from 'next/dynamic';
+import ReactDOM from 'react-dom';
 import 'react-quill/dist/quill.snow.css';
+
+// HACK: Polyfill findDOMNode for React 18 / react-quill compatibility
+if (typeof window !== 'undefined' && !(ReactDOM as any).findDOMNode) {
+    (ReactDOM as any).findDOMNode = (instance: any) => {
+        if (!instance) return null;
+        if (instance instanceof HTMLElement) return instance;
+        return null;
+    };
+}
 
 // We create a wrapper that handles the ref correctly for dynamic loading
 const ReactQuillBase = dynamic(
@@ -112,6 +122,23 @@ export default function RichEditor({ value, onChange }: RichEditorProps) {
                 }
                 .custom-quill-editor .ql-container.ql-snow {
                     border: none;
+                }
+                /* Quill 2.0+ specific fixes */
+                .ql-snow .ql-picker.ql-size .ql-picker-label::before,
+                .ql-snow .ql-picker.ql-size .ql-picker-item::before {
+                    content: 'Normal';
+                }
+                .ql-snow .ql-picker.ql-size .ql-picker-label[data-value=small]::before,
+                .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=small]::before {
+                    content: 'Small';
+                }
+                .ql-snow .ql-picker.ql-size .ql-picker-label[data-value=large]::before,
+                .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=large]::before {
+                    content: 'Large';
+                }
+                .ql-snow .ql-picker.ql-size .ql-picker-label[data-value=huge]::before,
+                .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=huge]::before {
+                    content: 'Huge';
                 }
             `}} />
             <ReactQuillBase
