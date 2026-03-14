@@ -32,6 +32,11 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "Aaroh - Best computer classes",
   description: "Aaroh is a place to learn all modern tech stack. ",
+  icons: {
+    icon: "/img/logo-aaroh.png",
+    shortcut: "/img/logo-aaroh.png",
+    apple: "/img/logo-aaroh.png",
+  }
 };
 
 export default function RootLayout({ children }: PropsWithChildren) {
