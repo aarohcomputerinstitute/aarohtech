@@ -31,6 +31,11 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     const isActive = (href: string, exact?: boolean) =>
         exact ? pathname === href : pathname.startsWith(href);
 
+    // Login page should render standalone — no sidebar
+    if (pathname === "/admin/login") {
+        return <>{children}</>;
+    }
+
     return (
         <div className="d-flex min-vh-100 bg-light">
             {/* Sidebar */}
