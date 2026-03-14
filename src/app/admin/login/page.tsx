@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
 
 export default function AdminLogin() {
     const router = useRouter();
@@ -37,79 +36,80 @@ export default function AdminLogin() {
     };
 
     return (
-        <div className="d-flex min-vh-100 bg-white">
-            {/* Left Graphic Side */}
-            <div className="d-none d-lg-flex col-lg-6 bg-primary align-items-center justify-content-center p-5 position-relative overflow-hidden">
-                <div className="position-absolute w-100 h-100 top-0 start-0" style={{
-                    background: 'radial-gradient(circle at top right, rgba(255,255,255,0.1), transparent), radial-gradient(circle at bottom left, rgba(0,0,0,0.1), transparent)'
-                }}></div>
-                <div className="text-white text-center position-relative z-index-1">
-                    <h1 className="display-4 fw-bold mb-4">Aaroh Tech</h1>
-                    <p className="lead opacity-75">Secure Administrative Portal</p>
+        <div
+            className="d-flex min-vh-100 align-items-center justify-content-center"
+            style={{ backgroundColor: "#f1f5f9" }}
+        >
+            <div
+                className="bg-white rounded-4 shadow-lg p-5"
+                style={{ width: "100%", maxWidth: "420px" }}
+            >
+                {/* Logo / Header */}
+                <div className="text-center mb-4">
+                    <div style={{ fontSize: "1.8rem", fontWeight: 800, color: "#1e293b", lineHeight: 1 }}>
+                        Aaroh <span style={{ color: "#3b82f6" }}>Tech</span>
+                    </div>
+                    <div style={{ fontSize: "0.75rem", color: "#94a3b8", letterSpacing: "2px", textTransform: "uppercase", marginTop: "4px" }}>
+                        Admin Portal
+                    </div>
                 </div>
-            </div>
 
-            {/* Right Login Side */}
-            <div className="col-12 col-lg-6 d-flex align-items-center justify-content-center p-4 p-md-5">
-                <div className="w-100" style={{ maxWidth: '420px' }}>
-                    <div className="mb-5 text-center text-lg-start">
-                        <h2 className="fw-bold fs-2 mb-2 text-dark">Welcome back</h2>
-                        <p className="text-muted">Please enter your credentials to access the dashboard.</p>
+                <hr className="mb-4" style={{ borderColor: "#e2e8f0" }} />
+
+                <h5 className="fw-bold text-dark mb-1">Sign In</h5>
+                <p className="text-muted small mb-4">Enter your credentials to continue</p>
+
+                {error && (
+                    <div className="alert alert-danger border-0 rounded-3 small py-2" role="alert">
+                        {error}
+                    </div>
+                )}
+
+                <form onSubmit={handleLogin}>
+                    <div className="mb-3">
+                        <label htmlFor="usernameInput" className="form-label small fw-medium text-dark">Email address</label>
+                        <input
+                            type="email"
+                            className="form-control bg-light border-0 rounded-3 py-3"
+                            id="usernameInput"
+                            placeholder="you@example.com"
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
+                            required
+                        />
                     </div>
 
-                    {error && (
-                        <div className="alert alert-danger d-flex align-items-center border-0 shadow-sm" role="alert">
-                            <i className="uil uil-info-circle me-2 fs-5"></i>
-                            <div>{error}</div>
-                        </div>
-                    )}
+                    <div className="mb-4">
+                        <label htmlFor="passwordInput" className="form-label small fw-medium text-dark">Password</label>
+                        <input
+                            type="password"
+                            className="form-control bg-light border-0 rounded-3 py-3"
+                            id="passwordInput"
+                            placeholder="••••••••"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                        />
+                    </div>
 
-                    <form onSubmit={handleLogin} className="needs-validation">
-                        <div className="form-floating mb-4">
-                            <input
-                                type="email"
-                                className="form-control bg-light border-0 shadow-none px-4"
-                                id="usernameInput"
-                                placeholder="name@example.com"
-                                value={username}
-                                onChange={(e) => setUsername(e.target.value)}
-                                required
-                            />
-                            <label htmlFor="usernameInput" className="px-4 text-muted">Email address</label>
-                        </div>
-
-                        <div className="form-floating mb-5">
-                            <input
-                                type="password"
-                                className="form-control bg-light border-0 shadow-none px-4"
-                                id="passwordInput"
-                                placeholder="Password"
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                                required
-                            />
-                            <label htmlFor="passwordInput" className="px-4 text-muted">Password</label>
-                        </div>
-
-                        <button 
-                            type="submit" 
-                            className="btn btn-primary w-100 py-3 rounded-pill shadow-sm fw-semibold fs-6 d-flex justify-content-center align-items-center transition-all"
-                            disabled={loading}
-                            style={{ transition: 'transform 0.2s', ':hover': { transform: 'translateY(-2px)' } } as any}
-                        >
-                            {loading ? (
+                    <button
+                        type="submit"
+                        className="btn btn-primary w-100 py-3 rounded-3 fw-semibold"
+                        disabled={loading}
+                        style={{ fontSize: "0.95rem" }}
+                    >
+                        {loading ? (
+                            <>
                                 <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
-                            ) : (
-                                <i className="uil uil-signin me-2 fs-5"></i>
-                            )}
-                            {loading ? "Authenticating..." : "Sign In to Dashboard"}
-                        </button>
-                    </form>
-                    
-                    <div className="text-center mt-5 text-muted small">
-                        &copy; {new Date().getFullYear()} Aaroh Computer Institute. All rights reserved.
-                    </div>
-                </div>
+                                Signing in...
+                            </>
+                        ) : "Sign In"}
+                    </button>
+                </form>
+
+                <p className="text-center text-muted small mt-4 mb-0">
+                    &copy; {new Date().getFullYear()} Aaroh Computer Institute
+                </p>
             </div>
         </div>
     );

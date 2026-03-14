@@ -41,12 +41,16 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                 {/* Logo */}
                 <Link
                     href="/admin"
-                    className="d-flex align-items-center mb-3 text-white text-decoration-none px-2 py-2"
+                    className="d-flex align-items-center mb-3 text-white text-decoration-none px-2 py-3"
                 >
-                    <span className="fs-5 fw-bold">
-                        Aaroh{" "}
-                        <span style={{ color: "#3b82f6" }}>Admin</span>
-                    </span>
+                    <div>
+                        <div style={{ fontSize: "1.5rem", fontWeight: 800, letterSpacing: "-0.5px", lineHeight: 1.2 }}>
+                            Aaroh <span style={{ color: "#3b82f6" }}>Tech</span>
+                        </div>
+                        <div style={{ fontSize: "0.7rem", color: "rgba(255,255,255,0.5)", letterSpacing: "2px", textTransform: "uppercase", marginTop: "2px" }}>
+                            Admin Panel
+                        </div>
+                    </div>
                 </Link>
 
                 <hr style={{ borderColor: "rgba(255,255,255,0.15)" }} />
