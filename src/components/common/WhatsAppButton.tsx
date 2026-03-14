@@ -1,17 +1,21 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function WhatsAppButton() {
     const [isMobile, setIsMobile] = useState(false);
+    const pathname = usePathname();
     const phoneNumber = "919828658887";
 
     useEffect(() => {
-        // Simple mobile detection
         const userAgent = typeof window.navigator === "undefined" ? "" : navigator.userAgent;
         const mobile = Boolean(userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i));
         setIsMobile(mobile);
     }, []);
+
+    // Hide on admin pages
+    if (pathname?.startsWith("/admin")) return null;
 
     const whatsappUrl = isMobile
         ? `https://wa.me/${phoneNumber}`

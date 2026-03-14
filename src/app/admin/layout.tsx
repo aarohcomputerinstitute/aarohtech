@@ -1,81 +1,116 @@
 "use client";
 
-import { Fragment } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import {
+    MdDashboard,
+    MdPeople,
+    MdArticle,
+    MdEmail,
+    MdSettings,
+    MdLogout
+} from "react-icons/md";
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
     const router = useRouter();
 
     const handleLogout = async () => {
-        // In a real app, you might call an API to clear the cookie server-side too
-        // For now, we'll just clear it client-side (if possible) or rely on the API to clear it on a logout route
-        // But since our auth is HttpOnly cookie based, we need to hit an API to clear it.
         await fetch("/api/auth/logout", { method: "POST" });
         router.push("/admin/login");
     };
 
-    const isActive = (path: string) => pathname === path ? "active" : "";
+    const navLinks = [
+        { href: "/admin", label: "Dashboard", icon: <MdDashboard size={20} />, exact: true },
+        { href: "/admin/leads", label: "Leads", icon: <MdPeople size={20} /> },
+        { href: "/admin/blogs", label: "Blogs", icon: <MdArticle size={20} /> },
+        { href: "/admin/newsletter", label: "Newsletter", icon: <MdEmail size={20} /> },
+        { href: "/admin/settings", label: "Settings", icon: <MdSettings size={20} /> },
+    ];
+
+    const isActive = (href: string, exact?: boolean) =>
+        exact ? pathname === href : pathname.startsWith(href);
 
     return (
         <div className="d-flex min-vh-100 bg-light">
             {/* Sidebar */}
-            <aside className="d-flex flex-column flex-shrink-0 p-3 text-white shadow" style={{ width: "280px", backgroundColor: "#1e293b" }}>
-                <Link href="/admin" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none px-2">
-                    <span className="fs-4 fw-bold tracking-tight">Aaroh <span className="text-primary">Admin</span></span>
+            <aside
+                className="d-flex flex-column flex-shrink-0 p-3 text-white shadow"
+                style={{ width: "260px", backgroundColor: "#1e293b", minHeight: "100vh" }}
+            >
+                {/* Logo */}
+                <Link
+                    href="/admin"
+                    className="d-flex align-items-center mb-3 text-white text-decoration-none px-2 py-2"
+                >
+                    <span className="fs-5 fw-bold">
+                        Aaroh{" "}
+                        <span style={{ color: "#3b82f6" }}>Admin</span>
+                    </span>
                 </Link>
-                <hr className="border-secondary mb-4" />
-                <ul className="nav nav-pills flex-column mb-auto gap-1">
-                    <li className="nav-item">
-                        <Link href="/admin" className={`nav-link text-white d-flex align-items-center py-2 px-3 rounded-3 transition-colors ${pathname === '/admin' ? 'bg-primary' : 'hover-bg-secondary'}`} style={pathname !== '/admin' ? { transition: "background-color 0.2s" } : {}}>
-                            <i className="uil uil-home me-3 fs-5"></i>
-                            <span className="fw-medium">Dashboard</span>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/admin/leads" className={`nav-link text-white d-flex align-items-center py-2 px-3 rounded-3 transition-colors ${pathname.startsWith('/admin/leads') ? 'bg-primary' : 'hover-bg-secondary'}`} style={!pathname.startsWith('/admin/leads') ? { transition: "background-color 0.2s" } : {}}>
-                            <i className="uil uil-users-alt me-3 fs-5"></i>
-                            <span className="fw-medium">Leads</span>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/admin/blogs" className={`nav-link text-white d-flex align-items-center py-2 px-3 rounded-3 transition-colors ${pathname.startsWith('/admin/blogs') ? 'bg-primary' : 'hover-bg-secondary'}`} style={!pathname.startsWith('/admin/blogs') ? { transition: "background-color 0.2s" } : {}}>
-                            <i className="uil uil-file-alt me-3 fs-5"></i>
-                            <span className="fw-medium">Blogs</span>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/admin/newsletter" className={`nav-link text-white d-flex align-items-center py-2 px-3 rounded-3 transition-colors ${pathname.startsWith('/admin/newsletter') ? 'bg-primary' : 'hover-bg-secondary'}`} style={!pathname.startsWith('/admin/newsletter') ? { transition: "background-color 0.2s" } : {}}>
-                            <i className="uil uil-envelope me-3 fs-5"></i>
-                            <span className="fw-medium">Newsletter</span>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/admin/settings" className={`nav-link text-white d-flex align-items-center py-2 px-3 rounded-3 transition-colors ${pathname.startsWith('/admin/settings') ? 'bg-primary' : 'hover-bg-secondary'}`} style={!pathname.startsWith('/admin/settings') ? { transition: "background-color 0.2s" } : {}}>
-                            <i className="uil uil-setting me-3 fs-5"></i>
-                            <span className="fw-medium">Settings</span>
-                        </Link>
-                    </li>
+
+                <hr style={{ borderColor: "rgba(255,255,255,0.15)" }} />
+
+                {/* Nav Links */}
+                <ul className="nav flex-column gap-1 mb-auto">
+                    {navLinks.map(({ href, label, icon, exact }) => {
+                        const active = isActive(href, exact);
+                        return (
+                            <li key={href} className="nav-item">
+                                <Link
+                                    href={href}
+                                    className="d-flex align-items-center gap-3 px-3 py-2 rounded-3 text-white text-decoration-none"
+                                    style={{
+                                        backgroundColor: active ? "#3b82f6" : "transparent",
+                                        transition: "background-color 0.2s",
+                                        fontWeight: active ? 600 : 400,
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        if (!active) (e.currentTarget as HTMLElement).style.backgroundColor = "rgba(255,255,255,0.1)";
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        if (!active) (e.currentTarget as HTMLElement).style.backgroundColor = "transparent";
+                                    }}
+                                >
+                                    <span style={{ display: "flex", alignItems: "center", opacity: active ? 1 : 0.75 }}>
+                                        {icon}
+                                    </span>
+                                    <span>{label}</span>
+                                </Link>
+                            </li>
+                        );
+                    })}
                 </ul>
-                <hr className="border-secondary mt-auto mb-4" />
-                <div className="px-2">
-                    <button onClick={handleLogout} className="btn btn-outline-light w-100 d-flex align-items-center justify-content-center py-2 rounded-3" style={{ transition: "all 0.2s" }}>
-                        <i className="uil uil-signout me-2"></i> 
+
+                <hr style={{ borderColor: "rgba(255,255,255,0.15)", marginTop: "auto" }} />
+
+                {/* Sign out */}
+                <div className="px-1">
+                    <button
+                        onClick={handleLogout}
+                        className="btn w-100 d-flex align-items-center gap-3 px-3 py-2 rounded-3 text-white"
+                        style={{
+                            background: "transparent",
+                            border: "1px solid rgba(255,255,255,0.2)",
+                            transition: "all 0.2s",
+                        }}
+                        onMouseEnter={(e) => {
+                            (e.currentTarget as HTMLElement).style.backgroundColor = "rgba(239,68,68,0.2)";
+                            (e.currentTarget as HTMLElement).style.borderColor = "rgba(239,68,68,0.5)";
+                        }}
+                        onMouseLeave={(e) => {
+                            (e.currentTarget as HTMLElement).style.backgroundColor = "transparent";
+                            (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.2)";
+                        }}
+                    >
+                        <MdLogout size={20} style={{ opacity: 0.8 }} />
                         <span className="fw-medium">Sign out</span>
                     </button>
                 </div>
-                
-                {/* CSS to assist hover effects */}
-                <style jsx>{`
-                    .hover-bg-secondary:hover {
-                        background-color: rgba(255, 255, 255, 0.1) !important;
-                    }
-                `}</style>
             </aside>
 
             {/* Main Content */}
-            <main className="flex-grow-1 p-6 overflow-auto">
+            <main className="flex-grow-1 overflow-auto" style={{ padding: "2rem" }}>
                 {children}
             </main>
         </div>
