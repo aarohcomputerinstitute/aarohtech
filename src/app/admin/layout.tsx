@@ -6,6 +6,8 @@ import {
     MdDashboard,
     MdPeople,
     MdArticle,
+    MdCategory,
+    MdPermMedia,
     MdEmail,
     MdSettings,
     MdLogout
@@ -24,6 +26,8 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         { href: "/admin", label: "Dashboard", icon: <MdDashboard size={20} />, exact: true },
         { href: "/admin/leads", label: "Leads", icon: <MdPeople size={20} /> },
         { href: "/admin/blogs", label: "Blogs", icon: <MdArticle size={20} /> },
+        { href: "/admin/categories", label: "Categories", icon: <MdCategory size={20} /> },
+        { href: "/admin/media", label: "Media Library", icon: <MdPermMedia size={20} /> },
         { href: "/admin/newsletter", label: "Newsletter", icon: <MdEmail size={20} /> },
         { href: "/admin/settings", label: "Settings", icon: <MdSettings size={20} /> },
     ];
