@@ -173,14 +173,14 @@ export default function AdminBlogList() {
                 </div>
             </div>
 
-            <style jsx>{`
+            <style dangerouslySetInnerHTML={{ __html: `
                 .x-small { font-size: 0.7rem; }
                 .truncate {
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
                 }
-            `}</style>
+            `}} />
         </div>
     );
 }

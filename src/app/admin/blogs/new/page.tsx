@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import RichEditor from "../../../../components/admin/RichEditor";
+import RichEditor from "components/admin/RichEditor";
 import { MdArrowBack, MdRocketLaunch, MdImage, MdSearch, MdSettings } from "react-icons/md";
 import Link from "next/link";
 
@@ -90,6 +90,16 @@ export default function NewBlog() {
 
     return (
         <div className="container-fluid pb-5">
+            {/* Standard style tag instead of styled-jsx */}
+            <style dangerouslySetInnerHTML={{ __html: `
+                .truncate {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .x-small { font-size: 0.75rem; }
+            `}} />
+
             {/* Header */}
             <div className="d-flex align-items-center justify-content-between mb-4 mt-2">
                 <div className="d-flex align-items-center gap-3">
@@ -307,15 +317,6 @@ export default function NewBlog() {
                     </div>
                 </div>
             </div>
-
-            <style jsx>{`
-                .truncate {
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-                .x-small { font-size: 0.75rem; }
-            `}</style>
         </div>
     );
 }
