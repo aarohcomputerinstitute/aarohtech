@@ -1,16 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import RichEditor from "components/admin/RichEditor";
-import { MdArrowBack, MdSave, MdRocketLaunch, MdImage, MdSearch, MdSettings } from "react-icons/md";
+import RichEditor from "../../../components/admin/RichEditor";
+import { MdArrowBack, MdRocketLaunch, MdImage, MdSearch, MdSettings } from "react-icons/md";
 import Link from "next/link";
 
 export default function NewBlog() {
     const router = useRouter();
     const [loading, setLoading] = useState(false);
     const [imagePreview, setImagePreview] = useState<string | null>(null);
+    const [isMounted, setIsMounted] = useState(false);
 
     const [formData, setFormData] = useState({
         title: "",
@@ -26,6 +27,11 @@ export default function NewBlog() {
         is_featured: false
     });
 
+    // Prevent hydration issues by waiting for mount
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
     const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
         const file = e.target.files?.[0];
         if (!file) return;
@@ -39,15 +45,23 @@ export default function NewBlog() {
             if (data.success) {
                 setFormData({ ...formData, image: data.url });
                 setImagePreview(data.url);
+            } else {
+                alert(`Upload failed: ${data.error || 'Server error'}`);
             }
         } catch (error) {
             console.error("Upload failed", error);
-            alert("Featured image upload failed.");
+            alert("Featured image upload failed. Check your internet connection.");
         }
     };
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        
+        if (!formData.title || !formData.content) {
+            alert("Please fill in the title and content.");
+            return;
+        }
+
         setLoading(true);
 
         try {
@@ -64,13 +78,15 @@ export default function NewBlog() {
             } else {
                 alert(`Error: ${result.details || result.error || "Failed to create blog"}`);
             }
-        } catch (error) {
-            console.error(error);
-            alert("A network error occurred.");
+        } catch (error: any) {
+            console.error("Submit error:", error);
+            alert(`A network error occurred: ${error.message}`);
         } finally {
             setLoading(false);
         }
     };
+
+    if (!isMounted) return <div className="p-5 text-center text-muted">Loading Editor...</div>;
 
     return (
         <div className="container-fluid pb-5">
@@ -151,7 +167,7 @@ export default function NewBlog() {
                                 {formData.meta_title || formData.title || "Your Blog Title Will Appear Here"}
                             </div>
                             <div className="text-success small mb-1">
-                                aarhtech.com › blogs › {formData.title.toLowerCase().replace(/ /g, '-')}
+                                aarhtech.com › blogs › {formData.title ? formData.title.toLowerCase().replace(/[^a-z0-9]+/g, '-') : 'your-slug'}
                             </div>
                             <div className="text-muted small" style={{ color: '#4d5156' }}>
                                 {formData.meta_description || formData.excerpt || "Your meta description will appear here to attract visitors from search engines..."}
@@ -171,7 +187,12 @@ export default function NewBlog() {
                             onClick={() => document.getElementById('featuredImage')?.click()}
                         >
                             {imagePreview ? (
-                                <img src={imagePreview} alt="Preview" className="w-100 h-100 object-fit-cover" />
+                                <Image 
+                                    src={imagePreview} 
+                                    alt="Preview" 
+                                    fill 
+                                    style={{ objectFit: 'cover' }}
+                                />
                             ) : (
                                 <div className="text-muted">
                                     <MdImage size={48} className="mb-2 opacity-50" />
@@ -286,6 +307,16 @@ export default function NewBlog() {
                     </div>
                 </div>
             </div>
+
+            <style jsx>{`
+                .truncate {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .x-small { font-size: 0.75rem; }
+            `}</style>
         </div>
     );
 }
+

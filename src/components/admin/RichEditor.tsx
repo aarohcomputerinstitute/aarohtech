@@ -4,16 +4,11 @@ import { useMemo, useRef } from 'react';
 import dynamic from 'next/dynamic';
 import 'react-quill/dist/quill.snow.css';
 
-const ReactQuill = dynamic(
-    async () => {
-        const { default: RQ } = await import('react-quill');
-        // Forward ref to ReactQuill instance
-        return function ForwardedQuill(props: any) {
-            return <RQ {...props} forwardedRef={props.quillRef} />;
-        };
-    },
-    { ssr: false }
-);
+// Standard dynamic import for ReactQuill
+const ReactQuill = dynamic(() => import('react-quill'), { 
+    ssr: false,
+    loading: () => <div className="bg-light rounded-3" style={{ height: '400px' }} />
+});
 
 interface RichEditorProps {
     value: string;
@@ -92,28 +87,29 @@ export default function RichEditor({ value, onChange }: RichEditorProps) {
     ];
 
     return (
-        <div className="bg-white rounded-3 overflow-hidden border">
-            <style jsx global>{`
-                .ql-container {
+        <div className="bg-white rounded-3 overflow-hidden border custom-quill-editor">
+            {/* Using standard style tag for App Router compatibility */}
+            <style dangerouslySetInnerHTML={{ __html: `
+                .custom-quill-editor .ql-container {
                     font-family: inherit;
                     font-size: 16px;
                 }
-                .ql-editor {
+                .custom-quill-editor .ql-editor {
                     min-height: 400px;
                     max-height: 600px;
                 }
-                .ql-toolbar.ql-snow {
+                .custom-quill-editor .ql-toolbar.ql-snow {
                     border: none;
                     border-bottom: 1px solid #dee2e6;
                     background: #f8f9fa;
                     padding: 10px;
                 }
-                .ql-container.ql-snow {
+                .custom-quill-editor .ql-container.ql-snow {
                     border: none;
                 }
-            `}</style>
+            `}} />
             <ReactQuill
-                quillRef={quillRef}
+                ref={quillRef}
                 theme="snow"
                 value={value}
                 onChange={onChange}
