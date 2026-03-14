@@ -1,14 +1,21 @@
 "use client";
 
-import { useMemo, useRef } from 'react';
+import { useMemo, useRef, forwardRef } from 'react';
 import dynamic from 'next/dynamic';
 import 'react-quill/dist/quill.snow.css';
 
-// Standard dynamic import for ReactQuill
-const ReactQuill = dynamic(() => import('react-quill'), { 
-    ssr: false,
-    loading: () => <div className="bg-light rounded-3" style={{ height: '400px' }} />
-});
+// We create a wrapper that handles the ref correctly for dynamic loading
+const ReactQuillBase = dynamic(
+    async () => {
+        const { default: RQ } = await import('react-quill');
+        // eslint-disable-next-line react/display-name
+        return forwardRef((props: any, ref: any) => <RQ ref={ref} {...props} />);
+    },
+    { 
+        ssr: false,
+        loading: () => <div className="bg-light rounded-3" style={{ height: '400px' }} />
+    }
+);
 
 interface RichEditorProps {
     value: string;
@@ -38,7 +45,7 @@ export default function RichEditor({ value, onChange }: RichEditorProps) {
 
                     if (res.ok) {
                         const data = await res.json();
-                        // Get quill instance
+                        // Get quill instance from the ref
                         const quill = quillRef.current?.getEditor();
                         if (quill) {
                             const range = quill.getSelection(true);
@@ -88,7 +95,6 @@ export default function RichEditor({ value, onChange }: RichEditorProps) {
 
     return (
         <div className="bg-white rounded-3 overflow-hidden border custom-quill-editor">
-            {/* Using standard style tag for App Router compatibility */}
             <style dangerouslySetInnerHTML={{ __html: `
                 .custom-quill-editor .ql-container {
                     font-family: inherit;
@@ -108,7 +114,7 @@ export default function RichEditor({ value, onChange }: RichEditorProps) {
                     border: none;
                 }
             `}} />
-            <ReactQuill
+            <ReactQuillBase
                 ref={quillRef}
                 theme="snow"
                 value={value}
