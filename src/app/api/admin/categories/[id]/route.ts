@@ -9,7 +9,7 @@ async function isAdmin() {
 
 export async function DELETE(
     req: Request,
-    { params }: { params: { id: string } }
+    { params }: { params: Promise<{ id: string }> }
 ) {
     if (!(await isAdmin())) {
         return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -31,7 +31,7 @@ export async function DELETE(
 
 export async function PUT(
     req: Request,
-    { params }: { params: { id: string } }
+    { params }: { params: Promise<{ id: string }> }
 ) {
     if (!(await isAdmin())) {
         return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
