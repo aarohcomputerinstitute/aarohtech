@@ -50,7 +50,8 @@ export default function NewBlog() {
             if (res.ok) {
                 router.push("/admin/blogs");
             } else {
-                alert("Failed to create blog");
+                const errorData = await res.json();
+                alert(`Failed to create blog: ${errorData.details || errorData.error || 'Server error'}`);
             }
         } catch (error) {
             console.error(error);

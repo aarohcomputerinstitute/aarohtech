@@ -43,7 +43,12 @@ export async function POST(req: NextRequest) {
             .single();
 
         if (error) {
-            console.error("Supabase insert error:", error);
+            console.error("Supabase insert error details:", {
+                code: error.code,
+                message: error.message,
+                details: error.details,
+                hint: error.hint
+            });
             // Handle unique constraint failure on slug
             if (error.code === '23505') {
                 return NextResponse.json({ error: 'A blog with a similar title already exists.' }, { status: 400 });
@@ -52,8 +57,11 @@ export async function POST(req: NextRequest) {
         }
 
         return NextResponse.json({ success: true, blog: data });
-    } catch (error) {
-        console.error("Blog Save Error:", error);
-        return NextResponse.json({ error: 'Failed to save blog' }, { status: 500 });
+    } catch (error: any) {
+        console.error("Uncaught Blog Save Error:", error);
+        return NextResponse.json({ 
+            error: 'Failed to save blog',
+            details: error.message || 'Unknown error'
+        }, { status: 500 });
     }
 }
