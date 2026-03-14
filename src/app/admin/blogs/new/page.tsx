@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import RichEditor from "../../../components/admin/RichEditor";
+import RichEditor from "../../../../components/admin/RichEditor";
 import { MdArrowBack, MdRocketLaunch, MdImage, MdSearch, MdSettings } from "react-icons/md";
 import Link from "next/link";
 
