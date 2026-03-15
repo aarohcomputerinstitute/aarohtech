@@ -1,4 +1,10 @@
+import { Fragment } from "react";
 import { Metadata } from "next";
+// GLOBAL CUSTOM COMPONENTS
+import Navbar from "components/blocks/navbar/navbar-1";
+import { Footer13 } from "components/blocks/footer";
+import NextLink from "components/reuseable/links/NextLink";
+import { Contact6, Contact10, LocationMap } from "components/blocks/contact";
 
 export const metadata: Metadata = {
   title: "Contact Us | Aaroh Tech and AI Institute Jaipur",
