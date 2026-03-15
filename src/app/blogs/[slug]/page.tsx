@@ -37,11 +37,15 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     title: blog.meta_title || blog.title,
     description: blog.meta_description || blog.excerpt || "",
     keywords: blog.keywords || "",
+    alternates: {
+      canonical: `/blogs/${params.slug}`,
+    },
     openGraph: {
       title: blog.meta_title || blog.title,
       description: blog.meta_description || blog.excerpt || "",
       images: blog.image ? [blog.image] : [],
       type: 'article',
+      url: `/blogs/${params.slug}`,
     }
   };
 }

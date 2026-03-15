@@ -1,9 +1,10 @@
-import { Fragment } from "react";
-// GLOBAL CUSTOM COMPONENTS
-import Navbar from "components/blocks/navbar/navbar-1";
-import { Footer13 } from "components/blocks/footer";
-import NextLink from "components/reuseable/links/NextLink";
-import { Contact6, Contact10, LocationMap } from "components/blocks/contact";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us | Aaroh Tech and AI Institute Jaipur",
+  description: "Get in touch with Aaroh Tech and AI Institute in Jaipur. Visit our center at Kalwar Road, Govindpura, or call us at +91-9828658887 for admissions and inquiries.",
+  keywords: ["Contact Aaroh Tech", "Computer Institute Jaipur Contact", "Aaroh Tech Address", "Learn Coding Jaipur"],
+};
 
 
 export default function ContactUs() {
