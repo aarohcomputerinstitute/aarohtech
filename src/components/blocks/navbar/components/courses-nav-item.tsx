@@ -14,7 +14,7 @@ export default function CoursesNavItem() {
 
       <ul className="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
         <li className="mega-menu-content mega-menu-scroll">
-          <ul className="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-4 gy-lg-2 list-unstyled">
+          <ul className="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-5 gy-lg-2 list-unstyled">
             {courses.map(({ id, title, url, thumnail }) => (
               <li className="col" key={id}>
                 <Link href={url} className="dropdown-item">
