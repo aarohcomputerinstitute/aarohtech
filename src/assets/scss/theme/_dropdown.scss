@@ -325,7 +325,13 @@
           padding: 0.6rem 0.25rem 0.2rem;
         }
         .mega-menu-dark {
-          background: $dropdown-dark-bg;
+          background: rgba($dropdown-dark-bg, 0.85) !important;
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border: 1px solid rgba($white, 0.08) !important;
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba($white, 0.05) !important;
+          background-image: linear-gradient(135deg, rgba($white, 0.03) 0%, rgba($white, 0) 100%) !important;
+
           .img-svg {
             background: rgba(var(--#{$prefix}white-rgb), 0.05);
             transition: $btn-transition;
@@ -335,14 +341,19 @@
           }
           .dropdown-item {
             color: $navbar-dark-color;
+            transition: transform 0.2s ease;
             &:hover,
             &:focus {
-              color: $navbar-dark-color;
+              color: var(--#{$prefix}primary) !important;
+              transform: translateX(4px);
+              background: transparent !important;
             }
           }
         }
         .mega-menu-img {
           padding: 0 !important;
+          animation: megaMenuFadeIn 0.3s ease-out forwards;
+          
           .mega-menu-content {
             padding: 0.2rem 2rem !important;
             margin: 1.8rem 0 !important;
@@ -350,7 +361,19 @@
           .dropdown-item {
             padding-left: 0;
             padding-right: 0;
+            img {
+              transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+              &:hover {
+                transform: scale(1.05) translateY(-5px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3) !important;
+              }
+            }
           }
+        }
+        
+        @keyframes megaMenuFadeIn {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
         }
         &.caret-none .dropdown:not(.dropdown-submenu) > .dropdown-toggle:after {
           display: none;
@@ -394,17 +417,17 @@
 }
 @media (min-width: 1400px) {
   .mega-menu-scroll {
-    height: 30.6rem;
+    max-height: 35rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .mega-menu-scroll {
-    height: 26.2rem;
+    max-height: 30rem;
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .mega-menu-scroll {
-    height: 21.8rem;
+    max-height: 25rem;
   }
 }
 //----------------------------------------------------------//
